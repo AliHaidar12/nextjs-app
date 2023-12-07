@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import Image from 'next/image';
+import styles from "./header.module.css"
 
 const Header = ({ logo }) => {
   return (
@@ -67,27 +68,27 @@ const Header = ({ logo }) => {
           <Navbar.Collapse id="navbar-nav" className="text-center">
             {/* Middle: Menu */}
             <Nav className="mx-auto" >
-              <Nav.Link href="/" style={{paddingRight: "20px"}}>Home</Nav.Link>
-              <Nav.Link href="linen-curtains" style={{paddingRight: "20px"}}>Linen Curtains</Nav.Link>
-              <Nav.Link href="office-curtains" style={{paddingRight: "20px"}}>Office Curtains</Nav.Link>
-              <Nav.Link href="living-room-curtains" style={{paddingRight: "20px"}}>Living Room Curtains</Nav.Link>
-              <Nav.Link href="office-blinds" style={{paddingRight: "20px"}}>Office Blinds</Nav.Link>
-              <Nav.Link href="wooden-blinds" style={{paddingRight: "20px"}}>Wooden Blinds</Nav.Link>
-              <Nav.Link href="venetian-blinds" style={{paddingRight: "20px"}}>Venetian Blinds</Nav.Link>
+              <Nav.Link href="/" className={styles.text} >Home</Nav.Link>
+              <Nav.Link href="#" className={styles.text}>About Us</Nav.Link>
+              
 
               {/* Dropdown 1 */}
-              {/* <NavDropdown title="Curtains" id="dropdown1">
-                <NavDropdown.Item href="#">Blackout Curtains</NavDropdown.Item>
-                <NavDropdown.Item href="#">Office Curtains</NavDropdown.Item>
-                <NavDropdown.Item href="#">Bedroom Curtains</NavDropdown.Item>
-              </NavDropdown> */}
+              <NavDropdown className={styles.text} title="Curtains" id="dropdown1">
+                <NavDropdown.Item href="linen-curtains">Blackout Curtains</NavDropdown.Item>
+                <NavDropdown.Item href="office-curtains">Office Curtains</NavDropdown.Item>
+                <NavDropdown.Item href="living-room-curtains">Bedroom Curtains</NavDropdown.Item>
+              </NavDropdown>
 
               {/* Dropdown 2 */}
-              {/* <NavDropdown title="Blinds" id="dropdown2">
-                <NavDropdown.Item href="#">Blackout Blinds</NavDropdown.Item>
-                <NavDropdown.Item href="#">Office Blinds</NavDropdown.Item>
-                <NavDropdown.Item href="#">Outdoor Blinds</NavDropdown.Item>
-              </NavDropdown> */}
+              <NavDropdown className={styles.text} title="Blinds" id="dropdown2">
+                <NavDropdown.Item href="office-blinds">Office Blinds</NavDropdown.Item>
+                <NavDropdown.Item href="wooden-blinds">Wooden Blinds</NavDropdown.Item>
+                <NavDropdown.Item href="venetian-blinds">Venetian Blinds</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#" className={styles.text}>Fabric Collection</Nav.Link>
+              <Nav.Link href="#" className={styles.text}>Gallery</Nav.Link>
+              <Nav.Link href="#" className={styles.text}>Blog</Nav.Link>
+              <Nav.Link href="#" className={styles.text}>Contact Us</Nav.Link>
             </Nav>
 
             {/* Right Side: Get A Quote Button */}
