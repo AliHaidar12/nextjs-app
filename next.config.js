@@ -2,9 +2,8 @@
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
-  images: {
-    unoptimized: true,
-  },
+  
+  target: "serverless"
 };
 
 module.exports = nextConfig;
