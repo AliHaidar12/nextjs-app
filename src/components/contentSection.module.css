@@ -81,13 +81,10 @@
   line-height: 80px;
 }
 .inner {
-  width: 85%;
+  width: 100%;
   margin: auto;
 }
-.h2 {
-  font-size: 45px;
-  line-height: 63px;
-}
+
 .sale {
   background-color: #1a808d;
 }

@@ -52,12 +52,12 @@ const Header = ({ logo }) => {
           {/* Left Side: Logo */}
           <Navbar.Brand style={{ maxWidth: '10%', margin: 'auto' }} href="/" className="mx-auto">
             <Image
-            width={100}
-            height={100}
+            width={110}
+            height={50}
               src={logo}
               alt="Logo"
-              style={{ maxWidth: '100%', height: 'auto' }}
-              className="d-inline-block align-top"
+              
+              className={`${styles.logomain} d-inline-block align-top`}
             />
           </Navbar.Brand>
 

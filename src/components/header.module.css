@@ -3,3 +3,8 @@
   color: black;
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .logomain {
+    margin: 0px;
+  }
+}
