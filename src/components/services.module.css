@@ -1,0 +1,19 @@
+.iconRowContainer {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.21);
+}
+
+.iconBox {
+  padding: 10px;
+  text-align: center;
+}
+
+.icon {
+  width: 100%; /* Adjust the width to your desired size */
+  max-width: 80px; /* Set a maximum width for responsiveness */
+  height: auto;
+}

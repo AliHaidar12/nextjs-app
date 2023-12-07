@@ -1,0 +1,62 @@
+.text {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-right: 100px;
+}
+.icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.contact {
+  margin-left: 10px;
+  padding: 15px;
+  border: 1px dotted white;
+}
+.button {
+  background: #fcb332;
+  color: black;
+  font-size: 30px;
+  margin-left: 20px;
+}
+.inner {
+  background-color: #1a808d;
+  padding: 20px;
+}
+.secondSection {
+  width: 80%;
+  margin: auto;
+}
+.column {
+  padding: 20px;
+}
+.links {
+  text-decoration: none;
+  color: #1a808d;
+  font-size: 16px;
+}
+.social {
+  padding-top: 2px;
+  padding-left: 7px;
+  width: 40px;
+  height: 40px;
+  background-color: #1a808d;
+  border-radius: 5px;
+}
+
+.phoneText {
+  color: black;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.contactInfo {
+  color: black;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contectIcon {
+  color: #1a808d;
+}

@@ -1,0 +1,10 @@
+.formInput {
+  background-color: #454a4f;
+}
+.button {
+  background-color: #1a808d;
+}
+.formInput input::placeholder,
+.formInput textarea::placeholder {
+  color: white;
+}
