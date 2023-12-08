@@ -5,6 +5,6 @@
 }
 @media (max-width: 767px) {
   .logomain {
-    margin: 0px;
+    margin: 0px !important;
   }
 }

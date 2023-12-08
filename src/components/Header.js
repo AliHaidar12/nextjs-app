@@ -50,14 +50,14 @@ const Header = ({ logo }) => {
       <Navbar expand="lg" bg="light" variant="light">
         <div className="container">
           {/* Left Side: Logo */}
-          <Navbar.Brand style={{ maxWidth: '10%', margin: 'auto' }} href="/" className="mx-auto">
+          <Navbar.Brand style={{ maxWidth: '10%', margin: 'auto' }} href="/" className={`${styles.logomain} mx-auto`} >
             <Image
             width={110}
             height={50}
               src={logo}
               alt="Logo"
               
-              className={`${styles.logomain} d-inline-block align-top`}
+              className={` d-inline-block align-top`}
             />
           </Navbar.Brand>
 
@@ -65,7 +65,7 @@ const Header = ({ logo }) => {
           <Navbar.Toggle aria-controls="navbar-nav" />
 
           {/* Navbar Items */}
-          <Navbar.Collapse id="navbar-nav" className="text-center">
+          <Navbar.Collapse id="navbar-nav" >
             {/* Middle: Menu */}
             <Nav className="mx-auto" >
               <Nav.Link href="/" className={styles.text} >Home</Nav.Link>

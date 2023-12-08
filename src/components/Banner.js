@@ -26,8 +26,8 @@ const Banner = ({heading=null, text=null,text1=null, side_image=null}) => {
           <Image
             src={side_image} // Replace with the path to your image
             alt="Banner"
-            width={600} // Set the desired width
-            height={400} // Set the desired height
+            width={550} // Set the desired width
+            height={370} // Set the desired height
             className={"img-fluid", styles.image}
           />
           </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
-const FAQsSection = ({ faqsData=null, heading }) => {
+import styles from "./faqsection.module.css"
+const FAQsSection = ({ faqsData, heading }) => {
   const [openIndex, setOpenIndex] = useState(0);
 
   const handleToggle = (index) => {
@@ -8,7 +8,7 @@ const FAQsSection = ({ faqsData=null, heading }) => {
   };
 
   return (
-    <div className="container-fluid" style={{ backgroundColor: '#1a808d', color: 'white', padding: '20px' }}>
+    <div className={`${styles.main} container-fluid`} >
       <h3 className="text-center mb-4">{heading}</h3>
 
       <div className="">
@@ -23,7 +23,7 @@ const FAQsSection = ({ faqsData=null, heading }) => {
               {openIndex === index ? <i className="fas fa-minus text-white"></i> : <i className="fas fa-plus text-white"></i>}
             </div>
             {openIndex === index && (
-              <div className="answer mt-2">
+              <div className="answer  mt-2">
                 {faq.answer}
               </div>
             )}

@@ -15,33 +15,33 @@ const Footer = () => {
           <i className={`fas fa-mobile-alt text-white ${styles.icon}`}></i>
           <p className="mb-0 ml-2 text-white" style={{ fontSize: '18px' }}>+971581535184</p>
         </div>
-        <button className={`btn btn-primary ${styles.button}`}>Your Button</button>
+        <button className={`btn btn-primary ${styles.button}`}>Get A Quote</button>
       </div>
 
-      <div className={`d-flex justify-content-around ${styles.secondSection}`}>
+      <div className={`d-flex flex-wrap justify-content-around ${styles.secondSection}`}>
       {/* 1st Column */}
-      <div className={`col-md-3 ${styles.column}`}>
+      <div className={`col-md-3 col-12 ${styles.column}`}>
         <h4>About Us</h4>
         <p>Closingcurtain.ae is the stellar platform to choose the best Blinds and Curtains for your place from. Our services take the right care of your perfect home maintenance.</p>
               <ul className="list-inline mb-0 d-none d-sm-block">
                 <li className={`${styles.social} list-inline-item me-3`}>
-                  <a href="#" className="text-white"><i className="bi bi-facebook fs-4"></i></a>
+                  <a href="#" className="text-white"><i className="bi bi-facebook fs-5"></i></a>
                 </li>
                 <li className={`${styles.social} list-inline-item me-3`}>
-                  <a href="#" className="text-white"><i className="bi bi-twitter fs-4"></i></a>
+                  <a href="#" className="text-white"><i className="bi bi-twitter fs-5"></i></a>
                 </li>
                 <li className={`${styles.social} list-inline-item me-3`}>
-                  <a href="#" className="text-white"><i className="bi bi-instagram fs-4"></i></a>
+                  <a href="#" className="text-white"><i className="bi bi-instagram fs-5"></i></a>
                 </li>
                 <li className={`${styles.social} list-inline-item me-3`}>
-                  <a href="#" className="text-white"><i className="bi bi-linkedin fs-4"></i></a>
+                  <a href="#" className="text-white"><i className="bi bi-linkedin fs-5"></i></a>
                 </li>
               </ul>
 
       </div>
 
       {/* 2nd Column */}
-      <div className={`col-md-3 ${styles.column}`}>
+      <div className={`col-md-3 col-12 ${styles.column}`}>
         <h4>Curtains</h4>
         <p><a className={styles.links} href="linen-curtains"> Linen Curtains</a></p>
         <p><a className={styles.links} href="office-curtains"> Office Curtains</a></p>
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       {/* 3rd Column */}
-      <div className={`col-md-3 ${styles.column}`}>
+      <div className={`col-md-3 col-12 ${styles.column}`}>
         <h4>Blinds</h4>
         
         <p><a className={styles.links} href="office-blinds"> Office Blinds</a></p>
@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
 
       {/* 4th Column */}
-      <div className={`col-md-3 ${styles.column}`}>
+      <div className={`col-md-3 col-12 ${styles.column}`}>
         <h4>Contact Us</h4>
         <div className="contact-section">
             <div className="d-flex align-items-center">

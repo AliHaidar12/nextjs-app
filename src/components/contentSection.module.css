@@ -88,3 +88,8 @@
 .sale {
   background-color: #1a808d;
 }
+@media (max-width: 767px) {
+  .box_container {
+    margin-bottom: 20px !important;
+  }
+}
