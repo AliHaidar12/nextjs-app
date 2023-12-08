@@ -12,7 +12,7 @@ const Footer = () => {
           Buy Customized Curtains Dubai: <br/> Free Installation in 48 Hour
         </p>
         <div className={`d-flex align-items-center ${styles.contact}`}>
-          <i className={`fas fa-mobile-alt text-white ${styles.icon}`}></i>
+          <i className={`bi bi-phone  fs-5 text-white ${styles.icon}`}></i>
           <p className="mb-0 ml-2 text-white" style={{ fontSize: '18px' }}>+971581535184</p>
         </div>
         <button className={`btn btn-primary ${styles.button}`}>Get A Quote</button>

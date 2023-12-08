@@ -12,6 +12,8 @@ import ContentService from '@/components/ContentService';
 import ServiceGallery from '@/components/ServiceGallery';
 import ContentService1 from '@/components/ContentService1';
 import ContentService2 from '@/components/ContentService2';
+import ContentService3 from '@/components/ContentService3';
+
 import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
 
@@ -71,7 +73,7 @@ const LinenCurtains = () => {
     },
   ]
 
-  //const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+  const points = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
 
   return (
     <div>
@@ -163,6 +165,19 @@ const LinenCurtains = () => {
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}
         />
+
+        {/* <ContentService3
+        faqHeading="FAQs (Frequently Asked Questions)"
+        leftSectionPoints={points}
+        leftSectionTitle=" We’ve come up with entirely trendsetting ranges of the Linen"
+        leftSectionParagraph1="We’ve come up with entirely trendsetting ranges of the Linen Dubai Curtains for a suave uplifting of your spaces. 
+        These curtains are not just mesmerizing to look at but also induce a genuine sensation of satisfaction and comfort. 
+        Plus, the build quality is super sustainable and can easily last for years on end. "
+        leftSectionParagraph2="Our Linen Curtains Dubai can easily outperform any given window treatment and they will also provide the additional 
+        advantage of keeping your living spaces clean and well-maintained. Do check out our platform for shopping these best blinds 
+        online and find the best pairing element for your decors."
+        faqsData={faqsData}
+        /> */}
 
         <Footer/>
     </div>
