@@ -33,7 +33,7 @@ const ContentSection4 = ({ mainHeading, heading, button="Get A Quote", text, tex
             </div>
           )}
           <div className={`col-md-5 ${styles.inner}`} style={mainStyle}>
-          <Image width={600} height={600} src={image} alt="banner" className={`img-fluid ${styles.imageWithBorder}`} />
+          <Image width={600} height={600} src={image} alt="banner" priority className={`img-fluid ${styles.imageWithBorder}`} />
           </div>
           {/* Left Side - Text Content */}
           <div className={`col-md-7 ${styles.inner}`} style={mainStyle}>

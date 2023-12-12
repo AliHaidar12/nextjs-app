@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.2",
     "jquery": "^3.7.1",

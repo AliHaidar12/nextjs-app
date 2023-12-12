@@ -56,6 +56,7 @@ const Header = ({ logo }) => {
             height={50}
               src={logo}
               alt="Logo"
+              priority
               
               className={` d-inline-block align-top`}
             />
@@ -76,6 +77,7 @@ const Header = ({ logo }) => {
               <NavDropdown className={styles.text} title="Curtains" id="dropdown1">
                 <NavDropdown.Item href="linen-curtains">Blackout Curtains</NavDropdown.Item>
                 <NavDropdown.Item href="office-curtains">Office Curtains</NavDropdown.Item>
+                <NavDropdown.Item href="living-room-curtains">Living Room Curtains</NavDropdown.Item>
                 <NavDropdown.Item href="living-room-curtains">Bedroom Curtains</NavDropdown.Item>
               </NavDropdown>
 
@@ -84,6 +86,17 @@ const Header = ({ logo }) => {
                 <NavDropdown.Item href="office-blinds">Office Blinds</NavDropdown.Item>
                 <NavDropdown.Item href="wooden-blinds">Wooden Blinds</NavDropdown.Item>
                 <NavDropdown.Item href="venetian-blinds">Venetian Blinds</NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown className={styles.text} title="Blinds" id="dropdown3">
+                <NavDropdown className={styles.text} title="Office Blinds" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="wooden-blinds">Wooden Blinds</NavDropdown.Item>
+                  <NavDropdown.Item href="wooden-blinds">Food Blinds</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown className={styles.text} title="Office Blinds" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="wooden-blinds">Wooden Blinds</NavDropdown.Item>
+                  <NavDropdown.Item href="wooden-blinds">Food Blinds</NavDropdown.Item>
+                </NavDropdown>
+                {/* Add more fabric types as needed */}
               </NavDropdown>
               <Nav.Link href="#" className={styles.text}>Fabric Collection</Nav.Link>
               <Nav.Link href="#" className={styles.text}>Gallery</Nav.Link>

@@ -23,7 +23,7 @@ const ContentService1 = ({heading, text,text1, image}) => {
 
           {/* Right Side */}
           <div className="col-md-6">
-          <Image width={600} height={600} src={image} alt="image" className={"img-fluid"} />
+          <Image width={600} height={600} priority src={image} alt="image" className={"img-fluid"} />
           </div>
         </div>
       </div>

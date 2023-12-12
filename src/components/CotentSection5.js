@@ -37,6 +37,7 @@ const ContentSection5 = ({ heading, text, text1, image, reverseDirection }) => {
           <Image width={600} height={600}
               src={image}
               alt="banner"
+              priority
               className={`img-fluid ${styles.imageBorder}`}
             />
           </div>

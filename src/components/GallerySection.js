@@ -16,6 +16,7 @@ const GallerySection = ({ images=null, heading }) => {
         {images.map((imageSrc, index) => (
           <div key={index} className="col-md-3 mb-4">
             <Image
+              priority
               width={300}
               height={170}
               src={imageSrc}

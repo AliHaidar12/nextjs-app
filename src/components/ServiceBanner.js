@@ -7,7 +7,7 @@ const FullScreenBanner = ({ imageUrl }) => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-12">
-          <Image width={1500} height={500} src={imageUrl} alt="Banner Image" className="img-fluid" />
+          <Image priority width={1500} height={500} src={imageUrl} alt="Banner Image" className="img-fluid" />
         </div>
       </div>
     </div>

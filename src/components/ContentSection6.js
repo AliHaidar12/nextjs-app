@@ -29,7 +29,7 @@ const ContentSection6 = ({ heading, text, image }) => {
 
         {/* Right Side */}
         <div className="col-md-6">
-        <Image width={600} height={600} src={image} alt="Your Image" className="img-fluid" />
+        <Image width={600} height={600} priority src={image} alt="Your Image" className="img-fluid" />
         </div>
       </div>
     </div>

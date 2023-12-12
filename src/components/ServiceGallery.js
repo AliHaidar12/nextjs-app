@@ -10,6 +10,7 @@ const ServiceGallery = ({ heading, images=null }) => {
         {images.map((imageUrl, index) => (
           <div key={index} className="col-md-4 mb-4">
             <Image
+              priority
               width={350}
               height={350}
               src={imageUrl}

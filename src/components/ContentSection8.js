@@ -68,7 +68,7 @@ const ContentSection8 = ({ mainHeading, heading, text, text1, image }) => {
 
           {/* Right Side - Image */}
           <div className={`col-md-6 ${styles.inner}`} style={mainStyle}>
-          <Image width={600} height={600} src={image} alt="banner" className={`img-fluid `} />
+          <Image width={600} height={600} priority src={image} alt="banner" className={`img-fluid `} />
           </div>
         </div>
       </div>

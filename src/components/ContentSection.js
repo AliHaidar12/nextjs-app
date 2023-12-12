@@ -34,6 +34,7 @@ const ContentSection = ({ heading=null, image=null, paragraph1=null, paragraph2=
             height={356}
             alt="Your Image Alt Text"
             className="img-fluid"
+            priority
           />
         </div>
       </div>

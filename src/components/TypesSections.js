@@ -22,6 +22,7 @@ const TypesSection = ({ heading, images=null }) => {
               
             >
               <Image
+                priority
                 width={200}
                 height={200}
                 src={image}

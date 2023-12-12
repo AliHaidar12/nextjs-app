@@ -9,7 +9,7 @@ const ContentSection7 = ({ heading, text, image }) => {
       <div className={`row ${styles.inner}` }>
         {/* Right Side */}
         <div className="col-md-6">
-        <Image width={600} height={600} src={image} alt="Your Image" className="img-fluid" />
+        <Image width={600} height={600} src={image} priority alt="Your Image" className="img-fluid" />
         </div>
 
         {/* Left Side */}

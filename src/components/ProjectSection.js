@@ -19,6 +19,7 @@ const ProjectSection = ({ items=null }) => {
               width={60}
               height={60}
               className="img-fluid"
+              priority
             />
             <div className={`number-container `}>
               <p className={styles.text_number}>{item.number}</p>
