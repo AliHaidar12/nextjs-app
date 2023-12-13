@@ -71,33 +71,55 @@ const Header = ({ logo }) => {
             <Nav className="mx-auto" >
               <Nav.Link href="/" className={styles.text} >Home</Nav.Link>
               <Nav.Link href="#" className={styles.text}>About Us</Nav.Link>
-              
+             
 
-              {/* Dropdown 1 */}
-              <NavDropdown className={styles.text} title="Curtains" id="dropdown1">
-                <NavDropdown.Item href="linen-curtains">Blackout Curtains</NavDropdown.Item>
-                <NavDropdown.Item href="office-curtains">Office Curtains</NavDropdown.Item>
-                <NavDropdown.Item href="living-room-curtains">Living Room Curtains</NavDropdown.Item>
-                <NavDropdown.Item href="bedroom-curtains">Bedroom Curtains</NavDropdown.Item>
-              </NavDropdown>
-
-              {/* Dropdown 2 */}
-              <NavDropdown className={styles.text} title="Blinds" id="dropdown2">
-                <NavDropdown.Item href="office-blinds">Office Blinds</NavDropdown.Item>
-                <NavDropdown.Item href="wooden-blinds">Wooden Blinds</NavDropdown.Item>
-                <NavDropdown.Item href="venetian-blinds">Venetian Blinds</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown className={styles.text} title="Blinds" id="dropdown3">
-                <NavDropdown className={styles.text} title="Office Blinds" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="wooden-blinds">Wooden Blinds</NavDropdown.Item>
-                  <NavDropdown.Item href="wooden-blinds">Food Blinds</NavDropdown.Item>
+              <NavDropdown className={styles.text} title="Curtains" id="dropdown3">
+                <NavDropdown className={styles.text} title="Home Curtains" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="living-room-curtains">Living Room Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="bedroom-curtains">Bedroom Curtains</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown className={styles.text} title="Office Blinds" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="wooden-blinds">Wooden Blinds</NavDropdown.Item>
-                  <NavDropdown.Item href="wooden-blinds">Food Blinds</NavDropdown.Item>
+                <NavDropdown className={styles.text} title="Commercial" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="hotel-curtains">Hotel Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="office-curtains">Office Curtains</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown className={styles.text} title="Types" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="eyelet-curtains">Eyelet Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Sheer Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="silk-curtains">Silk Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="linen-curtains">Linen Curtains</NavDropdown.Item>
+                  
+                </NavDropdown>
+                <NavDropdown className={styles.text} title="Smart" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="#">Blackout Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Electric Curtains</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown className={styles.text} title="Curtain Accessories" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="#">Curtain Rings</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Curtain Rods</NavDropdown.Item>
+                  <NavDropdown.Item href="curtain-tapes">Curtain Tapes</NavDropdown.Item>
+                  
                 </NavDropdown>
                 {/* Add more fabric types as needed */}
               </NavDropdown>
+
+              <NavDropdown className={styles.text} title="Blinds" id="dropdown3">
+                <NavDropdown className={styles.text} title="Types" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="#">Bamboo Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="blackout-blinds-dubai">Blackout Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Roller Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Roman Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="venetian-blinds-dubai">Venetian Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Vertical Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="wooden-blinds">Wooden Blinds Dubai</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown className={styles.text} title="Commercial" id="dropdown2" drop="end">
+                  <NavDropdown.Item href="office-blinds-dubai">Office Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="outdoor-blinds-dubai">Outdoor Blinds Dubai</NavDropdown.Item>
+                </NavDropdown>
+                {/* Add more fabric types as needed */}
+              </NavDropdown>
+
+
               <Nav.Link href="#" className={styles.text}>Fabric Collection</Nav.Link>
               <Nav.Link href="#" className={styles.text}>Gallery</Nav.Link>
               <Nav.Link href="#" className={styles.text}>Blog</Nav.Link>

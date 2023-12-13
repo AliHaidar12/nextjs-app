@@ -20,7 +20,7 @@ const VenetianBlinds = () => {
   const galleryImages = [
     '/static/images/Living-Room-Curtains-8.jpg',
     '/static/images/Living-Room-Curtains-9.jpg',
-    '/static/images/Living-Room-Curtains-4.jpg',
+    '/static/images/Living-Room-Curtains-4.jpg', 
     '/static/images/Living-Room-Curtains-5.jpg',
     '/static/images/Living-Room-Curtains-6.jpg',
     '/static/images/Living-Room-Curtains-7.jpg',
