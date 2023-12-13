@@ -23,12 +23,13 @@ const ContentService2 = ({ heading, text, text1, image }) => {
             <h2 className="mb-2" style={headingStyle}>
               {heading}
             </h2>
-            <p className="mb-2" style={textStyle}>
+            <div className='fs-6'>
               {text}
-            </p>
-            <p className="mb-2" style={textStyle}>
+              
               {text1}
-            </p>
+            </div>
+              
+            
           </div>
 
           

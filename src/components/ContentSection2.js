@@ -30,6 +30,7 @@ const ContentSection2 = ({ image=null, heading=null, text=null, h31=null, h32=nu
         {/* Right Side: Content */}
         <div className="col-md-6">
           <div className="text-start">
+            <li style={{color: "#1a808d"}} className="fs-5"> Welcome To Closing Curtain</li>
             {/* Heading */}
             <h2 className={styles.h2}>{heading}</h2>
 

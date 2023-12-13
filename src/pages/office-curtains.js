@@ -9,7 +9,6 @@ import ProjectSection from '@/components/ProjectSection';
 import ContentOnly from '@/components/ContentOnly';
 import SaleSection from '@/components/SaleSection';
 import ContentService from '@/components/ContentService';
-import ServiceGallery from '@/components/ServiceGallery';
 import ContentService1 from '@/components/ContentService1';
 import ContentService2 from '@/components/ContentService2';
 import FAQsSection from '@/components/FAQsSection';

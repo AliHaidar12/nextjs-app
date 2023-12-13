@@ -16,8 +16,11 @@ const ContentService3 = ({ faqHeading, leftSectionTitle, leftSectionParagraph1, 
         <div className="col-md-6 col-12">
           <div className="mb-4">
             <h2>{leftSectionTitle}</h2>
-            <p>{leftSectionParagraph1}</p>
-            <p>{leftSectionParagraph2}</p>
+            <div className='fs-6'>
+            {leftSectionParagraph1}
+            {leftSectionParagraph2}
+            </div>
+           
           </div>
 
           {leftSectionPoints && leftSectionPoints.length > 0 && (
@@ -38,7 +41,7 @@ const ContentService3 = ({ faqHeading, leftSectionTitle, leftSectionParagraph1, 
               </div>
               <div>
                 <h5>Call any time</h5>
-                <p>123132323</p>
+                <p>+971581535184</p>
               </div>
             </div>
           </div>

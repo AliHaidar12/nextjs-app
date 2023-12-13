@@ -176,7 +176,7 @@ const VenetianBlinds = () => {
         Venetian Blinds in Dubai are the easiest and the most effortless to deal with, in terms of maintenance. 
         This treatment will stay functional for years on end and will give you the best value for your money. Reach out to us today and 
         have these budget-friendly blinds as the most serviceable decor for your places!"
-        image="//static/images/Amazing-venetian-blinds.jpg"
+        image="/static/images/Amazing-venetian-blinds.jpg"
         />
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"

@@ -78,7 +78,7 @@ const Header = ({ logo }) => {
                 <NavDropdown.Item href="linen-curtains">Blackout Curtains</NavDropdown.Item>
                 <NavDropdown.Item href="office-curtains">Office Curtains</NavDropdown.Item>
                 <NavDropdown.Item href="living-room-curtains">Living Room Curtains</NavDropdown.Item>
-                <NavDropdown.Item href="living-room-curtains">Bedroom Curtains</NavDropdown.Item>
+                <NavDropdown.Item href="bedroom-curtains">Bedroom Curtains</NavDropdown.Item>
               </NavDropdown>
 
               {/* Dropdown 2 */}
