@@ -4,11 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from '@/components/Header'
 import ContentOnly from '@/components/ContentOnly';
-import SaleSection from '@/components/SaleSection';
 import ContentService from '@/components/ContentService';
 import ContentService1 from '@/components/ContentService1';
-import ContentService2 from '@/components/ContentService2';
-import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import ProjectSection from '@/components/ProjectSection';

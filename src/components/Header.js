@@ -39,8 +39,8 @@ const Header = ({ logo }) => {
 
             {/* Right Side: Contact Information */}
             <div className="col-md-4 d-flex justify-content-end align-items-center text-white">
-              <p className="mb-0 me-3"><i className="bi bi-telephone"></i> <span className="fw-bold">123-456-7890</span></p>
-              <p className="mb-0 me-3"><i className="bi bi-envelope"></i> <span className="fw-bold">info@example.com</span></p>
+              <p className="mb-0 me-3"><i className="bi bi-telephone"></i> <span className="fw-bold">+971581535184</span></p>
+              <p className="mb-0 me-3"><i className="bi bi-envelope"></i> <span className="fw-bold">info@closingcurtain.ae</span></p>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Header = ({ logo }) => {
             {/* Middle: Menu */}
             <Nav className="mx-auto" >
               <Nav.Link href="/" className={styles.text} >Home</Nav.Link>
-              <Nav.Link href="#" className={styles.text}>About Us</Nav.Link>
+              <Nav.Link href="about-us" className={styles.text}>About Us</Nav.Link>
              
 
               <NavDropdown className={styles.text} title="Curtains" id="dropdown3">
@@ -84,14 +84,14 @@ const Header = ({ logo }) => {
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Types" id="dropdown2" drop="end">
                   <NavDropdown.Item href="eyelet-curtains">Eyelet Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Sheer Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="sheer-curtains">Sheer Curtains</NavDropdown.Item>
                   <NavDropdown.Item href="silk-curtains">Silk Curtains</NavDropdown.Item>
                   <NavDropdown.Item href="linen-curtains">Linen Curtains</NavDropdown.Item>
                   
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Smart" id="dropdown2" drop="end">
                   <NavDropdown.Item href="#">Blackout Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Electric Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="electric-curtains">Electric Curtains</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Curtain Accessories" id="dropdown2" drop="end">
                   <NavDropdown.Item href="#">Curtain Rings</NavDropdown.Item>
