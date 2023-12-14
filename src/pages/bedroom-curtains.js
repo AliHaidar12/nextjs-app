@@ -65,7 +65,7 @@ const BedroomCurtains = () => {
 
         text2={<p>With these curtains, you can instantly make your comfort zones cozier and more relaxing for you. Another major
              advantage of these curtains’ utility is their flawless tendency to maintain privacy, which is totally the most crucial
-              requirement of a bedroom space. The functionality is efficient enough, similar to the working of a <a href='office-curtains'>blackout window treatment</a>.
+              requirement of a bedroom space. The functionality is efficient enough, similar to the working of a <Link href='office-curtains'>blackout window treatment</Link>.
 
             </p>}
 
@@ -76,7 +76,7 @@ const BedroomCurtains = () => {
         text4={<p>These calmative curtains for bedrooms will efficiently protect the beauty and décor organization of your bedroom in 
         multiple ways. These curtains, while serving as an outstanding window covering, also keep away all the dust, dirt, sun damage, 
         and insects. Moreover, you can have them with various useful and smart additions, such as in the form 
-        of <a href='electric-curtains'> Electric Window Treatment.</a></p>}
+        of <Link href='electric-curtains'> Electric Window Treatment.</Link></p>}
 
         />
 
@@ -94,8 +94,8 @@ const BedroomCurtains = () => {
 
         text1={<p>Amongst our extensive varieties, you can not only look for the best match for your existing bedroom decor but can also
              choose a number of calmative curtain shades in order to create attractive contrasting organizations.
-             <a href='sheer-curtains'>Sheer Bedroom Drapes </a>
-             are one classy choice in this regard, that can be paired with another <a href='blackout-curtains'>room darkening window treatment.</a> </p>}
+             <Link href='sheer-curtains'>Sheer Bedroom Drapes </Link>
+             are one classy choice in this regard, that can be paired with another <Link href='blackout-curtains'>room darkening window treatment.</Link> </p>}
 
         text2={<p>Our Bedroom Curtains Dubai add a lot of pleasurable warmth to the bedroom area, making them the coziest for you. 
             You can go for the prints and patterns choice if you want a luxurious look or you can simply play with the combination 
@@ -138,7 +138,7 @@ const BedroomCurtains = () => {
         text={<p>We’ve got just the right compilation of expertise required for a new window treatment installation within your comfort
              zones. Our quality bedroom curtain installation services will ensure bringing about the finest ornamental versions of your
               bedrooms as well, in addition to the perfect curtain fitting. So you can totally call this treatment a 
-              <a href='silk-curtains'>wonderful décor upgrade</a>. 
+              <Link href='silk-curtains'>wonderful décor upgrade</Link>. 
 
             </p>}
 
@@ -153,7 +153,7 @@ const BedroomCurtains = () => {
 
         image="/static/images/Amazing-venetian-blinds (1).jpg"
 
-        text={<p><a href='/'>Closing Curtain</a> is the top-tier home décor provider and expert for your places, which will always help you settle for 
+        text={<p><Link href='/'>Closing Curtain</Link> is the top-tier home décor provider and expert for your places, which will always help you settle for 
             the best decisions, regarding their betterment. Having that said, we’re more than glad to bring you our trendiest and premium 
             quality collections of the best bedroom window curtains, which will be a mind-blowing addition for the crucial spaces of your 
             bedrooms. These curtains not just appear extremely entrancing themselves but also have the tendency to harmonize all the s
@@ -172,7 +172,7 @@ const BedroomCurtains = () => {
 
         leftSectionTitle="Why Choose Us?"
 
-        leftSectionParagraph1={<p><a href='/'>Closing Curtain</a> is the top-rated supplier in Dubai, well-known for providing the best 
+        leftSectionParagraph1={<p><Link href='/'>Closing Curtain</Link> is the top-rated supplier in Dubai, well-known for providing the best 
         bedroom curtains in Dubai. Our premium collection of window curtains features attractive designs and patterns. You can add 
         beauty and functionality to your bedroom interior. Buy high-quality bedroom window curtains from us at competitive pricing. </p>}
 

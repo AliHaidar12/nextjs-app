@@ -74,7 +74,7 @@ const CurtainRods = () => {
 
         text1={<p>These rods are more of a curtain essential or must-have in the first place. They provide the adequate medium for 
             curtains to move in the smoothest and most effortless ways. Most commonly, they are used to attach the curtains using 
-            certain other elements such as <a className='text-decoration-none text-danger fw-bold' href='curtain-ring'>Curtain rings </a>, 
+            certain other elements such as <Link  className='text-decoration-none text-danger fw-bold' href='curtain-ring'>Curtain rings </Link>, 
             hooks, clips, or hoops.
             </p>}
         
@@ -82,7 +82,7 @@ const CurtainRods = () => {
             But in other cases, these Curtain Rods Dubai are made to pass through the curtains holes (eyelets in general) present at the 
             top of the curtains, followed by hanging them. This way, it becomes much easier to move the curtain across the rod and also 
             to open and close it much quickly. These rods can be easily used for all types of curtains and the usage isn’t just confined 
-            to <a className='text-decoration-none text-danger fw-bold' href='eyelet-curtains'> Eyelet Window Curtains </a>.
+            to <Link  className='text-decoration-none text-danger fw-bold' href='eyelet-curtains'> Eyelet Window Curtains </Link>.
 
 
         </p>}
@@ -91,8 +91,8 @@ const CurtainRods = () => {
             for your curtains, then you can always have the customization of Curtain Rods in Dubai from us. 
             </p>}
 
-        text4={<p>We are the first-rate <a className='text-decoration-none text-danger fw-bold' href='curtain-accessories'> curtain 
-        accessories supplier in UAE </a> and have incomparable excellence in dealing with all kinds of curtain requirements. 
+        text4={<p>We are the first-rate <Link  className='text-decoration-none text-danger fw-bold' href='curtain-accessories'> curtain 
+        accessories supplier in UAE </Link> and have incomparable excellence in dealing with all kinds of curtain requirements. 
         One notable example of our vast service spectrum is the ravishing rods will make your curtains stand out and thus you can 
         enjoy their whole beauty for the longest periods of time.
 
@@ -106,13 +106,13 @@ const CurtainRods = () => {
         text1={<p>Our quality rods feature the best and sturdiest build quality, hence are well-guaranteed of lasting long. In addition to 
             the curtain beauty enhancement, these rods also ensure the most appropriate safety of your curtains, efficiently keeping all
              kinds of damage at bay. These rods come in a wide variety of sizes, styles, finishes, patterns, and colors, so as to well 
-             complement all<a className='text-decoration-none text-danger fw-bold' href='sheer-curtains'> curtain designs </a> .
+             complement all<Link  className='text-decoration-none text-danger fw-bold' href='sheer-curtains'> curtain designs </Link> .
 
             </p>}
         text2={<p>You can have the ornamental rods that feature stylish ends and beautiful profiles or you can have those simple ones 
             that look genuinely elegant. Over and above, we’ve got you several adjustable Curtain Rods Dubai options too, that can be 
             made to fit various types of curtain designs, such as the 
-            <a className='text-decoration-none text-danger fw-bold' href='silk-curtains'> Adorable Silk Curtains </a>. These rods are a 
+            <Link  className='text-decoration-none text-danger fw-bold' href='silk-curtains'> Adorable Silk Curtains </Link>. These rods are a 
             must-have for all curtain flaunted areas generally. However, they’re specifically important for places such as bathrooms, 
             i.e. for smooth movement of shower curtains. 
 
@@ -144,8 +144,8 @@ const CurtainRods = () => {
 
         <ContentService
         heading="Have Us For The Best Expertise Of Curtain Rods Installation"
-        text={<p>And we’ll help you benefit the most from your<a className='text-decoration-none text-danger fw-bold' href='living-room-curtains'> 
-        new curtain treatment </a> . Our experts are right at your service to help you at any and every point of the curtain accessory 
+        text={<p>And we’ll help you benefit the most from your<Link  className='text-decoration-none text-danger fw-bold' href='living-room-curtains'> 
+        new curtain treatment </Link> . Our experts are right at your service to help you at any and every point of the curtain accessory 
         selection as well as fitting. We’ll not just help you pick out the right kind of curtain accessories but will also serve 
         you with the most perfect and seamless installation of each one of them.
 
@@ -166,10 +166,10 @@ const CurtainRods = () => {
         leftSectionTitle="We Offer The Finest Curtain Accessories All Across The UAE"
 
         leftSectionParagraph1={<p>
-            <a className='text-decoration-none text-danger fw-bold' href='/'></a>Closing Curtain, your ultimate trustworthy home décor 
-            provider has got you the <a className='text-decoration-none text-danger fw-bold' href='/'>complete range 
-            of curtain services</a> for generating the most adorable versions of your places. Our Curtain Rods Dubai are just another notable 
-            aspect of the <a className='text-decoration-none text-danger fw-bold' href='/'> extensive curtain treatment spectrum  </a> 
+            <Link  className='text-decoration-none text-danger fw-bold' href='/'></Link>Closing Curtain, your ultimate trustworthy home décor 
+            provider has got you the <Link  className='text-decoration-none text-danger fw-bold' href='/'>complete range 
+            of curtain services</Link> for generating the most adorable versions of your places. Our Curtain Rods Dubai are just another notable 
+            aspect of the <Link  className='text-decoration-none text-danger fw-bold' href='/'> extensive curtain treatment spectrum  </Link> 
             of ours, from which you can easily find the best complementing must-haves for your curtains. 
             </p>}
 
