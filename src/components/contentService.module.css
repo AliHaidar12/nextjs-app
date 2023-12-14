@@ -1,0 +1,19 @@
+.main {
+  /* background: url("../../public/static/images/1-Electric-Curtains-UAE-1.jpg"); */
+  background-image: linear-gradient(
+      rgba(30, 31, 31, 0.7),
+      rgba(59, 59, 59, 0.7)
+    ),
+    url("../../public/static/images/1-Electric-Curtains-UAE-1.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.box {
+  background-color: #e2dede;
+  width: 75%;
+  margin: auto;
+  border: aliceblue 5px solid;
+}

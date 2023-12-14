@@ -312,6 +312,8 @@ export default function Home() {
 
         <TestimonialsSection
         testimonials={testimonials}/>
+
+        
         <Footer/>
       </main>
 

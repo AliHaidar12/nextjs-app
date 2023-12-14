@@ -90,12 +90,12 @@ const Header = ({ logo }) => {
                   
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Smart" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="#">Blackout Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="blackout-curtains">Blackout Curtains</NavDropdown.Item>
                   <NavDropdown.Item href="electric-curtains">Electric Curtains</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Curtain Accessories" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="#">Curtain Rings</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Curtain Rods</NavDropdown.Item>
+                  <NavDropdown.Item href="curtain-rings">Curtain Rings</NavDropdown.Item>
+                  <NavDropdown.Item href="curtain-rods">Curtain Rods</NavDropdown.Item>
                   <NavDropdown.Item href="curtain-tapes">Curtain Tapes</NavDropdown.Item>
                   
                 </NavDropdown>
@@ -104,12 +104,12 @@ const Header = ({ logo }) => {
 
               <NavDropdown className={styles.text} title="Blinds" id="dropdown3">
                 <NavDropdown className={styles.text} title="Types" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="#">Bamboo Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="bamboo-blinds-dubai">Bamboo Blinds Dubai</NavDropdown.Item>
                   <NavDropdown.Item href="blackout-blinds-dubai">Blackout Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Roller Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Roman Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="roller-blinds-dubai">Roller Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="roman-blinds-dubai">Roman Blinds Dubai</NavDropdown.Item>
                   <NavDropdown.Item href="venetian-blinds-dubai">Venetian Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Vertical Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="vertical-blinds-dubai">Vertical Blinds Dubai</NavDropdown.Item>
                   <NavDropdown.Item href="wooden-blinds">Wooden Blinds Dubai</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Commercial" id="dropdown2" drop="end">

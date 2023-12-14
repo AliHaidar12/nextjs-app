@@ -9,10 +9,11 @@ import SaleSection from '@/components/SaleSection';
 import ContentService from '@/components/ContentService';
 import ServiceGallery from '@/components/ServiceGallery';
 import ContentService1 from '@/components/ContentService1';
-import ContentService2 from '@/components/ContentService2';
-import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
-import ServiceBanner2 from '@/components/ServiceBanner2';
+import ServiceBanner from '@/components/ServiceBanner';
+import ContentService4 from '@/components/ContentService4';
+import ProjectSection from '@/components/ProjectSection';
+import ContentService3 from '@/components/ContentService3';
 
 const HotelRoomCurtains = () => {
   const galleryImages = [
@@ -48,7 +49,7 @@ const HotelRoomCurtains = () => {
     <div>
       <Header logo='/static/images/logo.png'/>
 
-      <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="Hotel Curtains"/>
+      <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>
 
       <ContentSection2
         image='/static/images/eyelet-custom-curtain.jpg'
@@ -60,6 +61,7 @@ const HotelRoomCurtains = () => {
         h32text=""
         />
 
+        <ProjectSection items={items} />
 
         <ContentOnly
         heading=""
@@ -86,6 +88,12 @@ const HotelRoomCurtains = () => {
         text2={<p></p>}
         />
 
+        <ContentService4
+        heading=""
+         text3={<p>
+          </p>}
+        />
+
         <ServiceGallery
         heading="Explore Our Gleaming Gallery"
         images={galleryImages}
@@ -101,24 +109,18 @@ const HotelRoomCurtains = () => {
         <SaleSection
         text="10% Off Window Curtains and Blinds online - Sale End Today"
         />
-        
-        <ContentService2
-        heading=""
-        text={<p></p>}
-        text1={<p></p>}
-        image="/static/images/Luxury-living-room-curtains.jpg"
-        />
-        
-        <ContentService
-        heading=""
-        text={<p></p>}
-        text1={<p></p>}
-        text2={<p></p>}
-        image="/static/images/Closing-Curtain-7.jpg"
-        />
-        
-        <FAQsSection
-        heading="FAQs (Frequently Asked Questions)"
+         
+        <ContentService3
+        leftSectionTitle=""
+
+        leftSectionParagraph1={<p>
+            </p>}
+
+        leftSectionParagraph2=""
+
+
+        faqHeading=""
+
         faqsData={faqsData}
         />
 
