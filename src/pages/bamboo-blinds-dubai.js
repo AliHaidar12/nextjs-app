@@ -155,7 +155,7 @@ const BombooBlinds = () => {
           text3={<p>
             Bamboo window blinds make the most budget-friendly window treatment.<br/>
             Our quality Bamboo blinds Dubai will seamlessly blend into and will complement everything around them.<br/>
-            You'll find it the easiest to care for these blinds.<br/>
+            You well find it the easiest to care for these blinds.<br/>
             When used as an <Link className='text-decoration-none text-danger fw-bold' href='outdoor-blinds-dubai'>outdoor 
             window covering</Link>, these blinds provide the most adequate privacy maintenance. <br/>
             Energy-efficiency is probably the most fundamental plus point of these window blinds, as they provide you with both room 
