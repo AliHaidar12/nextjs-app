@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import styles from './banner.module.css';
 
@@ -17,6 +18,7 @@ const ContentSection5 = ({ heading, text, text1, image, reverseDirection }) => {
             <p className="mb-4">{text}</p>
             <p className="mb-4">{text1}</p>
             <div className="d-flex align-items-center">
+            <Link href="contact">
               <button
                 className="btn btn-primary me-3"
                 style={{ backgroundColor: "#1a808dff" }}
@@ -29,6 +31,7 @@ const ContentSection5 = ({ heading, text, text1, image, reverseDirection }) => {
               >
                 Call Us Today
               </button>
+              </Link>
             </div>
           </div>
 

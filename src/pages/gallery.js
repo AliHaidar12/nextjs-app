@@ -13,7 +13,7 @@ const Gallery = () => {
     '/static/images/gallery/1.jpeg',
     '/static/images/gallery/3.jpeg',
     '/static/images/gallery/4.jpeg',
-    '/static/images/gallery/6.jpg',
+    '/static/images/gallery/40.jpg',
     '/static/images/gallery/11.jpg',
     '/static/images/gallery/8.jpg',
     '/static/images/gallery/9.jpg',
@@ -24,25 +24,24 @@ const Gallery = () => {
     '/static/images/gallery/15.jpg',
     '/static/images/gallery/16.jpg',
     '/static/images/gallery/17.jpg',
-    '/static/images/gallery/18.jpg',
-    '/static/images/gallery/19.jpg',
     '/static/images/gallery/20.jpg',
     '/static/images/gallery/21.jpg',
-    '/static/images/gallery/22.jpg',
-    '/static/images/gallery/23.jpeg',
+    '/static/images/gallery/18.jpg',
+    '/static/images/gallery/41.jpg',
+    
     '/static/images/gallery/24.jpg',
     '/static/images/gallery/25.jpg',
-    '/static/images/gallery/26.jpeg',
-    '/static/images/gallery/27.jpg',
-    '/static/images/gallery/28.jpg',
-    '/static/images/gallery/29.jpg',
+    
+    
     '/static/images/gallery/30.jpg',
     '/static/images/gallery/31.jpg',
     '/static/images/gallery/32.jpeg',
     '/static/images/gallery/37.jpeg',
     '/static/images/gallery/34.jpeg',
     '/static/images/gallery/35.jpeg',
-    '/static/images/gallery/36.jpeg',
+    '/static/images/gallery/26.jpeg',
+    '/static/images/gallery/27.jpg',
+    
     
 
     // '/static/images/Living-Room-Curtains-5.jpg',
@@ -58,7 +57,8 @@ const Gallery = () => {
       <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" 
       heading="Gallery - Inspiring Curtain and Blind Designs"/>
 
-      <GallerySection  images={galleryImages} 
+      <GallerySection  images={galleryImages}
+        showButton={false} 
         heading="Inspiring Designs in Our Curtain and Blind Gallery"/>
 
         <Footer/>

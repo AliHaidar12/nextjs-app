@@ -3,8 +3,9 @@ import React from 'react';
 
 const ServiceBanner2 = ({ imageUrl, heading }) => {
     const bgImageStyle = {
-        background: `url(${imageUrl}) center/cover no-repeat`,
-        height: '50vh',
+        
+      background: `rgba(0, 0, 0) url(${imageUrl}) center/cover no-repeat`,
+        height: '30vh',
       };
   return (
     <div  className="container-fluid">

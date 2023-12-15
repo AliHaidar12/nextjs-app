@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import styles from './banner.module.css';
 const ContentService1 = ({heading, text,text1, text2, image}) => {
@@ -16,9 +17,11 @@ const ContentService1 = ({heading, text,text1, text2, image}) => {
             </div>
             
             <div className="d-flex align-items-center">
+            <Link href="contact">
                 <button className="btn btn-primary me-3" style={{ backgroundColor: "#1a808dff" }}>
                     Get A Quote
                 </button>
+              </Link>
                 <p className="mb-0" style={{ color: "#1a808dff" }}>
                     <i className="bi bi-telephone"></i> <span className="fw-bold">+971581535184</span>
                 </p>

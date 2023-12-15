@@ -5,6 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import Image from 'next/image';
 import styles from "./header.module.css"
+import Link from 'next/link';
 
 const Header = ({ logo }) => {
   return (
@@ -39,8 +40,8 @@ const Header = ({ logo }) => {
 
             {/* Right Side: Contact Information */}
             <div className="col-md-4 d-flex justify-content-end align-items-center text-white">
-              <p className="mb-0 me-3"><i className="bi bi-telephone"></i> <span className="fw-bold">+971581535184</span></p>
-              <p className="mb-0 me-3"><i className="bi bi-envelope"></i> <span className="fw-bold">info@closingcurtain.ae</span></p>
+              <p className="mb-0 "><i className="bi bi-telephone"></i> <span className="fw-bold">+971581535184</span></p>
+              <p className="mb-0 ml-10"><i className="bi bi-envelope"></i> <span className="fw-bold">info@closingcurtain.ae</span></p>
             </div>
           </div>
         </div>
@@ -120,16 +121,18 @@ const Header = ({ logo }) => {
               </NavDropdown>
 
 
-              <Nav.Link href="#" className={styles.text}>Fabric Collection</Nav.Link>
-              <Nav.Link href="#" className={styles.text}>Gallery</Nav.Link>
-              <Nav.Link href="#" className={styles.text}>Blog</Nav.Link>
-              <Nav.Link href="#" className={styles.text}>Contact Us</Nav.Link>
+              <Nav.Link href="fabric-collection" className={styles.text}>Fabric Collection</Nav.Link>
+              <Nav.Link href="gallery" className={styles.text}>Gallery</Nav.Link>
+              {/* <Nav.Link href="#" className={styles.text}>Blog</Nav.Link> */}
+              <Nav.Link href="contact" className={styles.text}>Contact Us</Nav.Link>
             </Nav>
 
             {/* Right Side: Get A Quote Button */}
+            <Link href="contact">
             <button className="btn btn-primary" style={{ backgroundColor: "#1a808dff" }}>
               Get A Quote
             </button>
+            </Link>
           </Navbar.Collapse>
         </div>
       </Navbar>

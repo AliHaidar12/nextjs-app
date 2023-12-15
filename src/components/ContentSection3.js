@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './banner.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 const ContentSection3 = ({ mainHeading, button="Get A Quote", heading, text, text1, image, backgroundColor, buttonColor, buttonTextColor, textColor, headingColor }) => {
   const mainStyle = {
     background: backgroundColor || '#ffffff',
@@ -44,9 +45,11 @@ const ContentSection3 = ({ mainHeading, button="Get A Quote", heading, text, tex
               {text1}
             </p>
             <div className="d-flex align-items-center">
+            <Link href="contact">
               <button className="btn btn-primary me-3" style={buttonStyle}>
                 {button}
               </button>
+              </Link>
             </div>
           </div>
 

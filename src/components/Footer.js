@@ -3,6 +3,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './footer.module.css'; 
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
           <i className={`bi bi-phone  fs-5 text-white ${styles.icon}`}></i>
           <p className="mb-0 ml-2 text-white" style={{ fontSize: '18px' }}>+971581535184</p>
         </div>
-        <button className={`btn btn-primary ${styles.button}`}>Get A Quote</button>
+        <Link href="contact"><button className={`btn btn-primary ${styles.button}`}>Get A Quote</button></Link>
       </div>
 
       <div className={`d-flex flex-wrap justify-content-around ${styles.secondSection}`}>
