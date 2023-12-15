@@ -1,6 +1,7 @@
 // pages/service.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from 'next/link';
 
 import Header from '@/components/Header'
 import ContentSection2 from '@/components/ContentSection2';
@@ -91,7 +92,7 @@ const CurtainRods = () => {
             for your curtains, then you can always have the customization of Curtain Rods in Dubai from us. 
             </p>}
 
-        text4={<p>We are the first-rate <Link  className='text-decoration-none text-danger fw-bold' href='curtain-accessories'> curtain 
+        text4={<p>We are the first-rate <Link  className='text-decoration-none text-danger fw-bold' href='curtain-rings'> curtain 
         accessories supplier in UAE </Link> and have incomparable excellence in dealing with all kinds of curtain requirements. 
         One notable example of our vast service spectrum is the ravishing rods will make your curtains stand out and thus you can 
         enjoy their whole beauty for the longest periods of time.

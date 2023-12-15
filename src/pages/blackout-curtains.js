@@ -14,6 +14,7 @@ import ServiceBanner from '@/components/ServiceBanner';
 import ContentService4 from '@/components/ContentService4';
 import ProjectSection from '@/components/ProjectSection';
 import ContentService3 from '@/components/ContentService3';
+import Link from 'next/link';
 
 const BlackoutCurtains = () => {
   const galleryImages = [
@@ -94,7 +95,7 @@ const BlackoutCurtains = () => {
              most agreeable and calming environments within all interiors. These wondrous blackout curtains Dubai come with ideal usage 
              versatility and can be used to achieve several desired levels of room darkening, in addition to a complete blackout. These 
              Black Out Curtains are a perfect choice for bedrooms and also are the best option as comforting  
-             <a className='text-decoration-none text-danger fw-bold' href='living-room-curtains'> living room drapes</a>.
+             <Link className='text-decoration-none text-danger fw-bold' href='living-room-curtains'> living room drapes</Link>.
 
             </p>}
         
@@ -106,15 +107,15 @@ const BlackoutCurtains = () => {
         text3={<p>Adding to that, having our hard-wearing blackout window curtains will keep all the noise pollution totally away from 
             you. These Blackout Curtains also work as perfect thermal curtains, providing admirable levels of temperature optimization. 
             So at this point, it goes without saying that these curtains make the best 
-            <a className='text-decoration-none text-danger fw-bold' href='office-curtains'> Office curtains </a> 
-            and <a className='text-decoration-none text-danger fw-bold' href='hotel-curtains'> commercial drapes</a> too. 
+            <Link className='text-decoration-none text-danger fw-bold' href='office-curtains'> Office curtains </Link> 
+            and <Link className='text-decoration-none text-danger fw-bold' href='hotel-curtains'> commercial drapes</Link> too. 
 
             </p>}
 
         text4={<p>These curtains insulate the interiors up to a considerable extent and also offer the ideal cooling effect when needed, 
             thus the perfect window treatment approach for all atmospheric conditions. Blackout Curtains Dubai feature the finest build 
             quality and therefore are extremely resilient in nature. And they will be your low-cost and 
-            <a href='eyelet-curtains' className='text-decoration-none text-danger fw-bold'> low-maintenance window treatments </a> 
+            <Link href='eyelet-curtains' className='text-decoration-none text-danger fw-bold'> low-maintenance window treatments </Link> 
             for many years to come.
 
             </p>}
@@ -131,7 +132,7 @@ const BlackoutCurtains = () => {
         text={<p>Our best blackout window curtains offer ideally captivating aesthetics, as well. These curtains are the best idea to 
             consider when there is a major requirement for a genuinely functional home decor. They are the eye-catching form of window 
             covering with the most flexible and versatile attributes, in order to provide the best for all needs, for instance the usage 
-            as <a href='home-curtains' className='text-decoration-none text-danger fw-bold'> all-purpose home curtains</a>. 
+            as <Link href='bedroom-curtains' className='text-decoration-none text-danger fw-bold'> all-purpose home curtains</Link>. 
 
             </p>}
         text2={<p>You can have these smart and serviceable curtains within all of your desired places and can totally pair them with 
@@ -146,7 +147,7 @@ const BlackoutCurtains = () => {
         heading="Everlasting Significance Of Blackout Curtains Dubai"
          text1={<p> Our quality blackout room curtains are a foolproof way of achieving an incredible comfort for your places, that too, 
              without the slightest compromise on styling. These curtains are just the right kind of 
-             <a className='text-decoration-none text-danger fw-bold' href='blackout-blinds-dubai'> functional decor </a> and can seriously 
+             <Link className='text-decoration-none text-danger fw-bold' href='blackout-blinds-dubai'> functional decor </Link> and can seriously 
              outperform any and every other type of curtain. 
           </p>}
           text2={<p> Post getting these quality curtains, you’re meant to notice a major change within your overall health as well as your 
@@ -167,7 +168,7 @@ const BlackoutCurtains = () => {
         <ContentService
         heading="Have Our Premium Blackout Curtains Dubai Installation Services"
         text={<p>Our quality curtains are just the most incredible choice to consider, in case you’re up for a 
-            <a className='text-decoration-none text-danger fw-bold' href='roller-blinds-dubai'> window treatment upgrade</a>. 
+            <Link className='text-decoration-none text-danger fw-bold' href='roller-blinds-dubai'> window treatment upgrade</Link>. 
             Having that said, we’re proud to present you with our expert-grade 
             services for the Blackout window curtains installations, aimed towards the highest levels of excellence. Our services will 
             take the best care of each and every step of a flawless curtain fitting.
@@ -187,7 +188,7 @@ const BlackoutCurtains = () => {
         <ContentService3
         leftSectionTitle="We Are The Top-notch Suppliers Of Quality Blackout Curtains in Dubai"
 
-        leftSectionParagraph1={<p><a className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain</a> is a top-tier 
+        leftSectionParagraph1={<p><Link className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain</Link> is a top-tier 
         platform, well-known for offering exceptional quality window curtains in Dubai on a budget. Our quality blackout drapes are not 
         just the most wonderful decor addition, but also a really incredible functional element for enhancing the comfort extent of your 
         places. Moreover, these curtains will favor you with their cost-efficiency too, for extensive timespans. 

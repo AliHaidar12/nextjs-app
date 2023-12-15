@@ -14,6 +14,7 @@ import ContentService1 from '@/components/ContentService1';
 import ContentService2 from '@/components/ContentService2';
 import Footer from '@/components/Footer';
 import ContentService3 from '@/components/ContentService3';
+import Link from 'next/link';
 
 const ElectricCurtains = () => {
   const galleryImages = [
@@ -88,7 +89,7 @@ const ElectricCurtains = () => {
 
         text1={<p>Our amazing automatic curtains are the type of functional decor that will prove to be advantageous for you in multiple 
             ways. These time-saving curtains come with the most beneficial perk of the smoothest and most effortless working, and the 
-            only <a className='text-decoration-none text-danger fw-bold' href='curtains-accessories'>curtain accessory</a> required 
+            only <Link className='text-decoration-none text-danger fw-bold' href='curtains-accessories'>curtain accessory</Link> required 
             for them are quality rods.
             </p>}
         
@@ -104,20 +105,20 @@ const ElectricCurtains = () => {
 
         text4={<p>In addition to that, these motorized curtains come with a built-in syncing with all voice assistants such as Google 
             Assistant, Amazon Alexa, Siri, etc. Their thick and heavy profiles can be used for an effective room darkening or 
-            brightening like the <a className='text-decoration-none text-danger fw-bold' href='curtains-accessories'>Blackout Window 
-            Curtains</a> and for keeping all the pollutants and external damage away.
+            brightening like the <Link className='text-decoration-none text-danger fw-bold' href='curtains-accessories'>Blackout Window 
+            Curtains</Link> and for keeping all the pollutants and external damage away.
             </p>}
         />
 
         <ContentService1
         heading="Will Electric Curtains in Dubai Really Look Attractive?"
-        text={<p>These <a className='text-decoration-none text-danger fw-bold' href='sheer-curtains'>wondrous curtains</a> not only will 
+        text={<p>These <Link className='text-decoration-none text-danger fw-bold' href='sheer-curtains'>wondrous curtains</Link> not only will 
         look charmingly appealing but will also add a lot of value to your properties. Our motorized drapes have super safe cordless 
         design profiles and therefore are totally children and pet-friendly. And you will be amazed by the fact that these remote 
         control curtains go seamlessly well with all the interior decors.
             </p>}
-        text1={<p>Also, you can use them within outdoor spaces and as <a className='text-decoration-none text-danger fw-bold' 
-        href='curtain-commercial'>commercial curtains</a> too, for the purpose of an effective and the safest coverage. These curtains 
+        text1={<p>Also, you can use them within outdoor spaces and as <Link className='text-decoration-none text-danger fw-bold' 
+        href='curtain-commercial'>commercial curtains</Link> too, for the purpose of an effective and the safest coverage. These curtains 
         maintain privacy like none other and you can adjust their coverage extent just the way you like. Over and above, our Electric 
         Curtains in Dubai will benefit you a lot with their energy efficiency and they will also protect the entire interior and other 
         belongings. Last but not least, their sturdy build quality makes them last longer, as well. 
@@ -127,8 +128,8 @@ const ElectricCurtains = () => {
 
         <ContentOnly
         heading="Features And Favorability Aspects Of Electric Curtains Dubai"
-        text1={<p>These <a className='text-decoration-none text-danger fw-bold' href='office-curtains'>incredible and serviceable 
-        curtains</a> are a great way to add endless comfort to your lifestyles and also to dress your windows in an extremely 
+        text1={<p>These <Link className='text-decoration-none text-danger fw-bold' href='office-curtains'>incredible and serviceable 
+        curtains</Link> are a great way to add endless comfort to your lifestyles and also to dress your windows in an extremely 
         attractive manner. Besides, these curtains are just the perfect choice for modern homes. You can benefit from them in 
         multiple ways and can have various purposes fulfilled from them as well. The most common examples in this regard are 
         energy-efficiency and the flawless control over privacy and room atmosphere.
@@ -184,7 +185,7 @@ const ElectricCurtains = () => {
 
         leftSectionTitle="Our Electric Curtains Dubai Feature The Most Incomparable Quality"
 
-        leftSectionParagraph1={<p><a className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain </a> 
+        leftSectionParagraph1={<p><Link className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain </Link> 
              brings you the most incredible curtain treatment for both your homes and offices, 
             that too, with a number of everlasting benefits. Our all-exclusive curtains are an excellent choice to consider if you’re 
             planning on a window treatment upgrade, as they will also offer the added perk of a suave beautifying of the home décor around. 

@@ -12,6 +12,7 @@ import ContentService2 from '@/components/ContentService2';
 import Footer from '@/components/Footer';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import ContentService3 from '@/components/ContentService3';
+import Link from 'next/link';
 
 const EyeletCurtains = () => {
   const galleryImages = [
@@ -69,17 +70,17 @@ const EyeletCurtains = () => {
 
         text1={<p>Our all-purpose and super-efficient eyelet window curtains give the freedom of styling and redesigning in the first place.
              These curtains are fairly flexible and vastly versatile in nature, therefore can be considered for all sorts of uses. Their 
-             prime significance lies within their absolutely effortless movement across the <a href='curtain-rods'>curtain rods</a>, which 
-             is, in fact the only <a href='curtain-rings'>curtain accessory </a>required by these curtains. These curtains are not 
+             prime significance lies within their absolutely effortless movement across the <Link href='curtain-rods'>curtain rods</Link>, which 
+             is, in fact the only <Link href='curtain-rings'>curtain accessory </Link>required by these curtains. These curtains are not 
              just extremely convenient to operate but also are very easy and quick when it comes to their installation. Another notable 
-             aspect of choosing these curtains as your <a href='home-curtains'>residential window treatment</a> is the advantage of their 
+             aspect of choosing these curtains as your <Link href='bedroom-curtains'>residential window treatment</Link> is the advantage of their 
              affordability.
 
             </p>}
         
         text2={<p>
             We’ve got you a huge variety of ready-made Eyelet Curtains in Dubai that make the best window treatment for all spaces, 
-            particularly the usage as <a href='living-room-curtains'>Living Room Curtains.</a>
+            particularly the usage as <Link href='living-room-curtains'>Living Room Curtains.</Link>
 
 
         </p>}
@@ -93,21 +94,21 @@ const EyeletCurtains = () => {
         heading="What Are The Perks And Pros Of Eyelet Curtains?"
         text={<p>
             These are the kind of curtains that are meant to look great within all scenarios as they ideally complement all ornamental 
-            themes. They appear supremely contemporary and are just the <a href='hotel.curtains'>most economical window covering choice</a>
-             to go for, as well. <br/>Besides of course the residential usage, you can also have them as the <a href='office-curtains'>
-             sleekest commercial or workspace drapes, </a> too.
+            themes. They appear supremely contemporary and are just the <Link href='hotel.curtains'>most economical window covering choice</Link>
+             to go for, as well. <br/>Besides of course the residential usage, you can also have them as the <Link href='office-curtains'>
+             sleekest commercial or workspace drapes, </Link> too.
         </p>}
         text1={
             <p>Moreover, you can also have them within nearly any and every kind of fabrication ranging from the light and 
-                <a href='sheer-curtains'>pleasant sheer ones</a> to those thick and plush velvet ones.
+                <Link href='sheer-curtains'>pleasant sheer ones</Link> to those thick and plush velvet ones.
             </p>
         }
         text2={<p>
                 Also, these Eyelet Curtains Dubai come with the most vogue variety of sizes and coverage options such as the window length 
                 ones or those with floor to ceiling profiles.<br/>
-                Last but not the least, is the greatly calmative curtain selection of eyelet <a href='blackout-curtains'>blackout curtains,
-                </a> which can also be paired up with any of the desired curtain accessories, such as <a href='curtain-tapes'>
-                curtain tapes.</a>
+                Last but not the least, is the greatly calmative curtain selection of eyelet <Link href='blackout-curtains'>blackout curtains,
+                </Link> which can also be paired up with any of the desired curtain accessories, such as <Link href='curtain-tapes'>
+                curtain tapes.</Link>
         </p>}
         />
 
@@ -117,7 +118,7 @@ const EyeletCurtains = () => {
         text1={<p>Our suave eyelet style curtains are a great way to add notable beauty to any and every interior space, since these 
             curtains always remain in fashion. They can easily sync into any of the surrounding decor themes and always appear the most 
             elegant. Also, these curtains are an excellent way to achieve the best coverage levels. This way, they are an exceptionally 
-            favorable choice as <a href='bedroom-curtains'>bedrooms drapes</a> and are best for all similar spaces, too. So do explore 
+            favorable choice as <Link href='bedroom-curtains'>bedrooms drapes</Link> and are best for all similar spaces, too. So do explore 
             our platform to look for the best complementing curtain styles for your homes!
 
             </p>}
@@ -167,8 +168,8 @@ const EyeletCurtains = () => {
 
         leftSectionTitle="We Supply Top Quality Eyelet Curtains Dubai All Over The UAE"
 
-        leftSectionParagraph1={<p><a href='/'>Closing Curtain</a> is the top-tier provider of the finest quality Eyelet Window <a href='/'>
-        curtains in Dubai</a> which will serve as a major uplifting of your places. Our sublime standard curtains are a fundamentally useful window 
+        leftSectionParagraph1={<p><Link href='/'>Closing Curtain</Link> is the top-tier provider of the finest quality Eyelet Window <Link href='/'>
+        curtains in Dubai</Link> which will serve as a major uplifting of your places. Our sublime standard curtains are a fundamentally useful window 
         treatment and a dynamic ornamental upgrade of all interior spaces. You’ll find these curtains a legit breeze to maintain and they’ll 
         keep serving you for years on end.
 

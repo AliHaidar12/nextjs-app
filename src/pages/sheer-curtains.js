@@ -13,6 +13,7 @@ import ContentService1 from '@/components/ContentService1';
 import ContentService2 from '@/components/ContentService2';
 import Footer from '@/components/Footer';
 import ContentService3 from '@/components/ContentService3';
+import Link from 'next/link';
 
 const SheerCurtains = () => {
   const galleryImages = [
@@ -71,7 +72,7 @@ const SheerCurtains = () => {
             light and you can enjoy well-lit interiors around you.<br/> They are great at light filtering and make even the most piercing 
             sun rays extremely mild and pleasant, ultimately the benefit of energy efficiency.<br/>Our sheer curtains Dubai are long-lasting 
             in their functionality and the credit goes to their finest build quality. <br/>The curtains also provide up-to-the-mark privacy
-             similar to the <a className='text-decoration-none text-danger fw-bold' href='blackout-curtains'>Blackout window curtains </a>  
+             similar to the <Link className='text-decoration-none text-danger fw-bold' href='blackout-curtains'>Blackout window curtains </Link>  
              and adjustment light filtering and divergence.<br/> These curtains have a lightweight profile and yet are very sturdy.<br/> 
              They work by effectively diminishing the entrance of pollutants, allergens, insects, etc, keeping your surroundings 
              perfectly decluttered and well-maintained.<br/>They are extremely easy and inexpensive to clean and their designs, prints, 
@@ -129,7 +130,7 @@ const SheerCurtains = () => {
         
         <ContentService2
         heading="Choose Our Flawless Sheer Curtains in Dubai Installation Services        "
-        text={<p><a className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain </a>  brings you the entire curtain 
+        text={<p><Link className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain </Link>  brings you the entire curtain 
         services at one stop and you’ll find our whole skill set to be the most comprehensive one regarding all your home improvement 
         needs. Our curtain installation services bring about the entire beauty of any and every curtain type while also ensuring the 
         provision of maximum functional benefits to you, as well. 

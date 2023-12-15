@@ -14,6 +14,7 @@ import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import ProjectSection from '@/components/ProjectSection';
+import Link from 'next/link';
 
 const CurtainTapes = () => {
   const galleryImages = [
@@ -102,8 +103,8 @@ const CurtainTapes = () => {
             even more attractive.
             </p>}
         
-        text2={<p>These <a className='text-decoration-none text-danger fw-bold' href='curtain-accesories'>amazing Curtain Accessories
-        </a> can also be used for creating certain decorative patterns at the sides or the 
+        text2={<p>These <Link className='text-decoration-none text-danger fw-bold' href='curtain-accesories'>amazing Curtain Accessories
+        </Link> can also be used for creating certain decorative patterns at the sides or the 
             top of the curtain or drapery. Our Curtain heading tapes can be easily attached to the curtains, only by straight 
             stitching or even simply by adhesion.
             </p>}
@@ -129,10 +130,10 @@ const CurtainTapes = () => {
         image='/static/images/curtains-collection-1-2.jpg'
         heading="What Are The Decorative Outcomes Of Using Curtain Tapes?"
         text={<p>These curtain heading tapes make the curtains stand out and become even more beneficial and effortless to use. 
-            These are the kind of curtain accessories that are best to acquire for <a href='home-curtains' className='text-decoration-none text-danger fw-bold'>
-            all types of curtains </a>  and draperies in the first place. Moreover, they are specifically crucial if you’re looking 
-            forward to having any version of the <a className='text-decoration-none text-danger fw-bold' href='silk-curtains'>pleated 
-            curtains</a> since they provide adequate handling of the pleats.
+            These are the kind of curtain accessories that are best to acquire for <Link href='bedroom-curtains' className='text-decoration-none text-danger fw-bold'>
+            all types of curtains </Link>  and draperies in the first place. Moreover, they are specifically crucial if you’re looking 
+            forward to having any version of the <Link className='text-decoration-none text-danger fw-bold' href='silk-curtains'>pleated 
+            curtains</Link> since they provide adequate handling of the pleats.
 
             </p>}
         text1={<p>As another interesting fact, these tapes for curtains are widely available in a number of design options. These types 
@@ -153,12 +154,12 @@ const CurtainTapes = () => {
         text={<p>This finest quality curtain accessory works as an extremely functional addition and offers major aesthetic perks too. 
             In the first place, these tapes can be used to achieve any kind of drapery fall perfectly, and therefore work wonders for
              all luxury curtains and most importantly with those having pleats, such as 
-             <a className='text-decoration-none text-danger fw-bold' href='eyelet-curtains'>Eyelet Window Curtains</a>. Besides, 
+             <Link className='text-decoration-none text-danger fw-bold' href='eyelet-curtains'>Eyelet Window Curtains</Link>. Besides, 
              you also get complete control over the curtain pleating and hence can easily style them just the way you want.
             </p>}
         text1={<p>This enhanced beauty comes with the added perks of a fuller coverage and privacy maintenance. You can make your 
-            windows stand out by dressing them with of course a <a className='text-decoration-none text-danger fw-bold' href='hotel-curtains'>
-            quality curtain treatment</a> and our seamlessly beautiful tapes. And in the same way, you can use these tapes as a 
+            windows stand out by dressing them with of course a <Link className='text-decoration-none text-danger fw-bold' href='hotel-curtains'>
+            quality curtain treatment</Link> and our seamlessly beautiful tapes. And in the same way, you can use these tapes as a 
             reviving addition to your existing curtains, so as to give them a whole new and way more attractive look.
             </p>}
         image="/static/images/Beauty-With-Our-Curtain-Tapes-Dubai.jpg"
@@ -172,7 +173,7 @@ const CurtainTapes = () => {
         text={<p>We’ve got you a whole lot of the best accessories for curtains, the most noteworthy of which are Curtain Tapes Dubai 
             Attachment. This incredible treatment will ensure that your curtains turn out to be the most attractive looking and are 
             super convenient to deal with, as well. And that’s how we’ll ensure making 
-            <a className='text-decoration-none text-danger fw-bold' href='office-curtains'>every curtain purchase</a> the most 
+            <Link className='text-decoration-none text-danger fw-bold' href='office-curtains'>every curtain purchase</Link> the most 
             beneficial for you.
             </p>}
         text1={<p>Our advantageous treatment of the curtain tapes addition is a great way to secure your curtains and to ensure 
@@ -192,8 +193,8 @@ const CurtainTapes = () => {
             Tapes Dubai, which are designed to make the most out of any given curtain. 
             </p>}
         text1={<p>In addition to these curtain tapes, we’ve got you a vast range of various other curtain accessories too, such as the 
-            <a className='text-decoration-none text-danger fw-bold' href='curtain-rings'>Curtain Rings</a> and 
-            <a className='text-decoration-none text-danger fw-bold' href='curtain-rods'>Curtain Rods Dubai</a>Curtain Rods Dubai. 
+            <Link className='text-decoration-none text-danger fw-bold' href='curtain-rings'>Curtain Rings</Link> and 
+            <Link className='text-decoration-none text-danger fw-bold' href='curtain-rods'>Curtain Rods Dubai</Link>Curtain Rods Dubai. 
             You can enjoy shopping for these accessories online and can also have the amazing experience of choosing them in-stores. 
 
             </p>}

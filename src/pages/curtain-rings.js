@@ -14,6 +14,7 @@ import ServiceBanner from '@/components/ServiceBanner';
 import ProjectSection from '@/components/ProjectSection';
 import ContentService2 from '@/components/ContentService2';
 import FAQsSection from '@/components/FAQsSection';
+import Link from 'next/link';
 
 const CurtainRings = () => {
   const galleryImages = [
@@ -97,19 +98,19 @@ const CurtainRings = () => {
 
         text1={<p>Curtain pole rings or simply rings for curtains have their prime significance in a number of ways. They do make a huge 
           difference and you’re meant to benefit a lot from that, as well. These rings provide a hurdle-free and totally effortless 
-          medium for both commercial and <a className='text-decoration-none text-danger fw-bold' href='home-curtains'> residential curtains 
-          </a> to move, whenever you need to have them opened or closed.
+          medium for both commercial and <Link className='text-decoration-none text-danger fw-bold' href='bedroom-curtains'> residential curtains 
+          </Link> to move, whenever you need to have them opened or closed.
           </p>}
         
         text2={<p>This way, it becomes much more convenient to have the desired movement of curtains as well as to control the amount of 
           light and air passage. These rings make the curtain installation extremely easy and timeless, plus super secure, too. When you 
           have these drapery rings or Curtain Rings Dubai, then all you need to do is to have the metal pins (present at the back of the 
           curtain/drapery) attached to the rings. Afterwards, you can simply have the curtain installation on the 
-          <a className='text-decoration-none text-danger fw-bold' href='curtain-rods'> Curtain Rods </a>. 
+          <Link className='text-decoration-none text-danger fw-bold' href='curtain-rods'> Curtain Rods </Link>. 
           </p>}
 
         text4={<p>The curtain pole rings are designed to ensure the right formation of the curtain pleats, similar to the working of 
-          <a className='text-decoration-none text-danger fw-bold' href='curtains-taps'> curtain tapes </a> and you can also create several curtain draping designs with the help of these rings. Moreover, the curtain can be easily folded into pleats, pinch pleats, goblet pleats, box pleats, pencil pleats, and many other creative styles, this way. 
+          <Link className='text-decoration-none text-danger fw-bold' href='curtains-taps'> curtain tapes </Link> and you can also create several curtain draping designs with the help of these rings. Moreover, the curtain can be easily folded into pleats, pinch pleats, goblet pleats, box pleats, pencil pleats, and many other creative styles, this way. 
 
           </p>}
 
@@ -129,7 +130,7 @@ const CurtainRings = () => {
         text2={<p>
           Adding to that, there are many other options available which appear to be extremely attractive and well-synced with your curtains. 
           These include curtain metal rings(a versatile choice that goes well with all curtains), curtain shower rings (used for bathrooms 
-          and shower stalls), <a className='text-decoration-none text-danger fw-bold' href='eyelet-curtains'>curtain eyelet</a> rings, 
+          and shower stalls), <Link className='text-decoration-none text-danger fw-bold' href='eyelet-curtains'>curtain eyelet</Link> rings, 
           and Curtain Rings with hooks. You can use these chic rings for all your desired type of curtains and draperies and add a lot 
           of elegance to your places.
 
@@ -151,10 +152,10 @@ const CurtainRings = () => {
           nearly all types of curtains Besides, they provide you with the flexibility of creating all your desired curtain heading styles, 
           particularly in the case of luxury curtains.<br/> Also, these rings work wonders for amplifying the beauty of your favorite curtains, making them appear the most 
           eye-catching. Besides, if you seek some functional purposes from your window treatments, such as 
-          <a className='text-decoration-none text-danger fw-bold' href='blackout-curtains'> light-blockage</a> or in case you have 
-          <a className='text-decoration-none text-danger fw-bold' href='sheer-curtains'> light-filtering drapes </a>, then these curtain 
+          <Link className='text-decoration-none text-danger fw-bold' href='blackout-curtains'> light-blockage</Link> or in case you have 
+          <Link className='text-decoration-none text-danger fw-bold' href='sheer-curtains'> light-filtering drapes </Link>, then these curtain 
           rings will make this factor the easiest for you, 
-          by providing smooth and <a className='text-decoration-none text-danger fw-bold' href='electric-curtains'> time-saving curtain</a>
+          by providing smooth and <Link className='text-decoration-none text-danger fw-bold' href='electric-curtains'> time-saving curtain</Link>
            movements.
           </p>}
         
@@ -166,13 +167,13 @@ const CurtainRings = () => {
 
         <ContentService2
         heading="Have Our Remarkable Curtain Rings Dubai Installation Services"
-        text={<p>These <a className='text-decoration-none text-danger fw-bold' href='curtain-accessories'>quality curtain accessories</a>  
+        text={<p>These <Link className='text-decoration-none text-danger fw-bold' href='curtain-rings'>quality curtain accessories</Link>  
         have their major cruciality in being the primary curtain must-haves. With that said, we’ve got you our expert-grade services 
         for the right fitting and organization of these rings, so that your overall curtain profile turns out to be the most attractive. 
         Not to mention the obvious advantage that you can enjoy a really smooth and trouble-free curtain handling this way. 
           </p>}
         text1={<p>Our premium-grade Curtain Rings Dubai Fitting Services are a great idea to make your 
-          <a className='text-decoration-none text-danger fw-bold' href='office-curtains'> curtain treatment </a> a lot more useful 
+          <Link className='text-decoration-none text-danger fw-bold' href='office-curtains'> curtain treatment </Link> a lot more useful 
           for you. Besides, these services will also save you from the unacceptable outcomes of DIY stitching and fittings of the rings. 
           So do ensure flawlessness at every step of your upcoming curtain installation projects with our quality, affordable and 
           long-term effective services. 
@@ -184,7 +185,7 @@ const CurtainRings = () => {
 
         <ContentService
         heading="We Are The Top-tier Suppliers Of The Best Accessories For Curtains"
-        text={<p>When <a className='text-decoration-none text-danger fw-bold' href='/'> choosing Closing Curtain </a> for any and every 
+        text={<p>When <Link className='text-decoration-none text-danger fw-bold' href='/'> choosing Closing Curtain </Link> for any and every 
         one of your home décor projects, you don’t need to be concerned about a single aspect at all. From the highest quality products 
         to the most efficient services, we ensure serving you with our timeless excellence at each and every step. This goes the same 
         for the impressive quality of our Curtain Rings Dubai with which you can notably enhance both the beauty and the functionality 

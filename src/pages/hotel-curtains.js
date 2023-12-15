@@ -13,6 +13,7 @@ import ContentService2 from '@/components/ContentService2';
 import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
 import ServiceBanner2 from '@/components/ServiceBanner2';
+import Link from 'next/link';
 
 const HotelRoomCurtains = () => {
   const galleryImages = [
@@ -73,7 +74,7 @@ const HotelRoomCurtains = () => {
         text1={<p>Our luxury hotel window curtains serve as an <strong>amazing window treatment</strong> offering flawless coverage 
         in the first place. These curtains add to the overall hotel or restaurant space decor in the most noteworthy manner and retain 
         their eye-catching profiles for extended periods of time. Also, they are super flexible and can be easily paired with any 
-        given <a href='curtain-accessories'>curtain accessories.</a>
+        given <Link href='curtain-rings'>curtain accessories.</Link>
             </p>}
         
         text2={<p>These hotel curtains Dubai create the most ideal and agreeable surroundings for everyone, in terms of comfort provision. 
@@ -89,7 +90,7 @@ const HotelRoomCurtains = () => {
 
         text4={<p>These curtains give an accomplishing and cozy effect to the rest of the decor, hence making it greatly eye-catching. 
             Moreover, they provide the most effective levels of privacy which also is a highly demanded aspect within professional settings. 
-            Last but not least, is the fact that these curtains also make the best <a href='office-curtains'>Office window curtains</a>, 
+            Last but not least, is the fact that these curtains also make the best <Link href='office-curtains'>Office window curtains</Link>, 
             a marvelous addition to your power offices. 
 
             </p>}
@@ -103,13 +104,13 @@ const HotelRoomCurtains = () => {
         <ContentService1
         image='/static/images/Best-Hotel-Curtains-Dubai.jpg'
         heading="What Are The Ornamental Perks Offered By Hotel Curtains Dubai?"
-        text={<p>Our curtains have their foremost significance in being the most <a href='silk-curtains'>entrancing accessorizing elements.</a> 
+        text={<p>Our curtains have their foremost significance in being the most <Link href='silk-curtains'>entrancing accessorizing elements.</Link> 
         They are widely available in hugely diversified fabrication, style, pattern, design, print, and shade options, so as to go well 
         with all kinds of decor themes. The richer and engaging profiles of these  curtains make it extremely delightful to be around them.
             </p>}
         text1={<p>You can have them within various sizes and measurements, as well, such as the inviting shorter ones or those having 
-            a whole floor-to-ceiling design. Our luxury <a href='/'>Hotel Curtains Dubai</a> designs also come within the versions of 
-            <a href='blackout-curtains'>hotel blackout curtains</a>, so as to make the interiors even more pacifying. These curtains 
+            a whole floor-to-ceiling design. Our luxury <Link href='/'>Hotel Curtains Dubai</Link> designs also come within the versions of 
+            <Link href='blackout-curtains'>hotel blackout curtains</Link>, so as to make the interiors even more pacifying. These curtains 
             feature endless versatility and can be considered for all deluxe hotels, restaurants, resorts, or other public places.
             </p>}
         />
@@ -122,7 +123,7 @@ const HotelRoomCurtains = () => {
         <ContentService
         heading="We Are The Expert Installers Of Restaurant Curtains Dubai"
         text={<p>And we shall help you settle for the best choices for all commercial places and business settings. As for our 
-            installation services for the hotel <a href='electric-curtains'>luxury curtains</a> , they are incredibly adept and will ensure the 
+            installation services for the hotel <Link href='electric-curtains'>luxury curtains</Link> , they are incredibly adept and will ensure the 
             most flawless, seamless and timeless fitting of all your desired curtains. Besides, we do ensure carrying out the entire 
             procedure in timely ways, so that you don’t have to face a single inconvenience regarding the utilization of the new window 
             treatment. 
@@ -142,8 +143,8 @@ const HotelRoomCurtains = () => {
         
         <ContentService2
         heading="Visit Our Top-Notch Platform For The Best Hotel Curtains Dubai Shopping "
-        text={<p><a href='/'>Closing Curtainis</a> the top-tier provider of the finest-grade and entirely unique curtain products and 
-        services. Our <a href='sheer-curtains'>commercial curtains</a> are one of the most effective ways to get your business settings 
+        text={<p><Link href='/'>Closing Curtainis</Link> the top-tier provider of the finest-grade and entirely unique curtain products and 
+        services. Our <Link href='sheer-curtains'>commercial curtains</Link> are one of the most effective ways to get your business settings 
         a major boost and of course all of the resultant favorable outcomes too. This treatment will work wonders regarding all of your 
         commercial space requirements. Not to mention the availability of incredible customization services, too.
             </p>}

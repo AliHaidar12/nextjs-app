@@ -12,7 +12,6 @@ import ContentService from '@/components/ContentService';
 import ServiceGallery from '@/components/ServiceGallery';
 import ContentService1 from '@/components/ContentService1';
 import ContentService2 from '@/components/ContentService2';
-import ContentService3 from '@/components/ContentService3';
 
 import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';

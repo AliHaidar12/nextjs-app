@@ -1,5 +1,6 @@
 // pages/service.js
 import React from 'react';
+import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from '@/components/Header'
