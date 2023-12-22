@@ -31,7 +31,7 @@ const TypesSection = ({ heading, images = null, showButton = true }) => {
       {/* View More Button */}
       {showButton && (
         <div className="text-center">
-          <Link href="fabric-collection"><button className="btn btn-primary mt-4">View More</button></Link>
+          <Link href="fabric-collection"><button style={{background: "#1a808d"}} className="btn btn-primary mt-4">View More</button></Link>
         </div>
       )}
 

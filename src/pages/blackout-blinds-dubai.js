@@ -14,6 +14,7 @@ import ContentService2 from '@/components/ContentService2';
 import Footer from '@/components/Footer';
 import ContentService3 from '@/components/ContentService3';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const BlackoutBlinds = () => {
   const galleryImages = [
@@ -24,6 +25,59 @@ const BlackoutBlinds = () => {
     '/static/images/Blackout-Blinds-6.jpg',
     '/static/images/Blackout-Blinds-7.jpg',
   ];
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' These blinds were literally the best ones I ever got and they have been super serviceable so far!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' I came across their amazing bamboo blinds and that was absolutely the best home decor purchase of my life.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: ' I’ve noticed a huge decline in my energy bills ever since I had these amazing Bamboo Blinds Dubai.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Their bamboo blinds give you an amazing exotic sensation and you feel like being in a natural environment',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' I was greatly amazed and of course very much impressed with their super timely shipment.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: ' I came across their amazing bamboo blinds and that was absolutely the best home decor purchase of my life.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+
   const points = ["",
     "",
     "",
@@ -59,16 +113,16 @@ const BlackoutBlinds = () => {
 
         heading="Get Complete Light Control with Blackout Blinds In Dubai"
 
-        text1={<p>Our all-exclusive Blackout Blinds Dubai serve as the<Link href='bamboo-blinds-dubai'>finest window covering solution</Link>
+        text1={<p>Our all-exclusive Blackout Blinds Dubai serve as the<Link className='text-decoration-none text-danger fw-bold' href='bamboo-blinds-dubai'>finest window covering solution</Link>
          in the first place. Besides, their incredible functionality is a lot more different and advantageous than other types of blinds.
-          These are the<Link href='venetian-blinds-dubai'>heavy-duty blinds</Link>  with the efficient tendency to block out majority of 
+          These are the<Link className='text-decoration-none text-danger fw-bold' href='venetian-blinds-dubai'>heavy-duty blinds</Link>  with the efficient tendency to block out majority of 
           the blazing sunlight, creating the perfect “blackout” effect. They are a great choice for both classic and contemporary homes,
-           just like the versatile <Link href='wooden-blinds'>Wooden Window Blinds.</Link>
+           just like the versatile <Link className='text-decoration-none text-danger fw-bold' href='wooden-blinds'>Wooden Window Blinds.</Link>
 
           </p>}
 
         text2={<p>This diminishing goes effective for all the disturbing external noises entering the room, as well. Over and above, 
-          the amount of room darkening obtained from these blackout <Link href='roller-blinds-dubai'>Dubai blinds</Link> is totally controllable. You can adjust it according to your preference and can easily achieve all your desired levels of complete blacking out, room darkening, or brightening. Our Blackout Blinds Dubai features an extremely resilient and durable build quality, thus will be your serviceable barrier for years straight.
+          the amount of room darkening obtained from these blackout <Link className='text-decoration-none text-danger fw-bold' href='roller-blinds-dubai'>Dubai blinds</Link> is totally controllable. You can adjust it according to your preference and can easily achieve all your desired levels of complete blacking out, room darkening, or brightening. Our Blackout Blinds Dubai features an extremely resilient and durable build quality, thus will be your serviceable barrier for years straight.
 
 
 
@@ -89,7 +143,7 @@ const BlackoutBlinds = () => {
         image="/static/images/Blinds-collection.jpg"
 
         text={<p>These blinds, primarily, are an amazing idea to consider for bedrooms or any other space you like to rest or spend your 
-          quality time in. Talking about the bedrooms, these blinds will be the<Link href='bedroom-curtains'>most calmative element</Link> for you after prolonged and tough working hours.
+          quality time in. Talking about the bedrooms, these blinds will be the<Link className='text-decoration-none text-danger fw-bold' href='bedroom-curtains'>most calmative element</Link> for you after prolonged and tough working hours.
           </p>}
 
         text1={<p>
@@ -98,8 +152,8 @@ const BlackoutBlinds = () => {
               </p>}
 
         text2={<p>
-                Besides residential utilization, these <Link href='blackout-blinds-dubai'>Blackout Blinds Dubai</Link>Blackout Blinds Dubai is 
-                just perfect to consider for all the commercial spaces, meaning they make the <Link href='office-blinds'>perfect Office Blinds</Link>, too. The blacking out ability can be used in either way for area darkening or brightening. Also, their energy efficiency proves to be really beneficial for lowering energy expenses.
+                Besides residential utilization, these <Link className='text-decoration-none text-danger fw-bold' href='blackout-blinds-dubai'>Blackout Blinds Dubai</Link>Blackout Blinds Dubai is 
+                just perfect to consider for all the commercial spaces, meaning they make the <Link className='text-decoration-none text-danger fw-bold' href='office-blinds'>perfect Office Blinds</Link>, too. The blacking out ability can be used in either way for area darkening or brightening. Also, their energy efficiency proves to be really beneficial for lowering energy expenses.
             </p>}
         
         />
@@ -135,7 +189,7 @@ const BlackoutBlinds = () => {
         text={<p>
               Our expert-grade services for the blinds installation will give rise to the most presentable looking versions of your places. 
               Not to mention the most functional ones too. Our quality services offer the major advantage of 
-              <Link href='roman-blinds-dubai'>beautifying the surroundings</Link>  as well, in addition to, of course the bind fitting. You can 
+              <Link className='text-decoration-none text-danger fw-bold' href='roman-blinds-dubai'>beautifying the surroundings</Link>  as well, in addition to, of course the bind fitting. You can 
               consider these services for all of the commercial spaces, considering the maximum extent of proficiency. </p>}
 
 
@@ -148,12 +202,14 @@ const BlackoutBlinds = () => {
         />
 
         
+    <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
+
 
         <ContentService3
 
         leftSectionTitle="Our Blackout Blinds Dubai Feature The Most Promising Quality"
 
-        leftSectionParagraph1={<p><Link href='/'>Closing Curtain</Link> is the renowned platform where you’re meant to come across the most 
+        leftSectionParagraph1={<p><Link className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain</Link> is the renowned platform where you’re meant to come across the most 
         excellent quality regarding both the products and the services. This goes particularly true for our finest standard blackout 
         window blinds that will make both your residential and commercial interiors the most delightful for you to be around. Not to 
         mention that this comfort provision is extremely long-lasting too. 

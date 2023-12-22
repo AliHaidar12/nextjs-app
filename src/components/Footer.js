@@ -26,16 +26,16 @@ const Footer = () => {
         <p>Closingcurtain.ae is the stellar platform to choose the best Blinds and Curtains for your place from. Our services take the right care of your perfect home maintenance.</p>
               <ul className="list-inline mb-0 d-none d-sm-block">
                 <li className={`${styles.social} list-inline-item me-3`}>
-                  <a href="#" className="text-white"><i className="bi bi-facebook fs-5"></i></a>
+                  <Link href="https://www.facebook.com/Closing-Curtain-104753588695284" className="text-white"><i className="bi bi-facebook fs-5"></i></Link>
                 </li>
                 <li className={`${styles.social} list-inline-item me-3`}>
-                  <a href="#" className="text-white"><i className="bi bi-twitter fs-5"></i></a>
+                  <Link href="https://twitter.com/closingcurtain" className="text-white"><i className="bi bi-twitter fs-5"></i></Link>
                 </li>
                 <li className={`${styles.social} list-inline-item me-3`}>
-                  <a href="#" className="text-white"><i className="bi bi-instagram fs-5"></i></a>
+                  <Link href="https://www.instagram.com/closingcurtain.ae/" className="text-white"><i className="bi bi-instagram fs-5"></i></Link>
                 </li>
                 <li className={`${styles.social} list-inline-item me-3`}>
-                  <a href="#" className="text-white"><i className="bi bi-linkedin fs-5"></i></a>
+                  <Link href="https://www.linkedin.com/in/closing-curtain-bb0588225/" className="text-white"><i className="bi bi-linkedin fs-5"></i></Link>
                 </li>
               </ul>
 

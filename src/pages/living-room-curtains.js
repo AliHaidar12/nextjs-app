@@ -16,6 +16,56 @@ import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
 
 const LivingRoomCurtains = () => {
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: '  At Closingcurtain.ae you’ll have endless amazing and impressive ideas to decorate your places!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Their Living Room Curtains are of the finest quality and they enhance your room decor really well',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: ' The quality and textures of their curtains seem so mesmerizing!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 4,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' The cutest curtains I had from Closingcurtain.ae had the best build quality among all others',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' Their curtains have truly perked up the whole living room of mine!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: ' The cutest curtains I had from Closingcurtain.ae had the best build quality among all others',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
   const galleryImages = [
     '/static/images/Living-Room-Curtains-8.jpg',
     '/static/images/Living-Room-Curtains-9.jpg',
@@ -175,6 +225,8 @@ const LivingRoomCurtains = () => {
         So do pay a visit at our curtain outlets in Dubai and enjoy the most delightful versions of your living spaces, afterwards. "
         image="/static/images/Best-living-rooom-curtains.jpg"
         />
+
+      <TestimonialsService heading="Testimunal" subHeading="How Our Happy Clients Talk About Us" testimonials={testimonials1}/>
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}

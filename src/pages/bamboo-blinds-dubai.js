@@ -14,6 +14,7 @@ import ProjectSection from '@/components/ProjectSection';
 import ContentService3 from '@/components/ContentService3';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const BombooBlinds = () => {
   const galleryImages = [
@@ -66,6 +67,59 @@ const BombooBlinds = () => {
       title: "No. of Designs"
     },
   ]
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' These blinds were literally the best ones I ever got and they have been super serviceable so far!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' I came across their amazing bamboo blinds and that was absolutely the best home decor purchase of my life.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: ' I’ve noticed a huge decline in my energy bills ever since I had these amazing Bamboo Blinds Dubai.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Their bamboo blinds give you an amazing exotic sensation and you feel like being in a natural environment',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' I was greatly amazed and of course very much impressed with their super timely shipment.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: ' I came across their amazing bamboo blinds and that was absolutely the best home decor purchase of my life.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+
   
 
   return (
@@ -200,7 +254,7 @@ const BombooBlinds = () => {
 
         faqsData={faqsData}
         />
-
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
         <Footer/>
     </div>
   );

@@ -13,8 +13,66 @@ import ProjectSection from '@/components/ProjectSection';
 import ContentService3 from '@/components/ContentService3';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const RomanBlinds = () => {
+  
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' Their Roller Blinds Abu Dhabi have served more me than I can express!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: 'Closingcurtain.ae Is the most excellent home decor brand that I have ever come across in my entire life.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '  The blind quality is simply amazing and the work is absolutely wonderful.   ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Their Roller Blinds Dubai are genuinely worth investing in.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' You must visit Closingcurtain.ae if you’re looking forward to having the best-personalized blinds. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: 'Closingcurtain.ae Is the most excellent home decor brand that I have ever come across in my entire life.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+  
+
+
   const galleryImages = [
     '/static/images/roller-blinds-1.jpg',
     '/static/images/roller-blinds-2.jpg',
@@ -172,7 +230,7 @@ const RomanBlinds = () => {
           </p>}
         /> 
 
-        
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
         <ContentService3
         leftSectionTitle="Choose Our Noteworthy Platform For The Best Roller Blinds Selection        "
 

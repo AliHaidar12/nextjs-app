@@ -13,8 +13,62 @@ import ContentService1 from '@/components/ContentService1';
 import ContentService2 from '@/components/ContentService2';
 import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const OfficeCurtains = () => {
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' I happened to order these cute curtains for my office room and my experience has been really fantastic.  ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' I must say these incredible blinds did change the entire look of my office in no time.   ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '  The blind quality is simply amazing and the work is absolutely wonderful.   ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Their office curtains do save a lot of my time and I’m so thankful for that. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' These guys truly offer you extraordinary curtains which are highly engaging and adorable  ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: '  I must say these incredible blinds did change the entire look of my office in no time. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
   
   const faqsData = [
     { 
@@ -147,6 +201,7 @@ const OfficeCurtains = () => {
         of our quality window treatment services right in the convenience of your comfort zones."
         />
         
+        <TestimonialsService heading="Testimunal" subHeading="Some Worthiest Client Feedbacks" testimonials={testimonials1}/>
 
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"

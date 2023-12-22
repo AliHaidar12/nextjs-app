@@ -13,8 +13,64 @@ import ContentService4 from '@/components/ContentService4';
 import ProjectSection from '@/components/ProjectSection';
 import ContentService3 from '@/components/ContentService3';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const VerticalBlinds = () => {
+
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' Their Blinds Abu Dhabi have served more me than I can express!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: 'I asked for a few Vertical Blinds Dubai customizations and to my surprise, these people came up with astonishing blind versions.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: ' Closingcurtain.ae is one entirely amazing place to shop for the best home decor from, particularly top-quality window treatments',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' I just love how these blinds have literally glorified the entire home decor of mine.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' Their blinds feature the best build quality and the most flawless working I’ve ever come across.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: 'I asked for a few Vertical Blinds Dubai customizations and to my surprise, these people came up with astonishing blind versions.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+  
   const galleryImages = [
     '/static/images/Vertical-Blinds-1.jpg',
     '/static/images/Vertical-Blinds-3.jpg',
@@ -98,7 +154,7 @@ const VerticalBlinds = () => {
           </p>}
 
         text3={<p>This way, these blinds are the best option to consider for rather less vacant or congested spaces. Besides, investing 
-          in our <Link className='text-decoration-none text-danger fw-bold' href='office-blinds-dubai'>commercially suitable blinds
+          in our <Link  className='text-decoration-none text-danger fw-bold' href='office-blinds-dubai'>commercially suitable blinds
           </Link> is another great idea, as it will keep all your professional and workspaces well-maintained and your energy expenses 
           fairly low. These blinds are extremely easy to take care of and they effectively protect your places from all kinds of hazardous 
           external factors.
@@ -167,7 +223,7 @@ const VerticalBlinds = () => {
             spend on another one at all. Give us a call today!
           </p>}
         />
-        
+        <TestimonialsService heading="Testimunal" subHeading="Top Feedbacks From Our Customers" testimonials={testimonials1}/>
         <ContentService3
         leftSectionTitle="Shop Trendiest Vertical Blinds in Dubai From Us"
 

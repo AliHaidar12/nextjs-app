@@ -15,8 +15,66 @@ import Footer from '@/components/Footer';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import ProjectSection from '@/components/ProjectSection';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const CurtainTapes = () => {
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: '  Their curtains work so fine that I stopped taking those nerve relaxants that I used to take before.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: '  These tapes do work wonders and my experience with them was an amazing one! ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '  I just love those mesmerizing patterns made by these incredible tapes for curtains. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: '   My curtains got a lovely lift-up and were spiced up really well, plus those rods look really charming themselves!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' I was greatly amazed and of course very much impressed with their super timely shipment.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: ' These tapes do work wonders and my experience with them was an amazing one!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+
+  
+
+
+
   const galleryImages = [
     '/static/images/Curtain-Tapes-2.jpg',
     '/static/images/Curtain-Tapes-3.jpg',
@@ -201,7 +259,7 @@ const CurtainTapes = () => {
         text2={<p></p>}
         image="/static/images/Amazing-curtains-tape.jpg"
         />
-        
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}

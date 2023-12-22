@@ -15,8 +15,67 @@ import ContentService1 from '@/components/ContentService1';
 import ContentService2 from '@/components/ContentService2';
 import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const VenetianBlinds = () => {
+
+
+  
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' Their Blinds Abu Dhabi have served more me than I can express!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: 'My craving for classic stuff got a real satisfaction post I had their Venetian Blinds.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '   Their Venetian Blinds Dubai has truly helped me a lot lately in sleeping peacefully.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' I just love how these blinds have literally glorified the entire home decor of mine.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' You must visit Closingcurtain.ae if you’re looking forward to having the best-personalized blinds. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: 'My craving for classic stuff got a real satisfaction post I had their Venetian Blinds.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+  
+
   const galleryImages = [
     '/static/images/Living-Room-Curtains-8.jpg',
     '/static/images/Living-Room-Curtains-9.jpg',
@@ -178,6 +237,7 @@ const VenetianBlinds = () => {
         have these budget-friendly blinds as the most serviceable decor for your places!"
         image="/static/images/Amazing-venetian-blinds.jpg"
         />
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}

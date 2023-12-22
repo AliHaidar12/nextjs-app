@@ -18,16 +18,16 @@ const Header = ({ logo }) => {
             <div className="col-md-2 d-flex align-items-center">
               <ul className="list-inline mb-0 d-none d-sm-block">
                 <li className="list-inline-item me-3">
-                  <a href="#" className="text-white"><i className="bi bi-facebook"></i></a>
+                  <Link href="https://www.facebook.com/Closing-Curtain-104753588695284" className="text-white"><i className="bi bi-facebook"></i></Link>
                 </li>
                 <li className="list-inline-item me-3">
-                  <a href="#" className="text-white"><i className="bi bi-twitter"></i></a>
+                  <Link href="https://twitter.com/closingcurtain" className="text-white"><i className="bi bi-twitter"></i></Link>
                 </li>
                 <li className="list-inline-item me-3">
-                  <a href="#" className="text-white"><i className="bi bi-instagram"></i></a>
+                  <Link href="https://www.instagram.com/closingcurtain.ae/" className="text-white"><i className="bi bi-instagram"></i></Link>
                 </li>
                 <li className="list-inline-item me-3">
-                  <a href="#" className="text-white"><i className="bi bi-linkedin"></i></a>
+                  <Link href="https://www.linkedin.com/in/closing-curtain-bb0588225/" className="text-white"><i className="bi bi-linkedin"></i></Link>
                 </li>
               </ul>
             </div>

@@ -15,6 +15,7 @@ import ContentService4 from '@/components/ContentService4';
 import ProjectSection from '@/components/ProjectSection';
 import ContentService3 from '@/components/ContentService3';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const BlackoutCurtains = () => {
   const galleryImages = [
@@ -67,6 +68,58 @@ const BlackoutCurtains = () => {
       title: "No. of Designs"
     },
   ]
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: '  Their curtains work so fine that I stopped taking those nerve relaxants that I used to take before.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: '  The blackout window curtains I picked up from Closingcurtain.ae have been the most pacifying curtains for me. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '  The blackout window curtains I picked up from Closingcurtain.ae have been the most pacifying curtains for me. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: '  Their Blackout Curtains actually are the best functional ones and way too fascinating as well!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' I was greatly amazed and of course very much impressed with their super timely shipment.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: '  The blackout window curtains I picked up from Closingcurtain.ae have been the most pacifying curtains for me. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
   
 
   return (
@@ -184,6 +237,7 @@ const BlackoutCurtains = () => {
         <SaleSection
         text="10% Off Window Curtains and Blinds online - Sale End Today"
         />
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
          
         <ContentService3
         leftSectionTitle="We Are The Top-notch Suppliers Of Quality Blackout Curtains in Dubai"

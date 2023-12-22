@@ -14,8 +14,66 @@ import Footer from '@/components/Footer';
 import ContentService4 from '@/components/ContentService4';
 import ContentService3 from '@/components/ContentService3';
 import ServiceBanner2 from '@/components/ServiceBanner2';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const CurtainRods = () => {
+
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: '  Their curtains work so fine that I stopped taking those nerve relaxants that I used to take before.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: '   The rod working is so great that it almost becomes magically seamless to move your curtains. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '  The blackout window curtains I picked up from Closingcurtain.ae have been the most pacifying curtains for me. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: '   My curtains got a lovely lift-up and were spiced up really well, plus those rods look really charming themselves!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' I was greatly amazed and of course very much impressed with their super timely shipment.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: ' The rod working is so great that it almost becomes magically seamless to move your curtains.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+
+
+
     const galleryImages = [
         '/static/images/Curtain-Rods-3.jpg',
         '/static/images/Curtain-Rods-4.jpg',
@@ -162,6 +220,7 @@ const CurtainRods = () => {
         <SaleSection
         text="10% Off Window Curtains and Blinds online - Sale End Today"
         />
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
          
         <ContentService3
         leftSectionTitle="We Offer The Finest Curtain Accessories All Across The UAE"

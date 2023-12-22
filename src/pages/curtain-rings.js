@@ -15,6 +15,7 @@ import ProjectSection from '@/components/ProjectSection';
 import ContentService2 from '@/components/ContentService2';
 import FAQsSection from '@/components/FAQsSection';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const CurtainRings = () => {
   const galleryImages = [
@@ -71,6 +72,63 @@ const CurtainRings = () => {
       title: "No. of Designs"
     },
   ]
+
+  
+
+
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: '   These people provided me with the clip-on rings which did the right job for me!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' My curtains got revived and got all their beauty with these rings. I’m really thankful to Closingcurtain.ae  ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '   These rings have actually made it a lot easier for me to move my curtains as much as I want!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: '   These rings have actually made it a lot easier for me to move my curtains as much as I want!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: '  Those cute Curtain Rings I had from Closingcurtain.ae have been doing their job really well',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: '  My curtains got revived and got all their beauty with these rings. I’m really thankful to Closingcurtain.ae ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
   
 
   return (
@@ -200,7 +258,7 @@ const CurtainRings = () => {
         image="/static/images/Best-curtains-ring.jpg"
         />
        
-         
+       <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"
 

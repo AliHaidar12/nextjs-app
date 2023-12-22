@@ -14,8 +14,66 @@ import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const SilkCurtains = () => {
+  
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: '  The silk curtain fabric is so soft and supple and I just can’t help caressing these curtains again and again.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: 'I do feel their superlative Silk Curtains UAE be mood-boosting for me every time I’m around them.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: ' At Closingcurtain.ae, you will definitely find the best quality curtains and their curtains are totally incomparable',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' I was greatly amazed and of course very much impressed with their super timely shipment.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' You must visit Closingcurtain.ae if you’re looking forward to having the best-personalized blinds. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: 'I do feel their superlative Silk Curtains UAE be mood-boosting for me every time I’m around them.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+  
+
+
   const galleryImages = [
     '/static/images/Silk-Curtains-3.jpg',
     '/static/images/Silk-Curtains-5.jpg',
@@ -80,16 +138,16 @@ const SilkCurtains = () => {
             </p>}
 
         text3={<p>Our Luxury Silk Curtains Dubai feature highly fade-resistant colors and prints and therefore remain ideally 
-            beautiful all their life. Another significant advantageous aspect of these <Link href='eyelet-curtains'>purposeful curtains</Link>
+            beautiful all their life. Another significant advantageous aspect of these <Link className='text-decoration-none text-danger fw-bold' href='eyelet-curtains'>purposeful curtains</Link>
              is that they are highly 
             resistant to all kinds of accumulations such as bacteria, molds, mildew, and even the dust and dirt particles. 
             Cleaning them is very easy and effortless as well.
             </p>}
 
-        text4={<p>These are totally non-toxic, allergen-free and more of a <Link href='sheer-curtains'>hygienic curtain</Link> choice to 
+        text4={<p>These are totally non-toxic, allergen-free and more of a <Link className='text-decoration-none text-danger fw-bold' href='sheer-curtains'>hygienic curtain</Link> choice to 
         consider. Also, they are well-absorbent in nature and thus effectively continue their beautiful appearance under all kinds 
         of atmospheric conditions. Though these curtains work wonders for nearly all uses, they work particularly best as 
-        <Link href='living-room-curtains'>Living Room Curtains.</Link>
+        <Link className='text-decoration-none text-danger fw-bold' href='living-room-curtains'>Living Room Curtains.</Link>
 
             </p>}
 
@@ -102,15 +160,15 @@ const SilkCurtains = () => {
         <ContentService1
         image='/static/images/Best-silk-curtains.jpg'
         heading="What Are The Areas To Use Silk Curtain?"
-        text={<p>You can never possibly go wrong when flaunting any and every space with our silk <Link href='bedroom-curtains'>luxury curtains
+        text={<p>You can never possibly go wrong when flaunting any and every space with our silk <Link className='text-decoration-none text-danger fw-bold' href='bedroom-curtains'>luxury curtains
         </Link>. Our silk curtain panels instantly give rise to a luxury, delightful, comforting and inviting vibe.
             </p>}
-        text1={<p>Over and above, these <Link href='bedroom-curtains'>stylish curtains</Link> come with endless designs and structural profiles,
+        text1={<p>Over and above, these <Link className='text-decoration-none text-danger fw-bold' href='bedroom-curtains'>stylish curtains</Link> come with endless designs and structural profiles,
          and you have a lovely time picking out your favorite ones.
             </p>}
         text2={<p>Some noteworthy versions include dupioni silk window curtains (blackout curtains with a metallic print and faux-silk 
             texture), faux silk luxury curtains, and extra-wide Silk Curtains Dubai, which work wonders as 
-            <Link href='bedroom-curtains'>Bedroom Curtains.</Link> Similarly, our Silk curtain blackout is another smart and spectacular manner 
+            <Link className='text-decoration-none text-danger fw-bold' href='bedroom-curtains'>Bedroom Curtains.</Link> Similarly, our Silk curtain blackout is another smart and spectacular manner 
             in which you can bring about a lot of comfort to your life. <br/> In addition to these, you can also go for the creation
              of your desired designs of custom silk drapes. 
             </p>}
@@ -143,8 +201,8 @@ const SilkCurtains = () => {
         
         <ContentService2
         heading="Make The Most Out Of Our Expert Installation Services"
-        text={<p> <Link href='/'>Closing Curtain</Link> brings you the finest fitting and flaunting services for Silk Curtains Dubai, 
-        so as to ensure the <Link href='curtains-accessories'>best decorative upgrade</Link> of your places. Hiring our professionals for 
+        text={<p> <Link className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain</Link> brings you the finest fitting and flaunting services for Silk Curtains Dubai, 
+        so as to ensure the <Link className='text-decoration-none text-danger fw-bold' href='curtains-accessories'>best decorative upgrade</Link> of your places. Hiring our professionals for 
         the perfect and most seamless curtain installation will keep all the unfavorable outcomes of DIY installation attempts at bay, 
         ensuring that you benefit the most from this treatment. Our experts ace every single procedure of the curtain fitting and give 
         rise to the most comfortable versions of your places. 
@@ -169,7 +227,7 @@ const SilkCurtains = () => {
             </p>}
         image="/static/images/Amazing-silk-curtains.jpg"
         />
-        
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}

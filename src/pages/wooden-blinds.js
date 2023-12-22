@@ -14,8 +14,67 @@ import ContentService1 from '@/components/ContentService1';
 import ContentService2 from '@/components/ContentService2';
 import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const WoodenBlinds = () => {
+  
+
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: '  Their blinds installation services were the most skillful ones I’ve ever had. Also, their working teams are admirably customer-friendly!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' I asked for a few Vertical Blinds Dubai customizations and to my surprise, these people came up with astonishing blind versions.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '  Their blinds have genuinely enhanced the look of an entire floor within my workspace. Everybody likes them a lot!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Closingcurtain.ae is one entirely amazing place to shop for the best home decor from, particularly top-quality window treatments',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' Their blinds feature the best build quality and the most flawless working I’ve ever come across.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: ' I asked for a few Vertical Blinds Dubai customizations and to my surprise, these people came up with astonishing blind versions.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+
+
+
   const galleryImages = [
     '/static/images/Wooden-Blinds.jpg',
     '/static/images/Wooden-Blinds1.jpg',
@@ -160,6 +219,8 @@ const WoodenBlinds = () => {
         include various incredible options such as Vertical Luxury Blinds and several other choices."
         image="/static/images/Custom-Wooden-Blinds-UAE.jpg"
         />
+
+        <TestimonialsService heading="Testimunal" subHeading="Top Feedbacks From Our Customers" testimonials={testimonials1}/>
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}

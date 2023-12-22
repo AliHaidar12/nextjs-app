@@ -15,8 +15,68 @@ import ContentService2 from '@/components/ContentService2';
 
 import FAQsSection from '@/components/FAQsSection';
 import Footer from '@/components/Footer';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const LinenCurtains = () => {
+  
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' I happened to order these cute curtains for my living room and my experience has been really fantastic.  ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' The curtain quality is simply amazing and the work is absolutely wonderful.   ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: ' I had their linen Curtains for my office and that decision has been extremely favorable for me. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Their linen curtains do save a lot of my time and I’m so thankful for that. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' These guys truly offer you extraordinary curtains which are highly engaging and adorable  ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: '  The curtain quality is simply amazing and the work is absolutely wonderful.   ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+
+
+
+
+
   const galleryImages = [
     '/static/images/linen11.jpg',
     '/static/images/linen12.jpg',
@@ -159,24 +219,13 @@ const LinenCurtains = () => {
         image="/static/images/Best-linen-curtains.jpg"
         />
 
-        
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
         <FAQsSection
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}
         />
 
-        {/* <ContentService3
-        faqHeading="FAQs (Frequently Asked Questions)"
-        leftSectionPoints={points}
-        leftSectionTitle=" We’ve come up with entirely trendsetting ranges of the Linen"
-        leftSectionParagraph1="We’ve come up with entirely trendsetting ranges of the Linen Dubai Curtains for a suave uplifting of your spaces. 
-        These curtains are not just mesmerizing to look at but also induce a genuine sensation of satisfaction and comfort. 
-        Plus, the build quality is super sustainable and can easily last for years on end. "
-        leftSectionParagraph2="Our Linen Curtains Dubai can easily outperform any given window treatment and they will also provide the additional 
-        advantage of keeping your living spaces clean and well-maintained. Do check out our platform for shopping these best blinds 
-        online and find the best pairing element for your decors."
-        faqsData={faqsData}
-        /> */}
+        
 
         <Footer/>
     </div>

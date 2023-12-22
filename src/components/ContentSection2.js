@@ -11,8 +11,8 @@ const ContentSection2 = ({ image=null, heading=null, text=null, h31=null, h32=nu
         {/* Left Side: Image */}
         <div className="col-md-6 position-relative">
         <Image
-            width={600}
-            height={600}
+            width={500}
+            height={500}
             src={image} // Replace with the actual path to your image
             alt="Your Image Alt Text"
             className="img-fluid mb-4 w-100" // Add the 'w-100' class for 100% width

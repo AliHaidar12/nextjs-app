@@ -23,22 +23,53 @@ import ContactForm from '@/components/ContactForm';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import SaleSection from '@/components/SaleSection';
 import Footer from '@/components/Footer';
+
 import Image from 'next/image';
+import TestimonialsService from '@/components/TestimonialsService';
  
 
 export default function Home() {
+
+
+  
+
+
   const testimonials = [
     {
       image: '/static/images/testimonial.png',
       rating: 5,
-      message: 'Great experience! I highly recommend it.',
-      name: 'John Doe',
+      message: ' Their curtains have truly perked up the whole living room of mine!',
+      name: ' Maria',
+    },
+    {
+      image: '/static/images/testimonial.png',
+      rating: 5,
+      message: ' The cutest curtains I had from Closingcurtain.ae had the best build quality among all others',
+      name: 'Mark',
     },
     {
       image: '/static/images/testimonial.png',
       rating: 4,
-      message: 'Amazing service and friendly staff.',
-      name: 'Jane Doe',
+      message: ' Their Living Room Curtains are of the finest quality and they enhance your room decor really well',
+      name: ' David',
+    },
+    {
+      image: '/static/images/testimonial.png',
+      rating: 5,
+      message: ' Their curtains have truly perked up the whole living room of mine!',
+      name: ' Sareena',
+    },
+    {
+      image: '/static/images/testimonial.png',
+      rating: 5,
+      message: ' The cutest curtains I had from Closingcurtain.ae had the best build quality among all others',
+      name: 'Mark',
+    },
+    {
+      image: '/static/images/testimonial.png',
+      rating: 4,
+      message: ' Their Living Room Curtains are of the finest quality and they enhance your room decor really well',
+      name: ' David',
     },
   ];
   const items = [
@@ -63,6 +94,8 @@ export default function Home() {
       title: "No. of Designs"
     },
   ]
+
+  
   const galleryImages = [
     '/static/images/Closing-Curtain-8.jpeg',
     '/static/images/Closing-Curtain-9.jpeg',
@@ -309,7 +342,7 @@ export default function Home() {
         heading="Major Clients We Served"
         images={careouselImage}/>
         <ContactForm/>
-
+        
         <TestimonialsSection
         testimonials={testimonials}/>
 

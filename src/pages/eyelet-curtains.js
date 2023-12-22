@@ -13,8 +13,67 @@ import Footer from '@/components/Footer';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import ContentService3 from '@/components/ContentService3';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const EyeletCurtains = () => {
+
+
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' I happened to order these cute curtains for my living room and my experience has been really fantastic.  ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' These Eyelet Curtains have proved to be the most exceptional curtains of my life!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: ' I had their Electric Curtains for my office and that decision has been extremely favorable for me. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Their automatic curtains do save a lot of my time and I’m so thankful for that. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' These guys truly offer you extraordinary curtains which are highly engaging and adorable  ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: ' These Eyelet Curtains have proved to be the most exceptional curtains of my life!',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+
+
+
   const galleryImages = [
     '/static/images/Eyelet-Curtains-1.jpg',
     '/static/images/Eyelet-Curtains-2.jpg',
@@ -71,16 +130,16 @@ const EyeletCurtains = () => {
         text1={<p>Our all-purpose and super-efficient eyelet window curtains give the freedom of styling and redesigning in the first place.
              These curtains are fairly flexible and vastly versatile in nature, therefore can be considered for all sorts of uses. Their 
              prime significance lies within their absolutely effortless movement across the <Link href='curtain-rods'>curtain rods</Link>, which 
-             is, in fact the only <Link href='curtain-rings'>curtain accessory </Link>required by these curtains. These curtains are not 
+             is, in fact the only <Link className='text-decoration-none text-danger fw-bold' href='curtain-rings'>curtain accessory </Link>required by these curtains. These curtains are not 
              just extremely convenient to operate but also are very easy and quick when it comes to their installation. Another notable 
-             aspect of choosing these curtains as your <Link href='bedroom-curtains'>residential window treatment</Link> is the advantage of their 
+             aspect of choosing these curtains as your <Link className='text-decoration-none text-danger fw-bold' href='bedroom-curtains'>residential window treatment</Link> is the advantage of their 
              affordability.
 
             </p>}
         
         text2={<p>
             We’ve got you a huge variety of ready-made Eyelet Curtains in Dubai that make the best window treatment for all spaces, 
-            particularly the usage as <Link href='living-room-curtains'>Living Room Curtains.</Link>
+            particularly the usage as <Link className='text-decoration-none text-danger fw-bold' href='living-room-curtains'>Living Room Curtains.</Link>
 
 
         </p>}
@@ -94,20 +153,20 @@ const EyeletCurtains = () => {
         heading="What Are The Perks And Pros Of Eyelet Curtains?"
         text={<p>
             These are the kind of curtains that are meant to look great within all scenarios as they ideally complement all ornamental 
-            themes. They appear supremely contemporary and are just the <Link href='hotel.curtains'>most economical window covering choice</Link>
-             to go for, as well. <br/>Besides of course the residential usage, you can also have them as the <Link href='office-curtains'>
+            themes. They appear supremely contemporary and are just the <Link className='text-decoration-none text-danger fw-bold' href='hotel.curtains'>most economical window covering choice</Link>
+             to go for, as well. <br/>Besides of course the residential usage, you can also have them as the <Link className='text-decoration-none text-danger fw-bold' href='office-curtains'>
              sleekest commercial or workspace drapes, </Link> too.
         </p>}
         text1={
             <p>Moreover, you can also have them within nearly any and every kind of fabrication ranging from the light and 
-                <Link href='sheer-curtains'>pleasant sheer ones</Link> to those thick and plush velvet ones.
+                <Link className='text-decoration-none text-danger fw-bold' href='sheer-curtains'>pleasant sheer ones</Link> to those thick and plush velvet ones.
             </p>
         }
         text2={<p>
                 Also, these Eyelet Curtains Dubai come with the most vogue variety of sizes and coverage options such as the window length 
                 ones or those with floor to ceiling profiles.<br/>
-                Last but not the least, is the greatly calmative curtain selection of eyelet <Link href='blackout-curtains'>blackout curtains,
-                </Link> which can also be paired up with any of the desired curtain accessories, such as <Link href='curtain-tapes'>
+                Last but not the least, is the greatly calmative curtain selection of eyelet <Link className='text-decoration-none text-danger fw-bold' href='blackout-curtains'>blackout curtains,
+                </Link> which can also be paired up with any of the desired curtain accessories, such as <Link className='text-decoration-none text-danger fw-bold' href='curtain-tapes'>
                 curtain tapes.</Link>
         </p>}
         />
@@ -118,7 +177,7 @@ const EyeletCurtains = () => {
         text1={<p>Our suave eyelet style curtains are a great way to add notable beauty to any and every interior space, since these 
             curtains always remain in fashion. They can easily sync into any of the surrounding decor themes and always appear the most 
             elegant. Also, these curtains are an excellent way to achieve the best coverage levels. This way, they are an exceptionally 
-            favorable choice as <Link href='bedroom-curtains'>bedrooms drapes</Link> and are best for all similar spaces, too. So do explore 
+            favorable choice as <Link className='text-decoration-none text-danger fw-bold' href='bedroom-curtains'>bedrooms drapes</Link> and are best for all similar spaces, too. So do explore 
             our platform to look for the best complementing curtain styles for your homes!
 
             </p>}
@@ -163,12 +222,13 @@ const EyeletCurtains = () => {
         image="/static/images/Luxuryb-eyelet-curtains.jpg"
         />
 
+      <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
         
         <ContentService3
 
         leftSectionTitle="We Supply Top Quality Eyelet Curtains Dubai All Over The UAE"
 
-        leftSectionParagraph1={<p><Link href='/'>Closing Curtain</Link> is the top-tier provider of the finest quality Eyelet Window <Link href='/'>
+        leftSectionParagraph1={<p><Link className='text-decoration-none text-danger fw-bold' href='/'>Closing Curtain</Link> is the top-tier provider of the finest quality Eyelet Window <Link href='/'>
         curtains in Dubai</Link> which will serve as a major uplifting of your places. Our sublime standard curtains are a fundamentally useful window 
         treatment and a dynamic ornamental upgrade of all interior spaces. You’ll find these curtains a legit breeze to maintain and they’ll 
         keep serving you for years on end.

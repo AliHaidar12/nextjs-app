@@ -14,8 +14,64 @@ import ProjectSection from '@/components/ProjectSection';
 import Link from 'next/link';
 import ContentService2 from '@/components/ContentService2';
 import FAQsSection from '@/components/FAQsSection';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const OutdoorBlind = () => {
+
+  
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: ' Their outdoor blinds did make a difference. By now, just the idea of entering my places fascinates me a lot.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: 'Their blinds do work wonders! The way they’ve made my outdoors stand out just excites me a lot. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: '  The blind quality is simply amazing and the work is absolutely wonderful.   ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: '  Post I had their window blinds, all my worries have long gone. Now my place looks really clean and well-maintained. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' You must visit Closingcurtain.ae if you’re looking forward to having the best-personalized blinds. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: 'Their blinds do work wonders! The way they’ve made my outdoors stand out just excites me a lot. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
   
   const faqsData = [
     { 
@@ -217,7 +273,7 @@ const OutdoorBlind = () => {
             </p>}
         image="/static/images/Best-outdoor-blinds-dubai-1.jpg"
         />
-        
+        <TestimonialsService heading="Testimunal" subHeading="How We Get Adored By Our Clients" testimonials={testimonials1}/>
          
         <FAQsSection
         

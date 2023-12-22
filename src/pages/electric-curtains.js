@@ -15,8 +15,65 @@ import ContentService2 from '@/components/ContentService2';
 import Footer from '@/components/Footer';
 import ContentService3 from '@/components/ContentService3';
 import Link from 'next/link';
+import TestimonialsService from '@/components/TestimonialsService';
 
 const ElectricCurtains = () => {
+
+  const testimonials1 = [
+    {
+      id: 1,
+      name: 'Henry',
+      position: ' Fully Use',
+      comment: '  Their curtains work so fine that I stopped taking those nerve relaxants that I used to take before.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 2,
+      name: 'Mark',
+      position: ' Top Class',
+      comment: ' The quality of their remote control curtains is simply amazing and their working is super smooth and flawless. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 3,
+      name: 'Maria',
+      position: ' Amazing',
+      comment: ' I had their Electric Curtains for my office and that decision has been extremely favorable for me. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    
+    {
+      id: 4,
+      name: 'David',
+      position: ' Fully Use',
+      comment: ' Their automatic curtains do save a lot of my time and I’m so thankful for that. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 5,
+      name: 'Sareena',
+      position: ' High Recommended',
+      comment: ' I was greatly amazed and of course very much impressed with their super timely shipment.',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+    {
+      id: 6,
+      name: 'Mark',
+      position: 'Amazing',
+      comment: 'The quality of their remote control curtains is simply amazing and their working is super smooth and flawless. ',
+      rating: 5,
+      image: '/static/images/testimonial.png',
+    },
+  ];
+
+  
+
   const galleryImages = [
     '/static/images/1-Electric-Curtains.jpg',
     '/static/images/2-Electric-Curtains.jpg',
@@ -179,7 +236,7 @@ const ElectricCurtains = () => {
             </p>}
         image="/static/images/Classic-Electric-Curtains-In-UAE-1.jpg"
         />
-        
+        <TestimonialsService heading="Testimunal" subHeading="We Are Loved By Our Customers" testimonials={testimonials1}/>
 
         <ContentService3
 

@@ -21,7 +21,7 @@ const Testimonial = ({ image, rating, message, name }) => {
         <div className="testimonial-content ml-4">
           <div className="testimonial-rating mb-2 fs-2">{generateStars()}</div>
           <div className="testimonial-message mb-2 fs-lg">{message}</div>
-          <div className="testimonial-name font-weight-bold fs-5">{name}</div>
+          <div className="testimonial-name fw-bold fs-5">{name}</div>
         </div>
       </div>
     </div>
