@@ -73,6 +73,7 @@ const TestimonialsService = ({ testimonials, heading, subHeading }) => {
                             src={testimonial.image}
                             width={50}
                             height={50}
+                            alt="testimunal_icon"
                           />
                           <strong className="">{testimonial.name}</strong>
                         </div>
