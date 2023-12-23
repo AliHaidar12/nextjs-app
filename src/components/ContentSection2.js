@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const ContentSection2 = ({ image=null, heading=null, text=null, h31=null, h32=null, h31text=null, h32text=null }) => {
   return (
-    <div className={`container-fluid p-5 ${styles.positionRelative}`} style={{ color: 'black' }}>
+    <div className={`container-fluid ${styles.mainSection}`} style={{ color: 'black' }}>
       <div className={`row ${styles.inner}` }>
         {/* Left Side: Image */}
         <div className="col-md-6 position-relative">

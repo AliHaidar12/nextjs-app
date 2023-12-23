@@ -2,6 +2,7 @@
   background: linear-gradient(360deg, #ffffff 35%, #1a808d 34%);
 }
 .top {
+  padding: 50px;
   color: #ffffff;
 
   margin-left: auto;
@@ -11,8 +12,19 @@
   background: #1a808d;
   border: 5px solid white;
   font-size: "14px";
+  padding: 30px;
 }
 .inner {
   max-width: 80%;
   margin: auto;
+}
+@media (max-width: 767px) {
+  .top {
+    padding: 10px;
+  }
+
+  .inner {
+    max-width: 95%;
+    margin: auto;
+  }
 }

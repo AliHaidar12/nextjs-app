@@ -22,11 +22,11 @@ const ContentSection7 = ({ heading, text, image }) => {
           <p>{text}</p>
           <div className="d-flex align-items-center">
             <div className={`circle-icon-with-shadow text-center ${styles.mainIcon}`} >
-              <i className={`${styles.iconstyle} bi bi-check2`} ></i>
+              <i className={`${styles.iconstyle} text-center bi bi-people-fill`} ></i>
               <p style={{ fontWeight: 'bold', margin: 0 }}>Professional Staff</p>
             </div>
             <div className="circle-icon-with-shadow text-center">
-              <i className={`${styles.iconstyle} bi bi-check2`} ></i>
+              <i className={`${styles.iconstyle} text-center bi bi-check-all`} ></i>
               <p style={{ fontWeight: 'bold', margin: 0 }}>Perfection Assurance</p>
             </div>
           </div>

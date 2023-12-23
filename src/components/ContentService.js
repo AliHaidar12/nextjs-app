@@ -10,7 +10,7 @@ const ContentService = ({ heading, text, text1, text2, image }) => {
   };
 
   return (
-    <div className={`container-fluid px-5 ${styles.main}`}>
+    <div className={`container-fluid ${styles.main}`}>
       <div className="container">
         <div className="row">
 

@@ -12,7 +12,7 @@ const ContentSection = ({ heading=null, image=null, paragraph1=null, paragraph2=
   };
 
   return (
-    <div className="container-fluid p-5 " style={sectionStyle}>
+    <div className={`${styles.mainSection} container-fluid `}  style={sectionStyle}>
       <div className={`row ${styles.inner}` } >
         {/* Heading */}
         <div className="col-12 mb-4 text-center">

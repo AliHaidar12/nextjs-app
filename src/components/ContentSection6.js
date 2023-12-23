@@ -15,13 +15,13 @@ const ContentSection6 = ({ heading, text, image }) => {
           </div>
           <h2 className={styles.h2}>{heading}</h2>
           <p>{text}</p>
-          <div className="d-flex align-items-center">
+          <div className="d-flex justify-content-center align-items-center text-center">
             <div className={`circle-icon-with-shadow text-center ${styles.mainIcon}`} >
-              <i className={`${styles.iconstyle} bi bi-check2`} ></i>
+              <i className={`${styles.iconstyle} bi bi-tags-fill text-center`} ></i>
               <p style={{ fontWeight: 'bold', margin: 0 }}>Low Rates</p>
             </div>
             <div className="circle-icon-with-shadow text-center">
-              <i className={`${styles.iconstyle} bi bi-check2`} ></i>
+              <i className={`${styles.iconstyle} text-center bi bi-truck`} ></i>
               <p style={{ fontWeight: 'bold', margin: 0 }}>Fast Services</p>
             </div>
           </div>

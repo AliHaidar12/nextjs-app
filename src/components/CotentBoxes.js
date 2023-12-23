@@ -18,7 +18,7 @@ const ContentBoxes = ({
       <div className={styles.inner}>
       {/* First Section */}
       <div
-        className={`container-fluid p-5 ${styles.top}`}
+        className={`container-fluid ${styles.top}`}
         
       >
         <h2>{heading}</h2>

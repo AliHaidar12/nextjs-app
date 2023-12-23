@@ -66,18 +66,18 @@
   margin: 0;
 }
 .mainIcon {
+  align-self: center;
   margin-right: 20px;
 }
 .iconstyle {
   color: #1a808d;
-  font-size: 35px;
+  font-size: 30px;
   background: white;
-  border-radius: 50%;
+  border-radius: 51%;
   padding: 10px;
   box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5);
   width: 80px;
-  height: 80px;
-  min-width: 80px;
+  height: 60px;
   line-height: 80px;
 }
 .inner {
@@ -88,8 +88,14 @@
 .sale {
   background-color: #1a808d;
 }
+.mainSection {
+  padding: 50px;
+}
 @media (max-width: 767px) {
   .box_container {
     margin-bottom: 20px !important;
+  }
+  .mainSection {
+    padding: 10px;
   }
 }

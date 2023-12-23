@@ -8,3 +8,6 @@
     margin: 0px !important;
   }
 }
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}

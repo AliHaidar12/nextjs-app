@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 const GallerySection = ({ images = null, heading, showButton = true }) => {
   return (
-    <div className="container mt-5 mb-5">
+    <div className="text-center container mb-5">
       {/* Heading */}
-      <h2 className={`text-center mb-4 ${styles.h2}`}>{heading}</h2>
+      <h2 className={` mb-4 ${styles.h2}`}>{heading}</h2>
 
       {/* Gallery Images */}
       <div className="row">

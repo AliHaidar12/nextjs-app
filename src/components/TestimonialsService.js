@@ -1,5 +1,5 @@
 // components/TestimonialsService.js
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaStar, FaStarHalf } from 'react-icons/fa';
 import { Carousel } from 'react-bootstrap';
 import styles from './Testimonials.module.css'; // Import your CSS file
@@ -26,13 +26,33 @@ const StarRating = ({ rating }) => {
 
 const TestimonialsService = ({ testimonials, heading, subHeading }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Attach event listener for resizing
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleSelect = (selectedIndex, e) => {
     setActiveIndex(selectedIndex);
   };
 
+  const testimonialsToShow = isMobile ? 1 : 3; // Show 1 testimonial on mobile, 3 on larger screens
+
   const chunkedTestimonials = testimonials.reduce((resultArray, item, index) => {
-    const chunkIndex = Math.floor(index / 3);
+    const chunkIndex = Math.floor(index / testimonialsToShow);
 
     if (!resultArray[chunkIndex]) {
       resultArray[chunkIndex] = []; // start a new chunk
@@ -59,7 +79,7 @@ const TestimonialsService = ({ testimonials, heading, subHeading }) => {
                   {chunk.map((testimonial, itemIndex, array) => (
                     <div
                       key={testimonial.id}
-                      className={`col-md-4 mb-4 ${styles.testimonialCol} ${
+                      className={`col-md-${12 / testimonialsToShow} mb-4 ${styles.testimonialCol} ${
                         itemIndex === 1 ? styles.secondItem : ''
                       } ${
                         itemIndex === Math.floor(array.length / 2)

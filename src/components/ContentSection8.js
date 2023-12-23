@@ -2,11 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 import styles from './banner.module.css';
 
-const ContentSection8 = ({ mainHeading, heading, text, text1, image }) => {
+const ContentSection8 = ({ mainHeading, heading, text, image }) => {
   // Fixed colors
   const backgroundColor = '#ffffff';
-  const buttonColor = '#1a808d';
-  const buttonTextColor = 'white';
   const textColor = 'black';
   const headingColor = '#1A808D';
 
@@ -14,10 +12,6 @@ const ContentSection8 = ({ mainHeading, heading, text, text1, image }) => {
     background: backgroundColor,
   };
 
-  const buttonStyle = {
-    backgroundColor: buttonColor,
-    color: buttonTextColor,
-  };
 
   const textStyle = {
     color: textColor,
