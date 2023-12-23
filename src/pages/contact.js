@@ -11,9 +11,9 @@ const ContactUs = () => {
           <Header logo='/static/images/logo.png'/>
     <div className="container mt-5">
         <h1 className="text-center mb-3">Contact Closing Curtain - Get in Touch with Us</h1>
-  <div >
-  <div className="row">
-  <div className={`${styles.box} d-flex justify-content-center align-items-center col`}>
+  <div  >
+  <div className={`${styles.contactInfo} row`}>
+  <div className={`${styles.box} col`}>
     {/* Box 1: Phone */}
     <div className="d-flex align-items-start">
       <div className="me-3 mb-3">
@@ -26,7 +26,7 @@ const ContactUs = () => {
     </div>
   </div>
 
-  <div className={`${styles.box1} d-flex justify-content-center align-items-center col`}>
+  <div className={`${styles.box1}  col`}>
     {/* Box 2: Location */}
     <div className="d-flex align-items-start">
       <div className="me-3 mb-3">
@@ -39,7 +39,7 @@ const ContactUs = () => {
     </div>
   </div>
 
-  <div className={`${styles.box} d-flex justify-content-center align-items-center col`}>
+  <div className={`${styles.box}  col`}>
     {/* Box 3: Email */}
     <div className="  d-flex align-items-start">
       <div className="me-3 mb-3">
