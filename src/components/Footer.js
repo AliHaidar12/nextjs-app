@@ -1,5 +1,3 @@
-// components/ContactInfo.js
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './footer.module.css'; 
@@ -44,11 +42,11 @@ const Footer = () => {
       {/* 2nd Column */}
       <div className={`col-md-3 col-12 ${styles.column}`}>
         <h4>Curtains</h4>
-        <p><a className={styles.links} href="/service/sheer-curtains/"> Sheer Curtains</a></p>
-        <p><a className={styles.links} href="/service/electric-curtains/"> Electric Curtains</a></p>
-        <p><a className={styles.links} href="/service/blackout-curtains/">Blackout Curtains</a></p>
-        <p><a className={styles.links} href="/service/office-curtains/"> Office Curtains</a></p>
-        <p><a className={styles.links} href="/service/bedroom-curtains/">Bedroom Curtains</a></p>
+        <p><Link className={styles.links} href="/service/sheer-curtains/"> Sheer Curtains</Link></p>
+        <p><Link className={styles.links} href="/service/electric-curtains/"> Electric Curtains</Link></p>
+        <p><Link className={styles.links} href="/service/blackout-curtains/">Blackout Curtains</Link></p>
+        <p><Link className={styles.links} href="/service/office-curtains/"> Office Curtains</Link></p>
+        <p><Link className={styles.links} href="/service/bedroom-curtains/">Bedroom Curtains</Link></p>
             
       </div>
 
@@ -56,12 +54,12 @@ const Footer = () => {
       <div className={`col-md-3 col-12 ${styles.column}`}>
         <h4>Blinds</h4>
         
-        <p><a className={styles.links} href="/service/blackout-blinds-dubai/"> Blackout Blinds</a></p>
-        <p><a className={styles.links} href="/service/office-blinds-dubai/"> Office Blinds</a></p>
-        <p><a className={styles.links} href="/service/outdoor-blinds-dubai/">Outdoor Blinds</a></p>
-        <p><a className={styles.links} href="/service/roller-blinds-dubai/"> Roller Blinds</a></p>
-        <p><a className={styles.links} href="/service/roman-blinds-dubai/"> Roman Blinds</a></p>
-        <p><a className={styles.links} href="/service/vertical-blinds-dubai/">Vertical Blinds</a></p>
+        <p><Link className={styles.links} href="/service/blackout-blinds-dubai/"> Blackout Blinds</Link></p>
+        <p><Link className={styles.links} href="/service/office-blinds-dubai/"> Office Blinds</Link></p>
+        <p><Link className={styles.links} href="/service/outdoor-blinds-dubai/">Outdoor Blinds</Link></p>
+        <p><Link className={styles.links} href="/service/roller-blinds-dubai/"> Roller Blinds</Link></p>
+        <p><Link className={styles.links} href="/service/roman-blinds-dubai/"> Roman Blinds</Link></p>
+        <p><Link className={styles.links} href="/service/vertical-blinds-dubai/">Vertical Blinds</Link></p>
       </div>
 
       {/* 4th Column */}
