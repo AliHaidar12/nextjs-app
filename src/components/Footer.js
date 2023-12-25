@@ -44,9 +44,11 @@ const Footer = () => {
       {/* 2nd Column */}
       <div className={`col-md-3 col-12 ${styles.column}`}>
         <h4>Curtains</h4>
-        <p><a className={styles.links} href="linen-curtains"> Linen Curtains</a></p>
-        <p><a className={styles.links} href="office-curtains"> Office Curtains</a></p>
-        <p><a className={styles.links} href="living-room-curtains">Living Room Curtains</a></p>
+        <p><a className={styles.links} href="/service/sheer-curtains/"> Sheer Curtains</a></p>
+        <p><a className={styles.links} href="/service/electric-curtains/"> Electric Curtains</a></p>
+        <p><a className={styles.links} href="/service/blackout-curtains/">Blackout Curtains</a></p>
+        <p><a className={styles.links} href="/service/office-curtains/"> Office Curtains</a></p>
+        <p><a className={styles.links} href="/service/bedroom-curtains/">Bedroom Curtains</a></p>
             
       </div>
 
@@ -54,9 +56,12 @@ const Footer = () => {
       <div className={`col-md-3 col-12 ${styles.column}`}>
         <h4>Blinds</h4>
         
-        <p><a className={styles.links} href="office-blinds"> Office Blinds</a></p>
-        <p><a className={styles.links} href="wooden-blinds"> Wooden Blinds</a></p>
-        <p><a className={styles.links} href="venetian-blinds">Venetian Blinds</a></p>
+        <p><a className={styles.links} href="/service/blackout-blinds-dubai/"> Blackout Blinds</a></p>
+        <p><a className={styles.links} href="/service/office-blinds-dubai/"> Office Blinds</a></p>
+        <p><a className={styles.links} href="/service/outdoor-blinds-dubai/">Outdoor Blinds</a></p>
+        <p><a className={styles.links} href="/service/roller-blinds-dubai/"> Roller Blinds</a></p>
+        <p><a className={styles.links} href="/service/roman-blinds-dubai/"> Roman Blinds</a></p>
+        <p><a className={styles.links} href="/service/vertical-blinds-dubai/">Vertical Blinds</a></p>
       </div>
 
       {/* 4th Column */}

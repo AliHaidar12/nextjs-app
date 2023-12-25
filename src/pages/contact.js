@@ -1,11 +1,77 @@
 // components/ContactUs.js
-
+import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from "../styles/Home.module.css";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 const ContactUs = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    console.log("form");
+    e.preventDefault();
+
+    // Log the form data to the console
+    console.log('Form Data:', formData);
+
+    try {
+      // Form submission logic
+      const response = await axios.post('/api/contact', formData);
+      console.log(response.data.message);
+
+      // Email sending logic
+      const transporter = nodemailer.createTransport({
+        // Configure your email transporter here
+        service: 'gmail',
+        auth: {
+          user: 'your-email@gmail.com',
+          pass: 'your-email-password',
+        },
+      });
+
+      const mailOptions = {
+        from: 'your-email@gmail.com',
+        to: 'info@closingcurtain.ae',
+        subject: 'New Contact Form Submission',
+        text: `
+          Name: ${formData.name}
+          Email: ${formData.email}
+          Phone: ${formData.phone}
+          Message: ${formData.message}
+        `,
+      };
+
+      await transporter.sendMail(mailOptions);
+      console.log('Email sent successfully');
+
+      // Reset the form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Error submitting form or sending email:', error);
+    }
+  };
+
+
+
+
   return (
       <div>
           <Header logo='/static/images/logo.png'/>
@@ -75,10 +141,11 @@ const ContactUs = () => {
                 <h2 className="title mb-3"> Get in Touch with Our Curtain and Blind Experts</h2>
             </div>
           
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-md-6 mb-3">
                 <input
+                  onChange={handleInputChange}
                   type="text"
                   className={`${styles.formFields} form-control `}
                   placeholder="Your Name"
@@ -86,6 +153,7 @@ const ContactUs = () => {
               </div>
               <div className="col-md-6 mb-3">
                 <input
+                  onChange={handleInputChange}
                   type="email"
                   className={`${styles.formFields} form-control `}
                   placeholder="Your Email"
@@ -96,6 +164,7 @@ const ContactUs = () => {
             <div className="row">
               <div className="col-md-12 mb-3">
                 <input
+                  onChange={handleInputChange}
                   className={`${styles.formFields} form-control `}
                   placeholder="Your Phone"
                 ></input>
@@ -104,6 +173,7 @@ const ContactUs = () => {
             <div className="row">
               <div className="col-md-12 mb-3">
                 <textarea
+                  onChange={handleInputChange}
                   className={` ${styles.formFields} form-control `}
                   rows="4"
                   placeholder="Your Message"

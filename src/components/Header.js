@@ -77,28 +77,28 @@ const Header = ({ logo }) => {
 
               <NavDropdown className={styles.text} title="Curtains" id="dropdown3">
                 <NavDropdown className={styles.text} title="Home Curtains" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="living-room-curtains">Living Room Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="bedroom-curtains">Bedroom Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/living-room-curtains/">Living Room Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/bedroom-curtains/">Bedroom Curtains</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Commercial" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="hotel-curtains">Hotel Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="office-curtains">Office Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/hotel-curtains/">Hotel Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/office-curtains/">Office Curtains</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Types" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="eyelet-curtains">Eyelet Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="sheer-curtains">Sheer Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="silk-curtains">Silk Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="linen-curtains">Linen Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/eyelet-curtains/">Eyelet Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/sheer-curtains/">Sheer Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/silk-curtains/">Silk Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/linen-curtains/">Linen Curtains</NavDropdown.Item>
                   
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Smart" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="blackout-curtains">Blackout Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="electric-curtains">Electric Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/blackout-curtains/">Blackout Curtains</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/electric-curtains/">Electric Curtains</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Curtain Accessories" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="curtain-rings">Curtain Rings</NavDropdown.Item>
-                  <NavDropdown.Item href="curtain-rods">Curtain Rods</NavDropdown.Item>
-                  <NavDropdown.Item href="curtain-tapes">Curtain Tapes</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/curtain-rings/">Curtain Rings</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/curtain-rods/">Curtain Rods</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/curtain-tapes/">Curtain Tapes</NavDropdown.Item>
                   
                 </NavDropdown>
                 {/* Add more fabric types as needed */}
@@ -106,17 +106,17 @@ const Header = ({ logo }) => {
 
               <NavDropdown className={styles.text} title="Blinds" id="dropdown3">
                 <NavDropdown className={styles.text} title="Types" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="bamboo-blinds-dubai">Bamboo Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="blackout-blinds-dubai">Blackout Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="roller-blinds-dubai">Roller Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="roman-blinds-dubai">Roman Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="venetian-blinds-dubai">Venetian Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="vertical-blinds-dubai">Vertical Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="wooden-blinds">Wooden Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/bamboo-blinds-dubai/">Bamboo Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/blackout-blinds-dubai/">Blackout Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/roller-blinds-dubai/">Roller Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/roman-blinds-dubai/">Roman Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/venetian-blinds-dubai/">Venetian Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/vertical-blinds-dubai/">Vertical Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/wooden-blinds/">Wooden Blinds Dubai</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown className={styles.text} title="Commercial" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="office-blinds-dubai">Office Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="outdoor-blinds-dubai">Outdoor Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/office-blinds-dubai/">Office Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item href="/service/outdoor-blinds-dubai/">Outdoor Blinds Dubai</NavDropdown.Item>
                 </NavDropdown>
                 {/* Add more fabric types as needed */}
               </NavDropdown>
@@ -124,7 +124,7 @@ const Header = ({ logo }) => {
 
               <Nav.Link href="fabric-collection" className={styles.text}>Fabric Collection</Nav.Link>
               <Nav.Link href="gallery" className={styles.text}>Gallery</Nav.Link>
-              {/* <Nav.Link href="#" className={styles.text}>Blog</Nav.Link> */}
+              <Nav.Link href="/service/blog" className={styles.text}>Blog</Nav.Link>
               <Nav.Link href="contact" className={styles.text}>Contact Us</Nav.Link>
             </Nav>
 
