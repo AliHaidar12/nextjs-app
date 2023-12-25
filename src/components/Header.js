@@ -72,7 +72,7 @@ const Header = ({ logo }) => {
             {/* Middle: Menu */}
             <Nav className="mx-auto" >
               <Nav.Link href="/" className={styles.text} >Home</Nav.Link>
-              <Nav.Link href="about-us" className={styles.text}>About Us</Nav.Link>
+              <Nav.Link href="/about-us/" className={styles.text}>About Us</Nav.Link>
              
 
               <NavDropdown className={styles.text} title="Curtains" id="dropdown3">
@@ -122,14 +122,14 @@ const Header = ({ logo }) => {
               </NavDropdown>
 
 
-              <Nav.Link href="fabric-collection" className={styles.text}>Fabric Collection</Nav.Link>
-              <Nav.Link href="gallery" className={styles.text}>Gallery</Nav.Link>
-              <Nav.Link href="/service/blog" className={styles.text}>Blog</Nav.Link>
-              <Nav.Link href="contact" className={styles.text}>Contact Us</Nav.Link>
+              <Nav.Link href="/fabric-collection/" className={styles.text}>Fabric Collection</Nav.Link>
+              <Nav.Link href="/gallery/" className={styles.text}>Gallery</Nav.Link>
+              <Nav.Link href="/service/blog/" className={styles.text}>Blog</Nav.Link>
+              <Nav.Link href="/contact/" className={styles.text}>Contact Us</Nav.Link>
             </Nav>
 
             {/* Right Side: Get A Quote Button */}
-            <Link href="contact">
+            <Link href="/contact/">
             <button className="btn btn-primary" style={{ backgroundColor: "#1a808dff" }}>
               Get A Quote
             </button>

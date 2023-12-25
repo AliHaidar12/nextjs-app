@@ -78,7 +78,7 @@ const AboutUs = () => {
     <div>
       <Header logo='/static/images/logo.png'/>
 
-      <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="Curtain Tapes"/>
+      <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="About Closing Curtain"/>
       
       <ContentService
         heading="Welcome to Closing Curtain"
