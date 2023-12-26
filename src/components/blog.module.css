@@ -1,0 +1,37 @@
+.proCol{
+    background-color: #CCF4D0;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.proHeading{ 
+    background: #46704b;
+    color: white;
+    padding: 14px;
+    box-shadow: 0 5px 15px 0 rgb(191 217 194);
+}
+.consCol{
+    background-color: #fbc3c3;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.consHeading{ 
+    background: #e93737;
+    color: white;
+    padding: 14px;
+    box-shadow: 0 5px 15px 0 rgb(191 217 194);
+}
+.points{
+    text-align: left;
+    margin-top: 10px;
+}
+.fontSize{
+    font-size: 18px;
+  }
+  @media (max-width: 767px) {
+    .prosBox{
+        flex-direction: column;
+        margin-right: 10px;
+    }
+  }

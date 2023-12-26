@@ -19,7 +19,7 @@ const ContentSection7 = ({ heading, text, image }) => {
             <p className={styles.line1}>Our Expertise</p>
           </div>
           <h2 className={styles.h2}>{heading}</h2>
-          <p>{text}</p>
+          <p className={`${styles.fontSize}`}>{text}</p>
           <div className="d-flex align-items-center">
             <div className={`circle-icon-with-shadow text-center ${styles.mainIcon}`} >
               <i className={`${styles.iconstyle} text-center bi bi-people-fill`} ></i>

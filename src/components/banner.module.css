@@ -48,11 +48,11 @@
 .imageWithBorder {
   border: 2px dotted #1a808d;
   padding: 10px; /* Add padding around the image */
-  max-width: 100%; /* Decrease image size to fit its container */
+  width: 100%; /* Decrease image size to fit its container */
   height: auto;
 }
 .main {
-  padding: 50px;
+  padding: 40px;
   background-color: rgb(221, 221, 221);
 }
 .inner {
@@ -96,14 +96,18 @@
   background-color: #1a808d;
 }
 .inner1 {
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
 @media (max-width: 767px) {
   .mainContainer {
     padding: 10px;
-    background: linear-gradient(180deg, #ffffff 84%, #1a808d 47%);
+    background: linear-gradient(180deg, #1a808d 20%, #ffffff  20%);
+  }
+  .rowContainer{
+    flex-direction: column-reverse;
+
   }
   .image {
     margin-top: 10px;
@@ -111,6 +115,7 @@
     height: 100%;
   }
   .main {
+    width: 100%;
     padding: 10px;
   }
   .main1 {
@@ -119,4 +124,11 @@
   .inner {
     padding: 10px;
   }
+  .inner1 {
+    width: fit-content;
+    margin: 0;
+  }
+}
+.fontSize{
+  font-size: 18px;
 }

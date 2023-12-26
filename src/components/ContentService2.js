@@ -23,7 +23,7 @@ const ContentService2 = ({ heading, text, text1, image }) => {
             <h2 className="mb-2" style={headingStyle}>
               {heading}
             </h2>
-            <div className='fs-6'>
+            <div className={styles.fontSize}>
               {text}
               
               {text1}

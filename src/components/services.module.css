@@ -17,3 +17,6 @@
   max-width: 80px; /* Set a maximum width for responsiveness */
   height: auto;
 }
+.fontSize{
+  font-size: 18px;
+}

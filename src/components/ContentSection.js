@@ -12,7 +12,10 @@ const ContentSection = ({ heading=null, image=null, paragraph1=null, paragraph2=
   };
 
   return (
-    <div className={`${styles.mainSection} container-fluid `}  style={sectionStyle}>
+    <div style={sectionStyle}>
+
+    
+    <div className={`${styles.mainSection} container `}  >
       <div className={`row ${styles.inner}` } >
         {/* Heading */}
         <div className="col-12 mb-4 text-center">
@@ -20,7 +23,7 @@ const ContentSection = ({ heading=null, image=null, paragraph1=null, paragraph2=
         </div>
 
         {/* Left Side: Text Content */}
-        <div className="col-md-6">
+        <div className={`col-md-6 ${styles.fontSize}`}>
           <p>{paragraph1}</p>
           <p>{paragraph2}</p>
           <p>{paragraph3}</p>
@@ -29,15 +32,16 @@ const ContentSection = ({ heading=null, image=null, paragraph1=null, paragraph2=
         {/* Right Side: Image */}
         <div className="col-md-6">
           <Image
+          className={styles.image}
             src={image}
             width={688}
             height={356}
             alt="Your Image Alt Text"
-            className="img-fluid"
             priority
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

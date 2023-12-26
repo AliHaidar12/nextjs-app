@@ -18,7 +18,7 @@ const ContentService = ({ heading, text, text1, text2, image }) => {
             <h2 className="mb-4" style={headingStyle}>
               {heading}
             </h2>
-            <div className='fs-6'>
+            <div className={styles.fontSize}>
             {text}
             
             {text1}
@@ -29,7 +29,7 @@ const ContentService = ({ heading, text, text1, text2, image }) => {
           </div>
 
           <div className="col-md-6 px-4"> 
-          <Image width={600} height={600} priority src={image} alt="banner" className="img-fluid" />
+          <Image width={500} height={500} priority src={image} alt="banner" className="img-fluid" />
           </div>
         </div>
       </div>

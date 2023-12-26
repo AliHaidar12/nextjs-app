@@ -66,3 +66,19 @@
     width: 100% !important;
   }
 }
+
+.iconBox{
+  background-color: lightgray;
+  color: white;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  min-width: 90px;
+  border-radius: 10px;
+  font-size: 90px;
+  text-align: center;
+
+}
+.fontSize{
+  font-size: 18px;
+}

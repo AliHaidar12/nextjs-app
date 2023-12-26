@@ -98,4 +98,11 @@
   .mainSection {
     padding: 10px;
   }
+  .image{
+    width: 100%;
+    padding: 10px;
+  }
+}
+.fontSize{
+  font-size: 18px;
 }

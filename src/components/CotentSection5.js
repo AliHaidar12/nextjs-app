@@ -37,7 +37,7 @@ const ContentSection5 = ({ heading, text, text1, image, reverseDirection }) => {
 
           {/* Right Side */}
           <div className="col-md-6">
-          <Image width={600} height={600}
+          <Image width={500} height={450}
               src={image}
               alt="banner"
               priority

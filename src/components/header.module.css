@@ -11,3 +11,6 @@
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
+.fontSize{
+  font-size: 18px;
+}

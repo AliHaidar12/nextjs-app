@@ -48,10 +48,10 @@ const ContentSection8 = ({ mainHeading, heading, text, image }) => {
             <h2 className={`mb-4 ${styles.h2}`} style={headingStyle}>
               {heading}
             </h2>
-            <p className="mb-4" style={textStyle}>
+            <p className={`${styles.fontSize} mb-4`} style={textStyle}>
               {text}
             </p>
-            <p className="mb-4" style={textStyle}>
+            <p className={`${styles.fontSize} mb-4`} style={textStyle}>
             Many Curtain Choices<br/>
             Quality Products<br/>
             Custom Designs<br/>

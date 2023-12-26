@@ -22,7 +22,7 @@ const ContentSection4 = ({ mainHeading, heading, button="Get A Quote", text, tex
   };
 
   return (
-    <div className={`container-fluid ${styles.main}`} >
+    <div className={styles.main}>
       <div className="container">
         <div className={`row ${styles.inner1}`}>
           {/* H1 Heading */}

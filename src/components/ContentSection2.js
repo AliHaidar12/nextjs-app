@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const ContentSection2 = ({ image=null, heading=null, text=null, h31=null, h32=null, h31text=null, h32text=null }) => {
   return (
-    <div className={`container-fluid ${styles.mainSection}`} style={{ color: 'black' }}>
+    <div className={`container ${styles.mainSection}`} style={{ color: 'black' }}>
       <div className={`row ${styles.inner}` }>
         {/* Left Side: Image */}
         <div className="col-md-6 position-relative">
@@ -30,7 +30,7 @@ const ContentSection2 = ({ image=null, heading=null, text=null, h31=null, h32=nu
         {/* Right Side: Content */}
         <div className="col-md-6">
           <div className="text-start">
-            <li style={{color: "#1a808d"}} className="fs-5"> Welcome To Closing Curtain</li>
+            <li style={{color: "#1a808d"}} className={styles.fontSize}> Welcome To Closing Curtain</li>
             {/* Heading */}
             <h2 className={styles.h2}>{heading}</h2>
 

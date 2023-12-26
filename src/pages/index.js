@@ -2,7 +2,6 @@ import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Banner from '@/components/Banner'
 import Services from '@/components/Services';
@@ -25,7 +24,6 @@ import SaleSection from '@/components/SaleSection';
 import Footer from '@/components/Footer';
 
 import Image from 'next/image';
-import TestimonialsService from '@/components/TestimonialsService';
  
 
 export default function Home() {
@@ -149,7 +147,7 @@ export default function Home() {
 
         <Banner 
         side_image='/static/images/banner.jpg'
-        heading="Curtains Dubai - Best Window Treatment By Closing Curtain"
+        heading="Curtains Dubai - Best Window Treatment By Closing Curtain "
         text="Curtains Dubai are the best choice to give the perfect look to your windows. We provide premium quality Curtains in Dubai made of the finest fabrics to add luxury to your interiors. Our window coverings create a modern interior look with their attractive designs."
         text1="Our trendsetting collection of the best window curtains is the best choice for all kinds of home and office windows. Feel free to visit our showroom in Al Quoz or order curtains online in Dubai."/>
         

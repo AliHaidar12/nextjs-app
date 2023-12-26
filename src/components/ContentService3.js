@@ -16,7 +16,7 @@ const ContentService3 = ({ faqHeading, leftSectionTitle, leftSectionParagraph1, 
         <div className="col-md-6 col-12">
           <div className="mb-4">
             <h2>{leftSectionTitle}</h2>
-            <div className='fs-6'>
+            <div className={styles.fontSize}>
             {leftSectionParagraph1}
             {leftSectionParagraph2}
             </div>

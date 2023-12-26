@@ -2,7 +2,16 @@ import React from 'react';
 import styles from './banner.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-const ContentSection3 = ({ mainHeading, button="Get A Quote", heading, text, text1, image, backgroundColor, buttonColor, buttonTextColor, textColor, headingColor }) => {
+const ContentSection3 = ({ mainHeading,
+   button="Get A Quote",
+    heading,
+     text,
+      text1,
+       image, 
+       backgroundColor, 
+       buttonColor,
+        buttonTextColor,
+         textColor, headingColor }) => {
   const mainStyle = {
     background: backgroundColor || '#ffffff',
   };
@@ -21,7 +30,9 @@ const ContentSection3 = ({ mainHeading, button="Get A Quote", heading, text, tex
   };
 
   return (
-    <div className={`container-fluid ${styles.main}`} >
+    <div className={styles.main}>
+
+    
       <div className="container">
         <div className={`row ${styles.inner1}`}>
           {/* H1 Heading */}
@@ -38,7 +49,7 @@ const ContentSection3 = ({ mainHeading, button="Get A Quote", heading, text, tex
             <h2 className={`mb-4 ${styles.h2}`} style={headingStyle}>
               {heading}
             </h2>
-            <p className="mb-4" style={textStyle}>
+            <p className="mb-4 fs-6" style={textStyle}>
               {text}
             </p>
             <p className="mb-4" style={textStyle}>

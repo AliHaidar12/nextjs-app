@@ -8,3 +8,6 @@
 .formInput textarea::placeholder {
   color: white;
 }
+.fontSize{
+  font-size: 18px;
+}

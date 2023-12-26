@@ -4,13 +4,13 @@ import React from 'react';
 import styles from './banner.module.css';
 const ContentService1 = ({heading, text,text1, text2, image}) => {
   return (
-    <div className={"container-fluid", styles.mainContainer1}>
+    <div className={`container-fluid ${styles.mainContainer1}`}>
       <div className="container">
         <div className="row">
           {/* Left Side */}
           <div className="col-md-6">
             <h2 className="mb-4" style={{color: "#1A808D"}}>{heading}</h2>
-            <div className='fs-6'>
+            <div className={styles.fontSize}>
               {text}
               {text1}
               {text2}

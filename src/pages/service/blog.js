@@ -8,6 +8,7 @@ function blog() {
     const blogs = [
         {
           id: 1,
+          link: "/best-types-of-curtains-to-choose-for-your-home-in-dubai/",
           image: "/static/images/Curtains-in-Dubai-1536x1079.jpg",
           title: 'Best Types Of Curtains To Choose For Your Home in Dubai',
           date: 'October 19, 2023',
@@ -16,6 +17,7 @@ function blog() {
         },
         {
           id: 2,
+          link: "/Luxury-Blackout-Curtains-2022/",
           image: "/static/images/affordable-living-room-curtains-ideas-1.jpg",
           title: 'Top 10 Best Types of Luxury Blackout Curtains 2023',
           date: 'February 24, 2022',
@@ -24,6 +26,7 @@ function blog() {
         },
         {
           id: 3,
+          link: "/living-room-curtains-ideas/",
           image: "/static/images/Affordable-Living-Room-Curtains-Ideas.jpg",
           title: '10+ Affordable Living Room Curtains Ideas',
           date: 'February 19, 2022',

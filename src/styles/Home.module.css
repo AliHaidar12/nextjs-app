@@ -22,6 +22,75 @@
   border: 2px solid rgb(212, 212, 212);
 }
 
+
+.mainContainer{
+  width: 60%;
+  margin: auto;
+}
+.pManin{
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.pBox{
+  background-color: #1a808d;
+  color: white;
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.pBox1{
+  background-color: #1a808d;
+  color: white;
+  width: 230px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+
+.consCol{
+  background-color: #fbc3c3;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.consHeading{ 
+  background: #e93737;
+  color: white;
+  padding: 14px;
+  box-shadow: 0 5px 15px 0 rgb(191 217 194);
+}
+.points{
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+
+
+
+.consCol1{
+  background-color: #dafbff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.consHeading1{ 
+  background: #118d9d;
+  color: white;
+  padding: 14px;
+  box-shadow: 0 5px 15px 0 rgb(191 217 194);
+}
+.points1{
+  text-align: left;
+  margin-top: 10px;
+}
+
+
 @media (max-width: 767px) {
   .contactInfo {
     background-color: #1a808d;
@@ -31,4 +100,10 @@
     padding-top: 10px;
     padding-left: 10px;
   }
+  .mainContainer{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+
 }

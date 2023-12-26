@@ -14,7 +14,7 @@ const ContentSection6 = ({ heading, text, image }) => {
             <p className={styles.line1}>Custom-Designed Curtains</p>
           </div>
           <h2 className={styles.h2}>{heading}</h2>
-          <p>{text}</p>
+          <p className={`${styles.fontSize}`}>{text}</p>
           <div className="d-flex justify-content-center align-items-center text-center">
             <div className={`circle-icon-with-shadow text-center ${styles.mainIcon}`} >
               <i className={`${styles.iconstyle} bi bi-tags-fill text-center`} ></i>

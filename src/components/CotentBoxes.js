@@ -32,15 +32,15 @@ const ContentBoxes = ({
           className={`box ${styles.boxes} flex-fill p-3 text-white m-1`}
           
         >
-          <p>
+          <p className={styles.fontSize}>
             <i className="bi bi-check2"></i> {boxText}
           </p>
 
-          <p>
+          <p className={styles.fontSize}>
             <i className="bi bi-check2"></i> {boxText1}
           </p>
 
-          <p>
+          <p className={styles.fontSize}>
             <i className="bi bi-check2"></i> {boxText2}
           </p>
         </div>
@@ -49,15 +49,15 @@ const ContentBoxes = ({
           className={`box ${styles.boxes} flex-fill p-3 text-white m-1`}
           
         >
-          <p>
+          <p className={styles.fontSize}>
             <i className="bi bi-check2"></i> {box1Text}
-          </p>
+          </p >
 
-          <p>
+          <p className={styles.fontSize}>
             <i className="bi bi-check2"></i> {box1Text1}
           </p>
 
-          <p>
+          <p className={styles.fontSize}>
             <i className="bi bi-check2"></i> {box1Text2}
           </p>
         </div>
