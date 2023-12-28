@@ -1,5 +1,5 @@
 // components/Header.js
-import React from 'react';
+import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
@@ -8,8 +8,35 @@ import styles from "./header.module.css"
 import Link from 'next/link';
 
 const Header = ({ logo }) => {
-  
-  
+  const [isDropdownVisible, setDropdownVisible] = useState(null);
+
+  const handleMouseEnter = (dropdownId) => {
+    setDropdownVisible(dropdownId);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(null);
+  };
+
+  const [isDropdownVisible1, setDropdownVisible1] = useState(null);
+
+  const handleMouseEnter1 = (dropdownId) => {
+    setDropdownVisible1(dropdownId);
+  };
+
+  const handleMouseLeave1 = () => {
+    setDropdownVisible1(null);
+  };
+
+  const [isInnerDropdownVisible, setInnerDropdownVisible] = useState(null);
+
+  const handleInnerMouseEnter = (dropdownId) => {
+    setInnerDropdownVisible(dropdownId);
+  };
+
+  const handleInnerMouseLeave = () => {
+    setInnerDropdownVisible(null);
+  };
   return (
     <>
       {/* Top Header */}
@@ -75,51 +102,151 @@ const Header = ({ logo }) => {
               <Nav.Link href="/" className={styles.text} >Home</Nav.Link>
               <Nav.Link href="/about-us/" className={styles.text}>About Us</Nav.Link>
              
+            
+              <NavDropdown
+                onMouseEnter={() => handleMouseEnter('dropdown3')}
+                onMouseLeave={handleMouseLeave}
+                show={isDropdownVisible === 'dropdown3'}
+                className={`${styles.text} ${styles.dropdownMenu}`}
+                title="Curtains"
+                id="dropdown3"
+              >
+                {(isDropdownVisible === 'dropdown3') && (
+                  <>
+                    <NavDropdown
+                      onMouseEnter={() => handleInnerMouseEnter('dropdown2')}
+                      onMouseLeave={handleInnerMouseLeave}
+                      show={isInnerDropdownVisible === 'dropdown2'}
+                      className={`${styles.text} ${styles.subMenu}`}
+                      title={<Link href="/service/home-curtains/" className={styles.dropdownLink}>Home Curtains</Link>}
+                      href="/service/home-curtains/"
+                      id="dropdown2"
+                      drop="end"
+                    >
+                      {(isInnerDropdownVisible === 'dropdown2') && (
+                  <>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/living-room-curtains/">Living Room Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/bedroom-curtains/">Bedroom Curtains</NavDropdown.Item>
+                      </>)}
+                    </NavDropdown>
 
-              <NavDropdown className={styles.text} title="Curtains" id="dropdown3">
-                <NavDropdown className={styles.text} title="Home Curtains" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="/service/living-room-curtains/">Living Room Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/bedroom-curtains/">Bedroom Curtains</NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown className={styles.text} title="Commercial" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="/service/hotel-curtains/">Hotel Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/office-curtains/">Office Curtains</NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown className={styles.text} title="Types" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="/service/eyelet-curtains/">Eyelet Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/sheer-curtains/">Sheer Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/silk-curtains/">Silk Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/linen-curtains/">Linen Curtains</NavDropdown.Item>
-                  
-                </NavDropdown>
-                <NavDropdown className={styles.text} title="Smart" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="/service/blackout-curtains/">Blackout Curtains</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/electric-curtains/">Electric Curtains</NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown className={styles.text} title="Curtain Accessories" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="/service/curtain-rings/">Curtain Rings</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/curtain-rods/">Curtain Rods</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/curtain-tapes/">Curtain Tapes</NavDropdown.Item>
-                  
-                </NavDropdown>
-                {/* Add more fabric types as needed */}
+                    <NavDropdown
+                      onMouseEnter={() => handleInnerMouseEnter('dropdown5')}
+                      onMouseLeave={handleInnerMouseLeave}
+                      show={isInnerDropdownVisible === 'dropdown5'}
+                      className={`${styles.text} ${styles.subMenu}`}
+                      title="Commercial"
+                      id="dropdown5"
+                      drop="end"
+                    >
+                      {(isInnerDropdownVisible === 'dropdown5') && (
+                  <>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/hotel-curtains/">Hotel Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/office-curtains/">Office Curtains</NavDropdown.Item>
+                      </>)}
+                    </NavDropdown>
+
+                    <NavDropdown
+                      onMouseEnter={() => handleInnerMouseEnter('dropdown6')}
+                      onMouseLeave={handleInnerMouseLeave}
+                      show={isInnerDropdownVisible === 'dropdown6'}
+                      className={`${styles.text} ${styles.subMenu}`}
+                      title="Type"
+                      id="dropdown6"
+                      drop="end"
+                    >
+                      {(isInnerDropdownVisible === 'dropdown6') && (
+                  <>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/eyelet-curtains/">Eyelet Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/sheer-curtains/">Sheer Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/silk-curtains/">Silk Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/linen-curtains/">Linen Curtains</NavDropdown.Item>
+                    </>)}
+                    </NavDropdown>
+
+                    <NavDropdown
+                      onMouseEnter={() => handleInnerMouseEnter('dropdown7')}
+                      onMouseLeave={handleInnerMouseLeave}
+                      show={isInnerDropdownVisible === 'dropdown7'}
+                      className={`${styles.text} ${styles.subMenu}`}
+                      title="Smart"
+                      id="dropdown7"
+                      drop="end"
+                    >
+                      {(isInnerDropdownVisible === 'dropdown7') && (
+                  <>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/blackout-curtains/">Blackout Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/electric-curtains/">Electric Curtains</NavDropdown.Item>
+                      </>)}
+                    </NavDropdown>
+
+                    <NavDropdown
+                      onMouseEnter={() => handleInnerMouseEnter('dropdown8')}
+                      onMouseLeave={handleInnerMouseLeave}
+                      show={isInnerDropdownVisible === 'dropdown8'}
+                      className={`${styles.text} ${styles.subMenu}`}
+                      title={<Link href="/service/curtain-accessories/" className={styles.dropdownLink}>Curtain Accessories</Link>}
+                      id="dropdown8"
+                      drop="end"
+                    >
+                      {(isInnerDropdownVisible === 'dropdown8') && (
+                  <>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/curtain-rings/">Curtain Rings</NavDropdown.Item>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/curtain-rods/">Curtain Rods</NavDropdown.Item>
+                      <NavDropdown.Item className={styles.menuItem} href="/service/curtain-tapes/">Curtain Tapes</NavDropdown.Item>
+                      </>)}
+                    </NavDropdown>
+                    {/* Add more fabric types as needed */}
+                  </>
+                )}
               </NavDropdown>
 
-              <NavDropdown className={styles.text} title="Blinds" id="dropdown3">
-                <NavDropdown className={styles.text} title="Types" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="/service/bamboo-blinds-dubai/">Bamboo Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/blackout-blinds-dubai/">Blackout Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/roller-blinds-dubai/">Roller Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/roman-blinds-dubai/">Roman Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/venetian-blinds-dubai/">Venetian Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/vertical-blinds-dubai/">Vertical Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/wooden-blinds/">Wooden Blinds Dubai</NavDropdown.Item>
+              <NavDropdown 
+                onMouseEnter={() => handleMouseEnter1('dropdown4')}
+                onMouseLeave={handleMouseLeave1}
+                show={isDropdownVisible1 === 'dropdown4'}
+                className={`${styles.text} ${styles.dropdownMenu}`} 
+                title={<Link href="/service/blinds-dubai/" className={styles.dropdownLink}>Blinds</Link>}
+                 id="dropdown4">
+                  {(isDropdownVisible1 === 'dropdown4') && (
+                  <>
+                <NavDropdown
+                      onMouseEnter={() => handleInnerMouseEnter('dropdown9')}
+                      onMouseLeave={handleInnerMouseLeave}
+                      show={isInnerDropdownVisible === 'dropdown9'}
+                      className={`${styles.text} ${styles.subMenu}`}
+                      title="Type"
+                      id="dropdown9"
+                      drop="end"
+                    >
+                      {(isInnerDropdownVisible === 'dropdown9') && (
+                  <>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/bamboo-blinds-dubai/">Bamboo Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/blackout-blinds-dubai/">Blackout Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/roller-blinds-dubai/">Roller Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/roman-blinds-dubai/">Roman Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/venetian-blinds-dubai/">Venetian Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/vertical-blinds-dubai/">Vertical Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/wooden-blinds/">Wooden Blinds Dubai</NavDropdown.Item>
+                  </>)}
                 </NavDropdown>
-                <NavDropdown className={styles.text} title="Commercial" id="dropdown2" drop="end">
-                  <NavDropdown.Item href="/service/office-blinds-dubai/">Office Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="/service/outdoor-blinds-dubai/">Outdoor Blinds Dubai</NavDropdown.Item>
+                <NavDropdown
+                      onMouseEnter={() => handleInnerMouseEnter('dropdown10')}
+                      onMouseLeave={handleInnerMouseLeave}
+                      show={isInnerDropdownVisible === 'dropdown10'}
+                      className={`${styles.text} ${styles.subMenu}`}
+                      title="Commercial"
+                      id="dropdown10"
+                      drop="end"
+                    >
+                      {(isInnerDropdownVisible === 'dropdown10') && (
+                  <>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/office-blinds-dubai/">Office Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={styles.menuItem} href="/service/outdoor-blinds-dubai/">Outdoor Blinds Dubai</NavDropdown.Item>
+                  </>)}
                 </NavDropdown>
                 {/* Add more fabric types as needed */}
+                </>)}
               </NavDropdown>
 
 

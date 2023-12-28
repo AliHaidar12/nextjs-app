@@ -8,9 +8,15 @@
     margin: 0px !important;
   }
 }
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-}
+
 .fontSize{
   font-size: 18px;
+}
+
+
+.dropdownLink{
+  text-decoration: none;
+  padding-right: 20px;
+  color: black;
+  font-weight: bold;
 }
