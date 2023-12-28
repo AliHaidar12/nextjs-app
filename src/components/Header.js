@@ -118,6 +118,7 @@ const Header = ({ logo }) => {
                       onMouseLeave={handleInnerMouseLeave}
                       show={isInnerDropdownVisible === 'dropdown2'}
                       className={`${styles.text} ${styles.subMenu}`}
+                      //title="Home Curtains"
                       title={<Link href="/service/home-curtains/" className={styles.dropdownLink}>Home Curtains</Link>}
                       href="/service/home-curtains/"
                       id="dropdown2"
@@ -185,6 +186,7 @@ const Header = ({ logo }) => {
                       onMouseLeave={handleInnerMouseLeave}
                       show={isInnerDropdownVisible === 'dropdown8'}
                       className={`${styles.text} ${styles.subMenu}`}
+                      //title="Curtain Accessories"
                       title={<Link href="/service/curtain-accessories/" className={styles.dropdownLink}>Curtain Accessories</Link>}
                       id="dropdown8"
                       drop="end"
@@ -206,10 +208,13 @@ const Header = ({ logo }) => {
                 onMouseLeave={handleMouseLeave1}
                 show={isDropdownVisible1 === 'dropdown4'}
                 className={`${styles.text} ${styles.dropdownMenu}`} 
-                title={<Link href="/service/blinds-dubai/" className={styles.dropdownLink}>Blinds</Link>}
+                title="Blinds"
+                // href="/service/blinds-dubai/"
+                
                  id="dropdown4">
                   {(isDropdownVisible1 === 'dropdown4') && (
                   <>
+                <NavDropdown.Item className={styles.menuItem} href="/service/blinds-dubai/">Blinds Shop In Dubai</NavDropdown.Item>
                 <NavDropdown
                       onMouseEnter={() => handleInnerMouseEnter('dropdown9')}
                       onMouseLeave={handleInnerMouseLeave}

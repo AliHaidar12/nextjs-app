@@ -2,11 +2,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from '@/components/Header'
+import Header from 'src/components/Header'
 
-import Footer from '@/components/Footer';
-import GallerySection from '@/components/GallerySection';
-import ServiceBanner2 from '@/components/ServiceBanner2';
+import Footer from 'src/components/Footer';
+import GallerySection from 'src/components/GallerySection';
+import ServiceBanner2 from 'src/components/ServiceBanner2';
 
 const Gallery = () => {
   const galleryImages = [
