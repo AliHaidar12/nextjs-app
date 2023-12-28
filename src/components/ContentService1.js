@@ -17,7 +17,7 @@ const ContentService1 = ({heading, text,text1, text2, image}) => {
             </div>
             
             <div className="d-flex align-items-center">
-            <Link href="contact">
+            <Link href="contact-us">
                 <button className="btn btn-primary me-3" style={{ backgroundColor: "#1a808dff" }}>
                     Get A Quote
                 </button>

@@ -18,7 +18,7 @@ const ContentSection5 = ({ heading, text, text1, image, reverseDirection }) => {
             <p className="mb-4">{text}</p>
             <p className="mb-4">{text1}</p>
             <div className="d-flex align-items-center">
-            <Link href="contact">
+            <Link href="contact-us">
               <button
                 className="btn btn-primary me-3"
                 style={{ backgroundColor: "#1a808dff" }}

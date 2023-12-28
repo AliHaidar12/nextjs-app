@@ -13,7 +13,7 @@ const Banner = ({heading=null, text=null,text1=null, side_image=null}) => {
             <p className={`mb-4 ${styles.fontSize}`}>{text}</p>
             <p className={`mb-4 ${styles.fontSize}`}>{text1}</p>
             <div className="d-flex align-items-center">
-            <Link href="contact">
+            <Link href="contact-us">
                 <button className="btn btn-primary me-3 " style={{ backgroundColor: "#1a808dff" }}>
                     Get A Quote
                 </button>

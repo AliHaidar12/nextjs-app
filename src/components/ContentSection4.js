@@ -48,7 +48,7 @@ const ContentSection4 = ({ mainHeading, heading, button="Get A Quote", text, tex
               {text1}
             </p>
             <div className="d-flex align-items-center">
-            <Link href="contact">
+            <Link href="contact-us">
               <button className="btn btn-primary me-3" style={buttonStyle}>
                 {button}
               </button>
