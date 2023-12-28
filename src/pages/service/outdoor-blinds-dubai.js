@@ -2,19 +2,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from '@/components/Header'
-import ContentSection2 from '@/components/ContentSection2';
-import ContentOnly from '@/components/ContentOnly';
-import SaleSection from '@/components/SaleSection';
-import ContentService from '@/components/ContentService';
-import ContentService1 from '@/components/ContentService1';
-import Footer from '@/components/Footer';
-import ServiceBanner from '@/components/ServiceBanner';
-import ProjectSection from '@/components/ProjectSection';
+import Header from 'src/components/Header'
+import ContentSection2 from 'src/components/ContentSection2';
+import ContentOnly from 'src/components/ContentOnly';
+import SaleSection from 'src/components/SaleSection';
+import ContentService from 'src/components/ContentService';
+import ContentService1 from 'src/components/ContentService1';
+import Footer from 'src/components/Footer';
+import ServiceBanner from 'src/components/ServiceBanner';
+import ProjectSection from 'src/components/ProjectSection';
 import Link from 'next/link';
-import ContentService2 from '@/components/ContentService2';
-import FAQsSection from '@/components/FAQsSection';
-import TestimonialsService from '@/components/TestimonialsService';
+import ContentService2 from 'src/components/ContentService2';
+import FAQsSection from 'src/components/FAQsSection';
+import TestimonialsService from 'src/components/TestimonialsService';
 
 const OutdoorBlind = () => {
 

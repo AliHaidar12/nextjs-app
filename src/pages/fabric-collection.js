@@ -1,8 +1,8 @@
 import React from 'react';
-import TypesSection from '@/components/TypesSections';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import ServiceBanner2 from '@/components/ServiceBanner2';
+import TypesSection from 'src/components/TypesSections';
+import Header from 'src/components/Header';
+import Footer from 'src/components/Footer';
+import ServiceBanner2 from 'src/components/ServiceBanner2';
 
 function FabricCollection() {
     const images = [];

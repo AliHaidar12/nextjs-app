@@ -1,13 +1,13 @@
 import React from 'react';
-import BlogInfoSection from '@/components/BlogInfoSection';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import Footer from 'src/components/Footer';
+import Header from 'src/components/Header';
 import Link from 'next/link';
-import BlogItems from '@/components/BlogItems';
+import BlogItems from 'src/components/BlogItems';
 import styles from "../styles/Home.module.css";
-import BlogSocialSection from '@/components/BlogSocialSection';
-import BlogForm from '@/components/BlogForm';
-import BlogsProCons from '@/components/BlogsProCons';
+import BlogSocialSection from 'src/components/BlogSocialSection';
+import BlogForm from 'src/components/BlogForm';
+import BlogsProCons from 'src/components/BlogsProCons';
+import BlogInfoSection from 'src/components/BlogInfoSection';
 
 function LuxuryBlackoutCurtains() {
     const blogs = [
@@ -70,7 +70,7 @@ function LuxuryBlackoutCurtains() {
 
 
 
-            <div class={`${styles.consCol1} col`} >
+            <div className={`${styles.consCol1} col`} >
             <div className={styles.consHeading1}>
                 <h3>Top 10 Best Types of Luxury Blackout Curtains 2023</h3>
             </div>
@@ -199,7 +199,7 @@ function LuxuryBlackoutCurtains() {
             mainHeading="5. Thermal Insulated Grommet Blackout Curtains            "
             backgroundColor="#cd9f99"
             
-            text={<><p>These curtains are made of heavy microfiber and based on triple weave technology, which means they can blackout 
+            text={<div><p>These curtains are made of heavy microfiber and based on triple weave technology, which means they can blackout 
                 light, are washable in machines and act as an excellent insulator. Use these best blackout curtains for night shift. 
                 <br/> <br/>
                 Some different pros and cons of these curtains are listed below:
@@ -207,7 +207,7 @@ function LuxuryBlackoutCurtains() {
                 <br/> <br/>
                 
                 </p>
-            </>}
+            </div>}
             image={"/static/images/NICETOWN-Thermal-Insulated-Grommet-Blackout-Curtains.jpg"}
             />
 
@@ -227,14 +227,14 @@ function LuxuryBlackoutCurtains() {
             <BlogInfoSection
             mainHeading="6. Striped Curtains            "
             backgroundColor="#46704b"
-            text={<><p>
+            text={<div><p>
                 One of the best blackout curtain ideas for bedroom. These curtains come with two panels made up of polyester and woven 
                 with a linen-style weave. They can easily be washed in the machine and block 100% outdoor light. They also work as an 
                 insulator and help keep your bedroom cool or warm as you want.
                 
             <br/> <br/></p>
             
-            </>}
+            </div>}
             image={"/static/images/Rose-Home-Fashion-Burlap-Blackout-Curtains.jpg"}
             />
 
@@ -255,7 +255,7 @@ function LuxuryBlackoutCurtains() {
             <BlogInfoSection
             mainHeading="7. Mack and Milo Solid Blackout Thermal Curtains            "
             backgroundColor="#525c6f"
-            text={<><p>
+            text={<div><p>
                 These modern black curtains for the living room are made from the luxurious soft sateen material and come in different 
                 unique 19 colors. They can block the external light so efficiently that you will really love it when you want to get a 
                 restful sleep. <br/> <br/>
@@ -265,7 +265,7 @@ function LuxuryBlackoutCurtains() {
                 <br/> <br/>
 
                 </p>
-            </>}
+            </div>}
             image={"/static/images/Mack-and-Milo-Solid-Blackout-Thermal-Curtains.jpg"}
             />
 
@@ -284,14 +284,14 @@ function LuxuryBlackoutCurtains() {
             <BlogInfoSection
             mainHeading="8. Pottery Barn Emery Linen Blackout Curtain            "
             backgroundColor="#175a7e"
-            text={<><p>
+            text={<div><p>
                These curtains are made up of an amazing, durable, and outstanding linen-cotton blend. They can be installed easily and help to decor your room. Pottery Barn curtains can block the external light and give you a peaceful and amazing sleep.
                <br/> <br/>
                     These are some pros and cons of these curtains:
                 <br/> <br/>
 
                 </p>
-            </>}
+            </div>}
             image={"/static/images/Pottery-Barn-Emery-Linen-Blackout-Curtain.jpg"}
             />
 
@@ -312,14 +312,14 @@ function LuxuryBlackoutCurtains() {
             <BlogInfoSection
             mainHeading="9. West Elm Blackout Curtains            "
             backgroundColor="#b95d65"
-            text={<><p>
+            text={<div><p>
                 These curtains are best known as sound-absorbing curtains and reduce the external noise to give you a peaceful sleep. They also work as a great insulator for keeping the climate of your room in control. 
                 <br/> <br/>
                 They can easily be layered by using sheer curtains to block the maximum light. There are some pros and cons of these curtains too:
                 <br/> <br/>
 
                 </p>
-            </>}
+            </div>}
             image={"/static/images/Pottery-Barn-Emery-Linen-Blackout-Curtain.jpg"}
             />
 
@@ -337,7 +337,7 @@ function LuxuryBlackoutCurtains() {
             <BlogInfoSection
             mainHeading="10. Driftaway Darkening Blackout Curtains            "
             backgroundColor="#656a4b"
-            text={<><p>
+            text={<div><p>
                 These curtains can be installed behind the grommet curtains to block the external light completely. They come with 16 metal 
                 rings and are ready to be hung. You just have to put on a curtain rod.
                 <br/> <br/>
@@ -347,7 +347,7 @@ function LuxuryBlackoutCurtains() {
                 <br/> <br/>
 
                 </p>
-            </>}
+            </div>}
             image={"/static/images/Driftaway-Darkening-Blackout-Curtains.jpg"}
             />
 
@@ -369,7 +369,7 @@ function LuxuryBlackoutCurtains() {
             
 
 
-            <div class={`${styles.consCol} col`} >
+            <div className={`${styles.consCol} col`} >
             <div className={styles.consHeading}>
                 <h3>Conclusion</h3>
             </div>

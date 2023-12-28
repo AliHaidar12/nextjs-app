@@ -1,12 +1,12 @@
-import BlogInfoSection from '@/components/BlogInfoSection';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import BlogInfoSection from 'src/components/BlogInfoSection';
+import Footer from 'src/components/Footer';
+import Header from 'src/components/Header';
 import Link from 'next/link';
 import React from 'react';
-import BlogItems from '@/components/BlogItems';
+import BlogItems from 'src/components/BlogItems';
 import styles from "../styles/Home.module.css";
-import BlogSocialSection from '@/components/BlogSocialSection';
-import BlogForm from '@/components/BlogForm';
+import BlogSocialSection from 'src/components/BlogSocialSection';
+import BlogForm from 'src/components/BlogForm';
 
 function BlogInfo() {
     const blogs = [
@@ -57,10 +57,11 @@ function BlogInfo() {
                 Blackout curtains are a top choice for bedrooms in Dubai. Made from tightly woven, opaque fabrics, blackout curtains 
                 block outside light to create a dark sleep space. It is ideal for dealing with Dubai’s bright mornings and intense midday 
                 sun.<br/> <br/>
-                </p>
+                
                 <Link className='text-decoration-none text-danger fw-bold' href='blackout-curtains'>Blackout curtains Dubai</Link> come 
                 in various colors and patterns to match your bedroom décor. They’re also available in light-filtering versions that soften 
                 sunlight rather than fully blocking it. On our website, you can find a wide selection of blackout curtains in styles like:<br/> <br/>
+                </p>
                 <ul>
                 <li>Solid blackout curtains in colors like grey, blue, and beige to blend with your walls</li> <br/>
                 <li>Blackout curtains with striped or geometric patterns for visual interest</li> <br/>
@@ -88,9 +89,13 @@ function BlogInfo() {
                 Sheer curtains work well for:<br/> <br/>
 
                 </p>
+                <ul>
+
+                
                 <li>Living room windows let in natural light and views while obscuring the room from the outside</li> <br/>
                 <li>Kitchen windows to filter sunlight and maintain privacy</li> <br/>
                 <li>Bedrooms combined with blackout curtains for additional daytime light control</li> <br/> <br/>
+                </ul>
                 <p>Browse our selection of chic and affordable sheer curtains from our site. We have choices for every style, 
                 from embroidered to scalloped to paneled sheer curtains.</p>
                 
@@ -148,13 +153,16 @@ function BlogInfo() {
                 <br/> <br/>
                 On our site, you can find linen curtains designed to:
                 </p>
-            <Link className='text-decoration-none text-danger fw-bold' href='-curtains'></Link> 
             <br/> <br/>
+            <ul>
+
+            
             <li>Filter bright sunlight in breezy natural hues</li> <br/>
             <li>Provide privacy without blocking views or natural light</li> <br/>
             <li>Give a casual, beach-inspired look to living rooms, kitchens, and dens</li> <br/>
             <li>Stand up to high humidity without issues like mold or mildew</li> <br/>
-            <li>For coastal chic on a budget, linen is one of the best curtain fabrics for Dubai homes.</li> <br/> 
+            <li>For coastal chic on a budget, linen is one of the best curtain fabrics for Dubai homes.</li> <br/>
+            </ul> 
             </>}
             image={"/static/images/Linen-Curtains-1.jpg"}
             />
@@ -166,10 +174,13 @@ function BlogInfo() {
                 Bedrooms need curtains that balance light control, privacy, and style. Some good bedroom curtain options for Dubai homes include:
 
             <br/> <br/></p>
+            <ul>
             <li>Blackout curtains to block early morning and midday sunlight so you can sleep soundly</li> <br/>
             <li>Light, breezy curtains like voile or linen allow airflow and complement sunny spaces</li> <br/>
             <li>Dramatic curtains like velvet or brocade for bedrooms with a luxurious feel</li> <br/>
             <li>Kids’ curtains with fun patterns and images for bedrooms they’ll love</li> <br/> <br/>
+            </ul>
+            
             <p>We have bedroom curtains sets to transform your space, no matter your style or needs. Browse readymade curtains or have 
             them custom-made to fit your windows perfectly.</p>
             </>}
@@ -186,11 +197,14 @@ function BlogInfo() {
 
                 <br/> <br/>
                 </p>
-            <li>Sheer curtains to retain views while providing daytime privacy from the street</li> <br/>
+                <ul>
+                <li>Sheer curtains to retain views while providing daytime privacy from the street</li> <br/>
             <li>Blackout curtains on windows that get direct afternoon sun to prevent overheating</li> <br/>
             <li>Wide curtain panels that frame large living room windows elegantly</li> <br/>
             <li>Curtains that coordinate with your living room’s color palette and style</li> <br/>
             <li>Electric curtains for extra convenience opening and closing large curtains</li> <br/> <br/>
+                </ul>
+            
             <p>Check our selection of living room curtains in materials from cotton to faux silk. We have eye-catching patterns, 
             blackout options, curtains with decorative trims, and more. With the right curtains, your living room will become 
             your favorite space to relax and entertain.

@@ -1,14 +1,13 @@
 import React from 'react';
-import BlogInfoSection from '@/components/BlogInfoSection';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import BlogInfoSection from 'src/components/BlogInfoSection';
+import Footer from 'src/components/Footer';
+import Header from 'src/components/Header';
 import Link from 'next/link';
-import BlogItems from '@/components/BlogItems';
+import BlogItems from 'src/components/BlogItems';
 import styles from "../styles/Home.module.css";
-import BlogSocialSection from '@/components/BlogSocialSection';
-import BlogForm from '@/components/BlogForm';
-import BlogsProCons from '@/components/BlogsProCons';
-function CurtainsIdeas(props) {
+import BlogSocialSection from 'src/components/BlogSocialSection';
+import BlogForm from 'src/components/BlogForm';
+function CurtainsIdeas() {
     const blogs = [
         {
           id: 1,
@@ -62,7 +61,7 @@ function CurtainsIdeas(props) {
 
 
 
-            <div class={`${styles.consCol1} col`} >
+            <div className={`${styles.consCol1} col`} >
             <div className={styles.consHeading1}>
                 <h3>Living Room Curtains Ideas</h3>
             </div>
@@ -264,7 +263,7 @@ function CurtainsIdeas(props) {
             </>}
             image={"/static/images/Layering-Curtains.jpg"}
             />
-            <div class={`${styles.consCol} col`} >
+            <div className={`${styles.consCol} col`} >
             <div className={styles.consHeading}>
                 <h3>Conclusion</h3>
             </div>

@@ -1,22 +1,22 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from '@/components/Header'
-import ContentSection2 from '@/components/ContentSection2';
-import ContentOnly from '@/components/ContentOnly';
-import SaleSection from '@/components/SaleSection';
-import ContentService from '@/components/ContentService';
-import ServiceGallery from '@/components/ServiceGallery';
-import ContentService1 from '@/components/ContentService1';
-import ContentService2 from '@/components/ContentService2';
-import FAQsSection from '@/components/FAQsSection';
-import Footer from '@/components/Footer';
-import ServiceBanner from '@/components/ServiceBanner';
+import Header from 'src/components/Header'
+import ContentSection2 from 'src/components/ContentSection2';
+import ContentOnly from 'src/components/ContentOnly';
+import SaleSection from 'src/components/SaleSection';
+import ContentService from 'src/components/ContentService';
+import ServiceGallery from 'src/components/ServiceGallery';
+import ContentService1 from 'src/components/ContentService1';
+import ContentService2 from 'src/components/ContentService2';
+import FAQsSection from 'src/components/FAQsSection';
+import Footer from 'src/components/Footer';
+import ServiceBanner from 'src/components/ServiceBanner';
 import Link from 'next/link';
-import ProjectSection from '@/components/ProjectSection';
-import TestimonialsService from '@/components/TestimonialsService';
-import ContentService6 from '@/components/ContentService6';
-import ContentService7 from '@/components/ContentService7';
+import ProjectSection from 'src/components/ProjectSection';
+import TestimonialsService from 'src/components/TestimonialsService';
+import ContentService6 from 'src/components/ContentService6';
+import ContentService7 from 'src/components/ContentService7';
 
 const HomeCurtains = () => {
 

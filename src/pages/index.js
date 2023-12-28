@@ -2,26 +2,26 @@ import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import Header from '@/components/Header'
-import Banner from '@/components/Banner'
-import Services from '@/components/Services';
-import ContentSection from '@/components/ContentSection';
-import ContentSection2 from '@/components/ContentSection2';
-import GallerySection from '@/components/GallerySection';
-import ContentSection3 from '@/components/ContentSection3';
-import ContentSection4 from '@/components/ContentSection4';
-import ProjectSection from '@/components/ProjectSection';
-import TypesSection from '@/components/TypesSections';
-import ContentSection5 from '@/components/CotentSection5';
-import CotentBoxes from '@/components/CotentBoxes';
-import ContentSection6 from '@/components/ContentSection6';
-import ContentSection7 from '@/components/ContentSection7';
-import ContentSection8 from '@/components/ContentSection8';
-import ImageCarousel from '@/components/ImageCarousel';
-import ContactForm from '@/components/ContactForm';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import SaleSection from '@/components/SaleSection';
-import Footer from '@/components/Footer';
+import Header from 'src/components/Header'
+import Banner from 'src/components/Banner'
+import Services from 'src/components/Services';
+import ContentSection from 'src/components/ContentSection';
+import ContentSection2 from 'src/components/ContentSection2';
+import GallerySection from 'src/components/GallerySection';
+import ContentSection3 from 'src/components/ContentSection3';
+import ContentSection4 from 'src/components/ContentSection4';
+import ProjectSection from 'src/components/ProjectSection';
+import TypesSection from 'src/components/TypesSections';
+import ContentSection5 from 'src/components/CotentSection5';
+import CotentBoxes from 'src/components/CotentBoxes';
+import ContentSection6 from 'src/components/ContentSection6';
+import ContentSection7 from 'src/components/ContentSection7';
+import ContentSection8 from 'src/components/ContentSection8';
+import ImageCarousel from 'src/components/ImageCarousel';
+import ContactForm from 'src/components/ContactForm';
+import TestimonialsSection from 'src/components/TestimonialsSection';
+import SaleSection from 'src/components/SaleSection';
+import Footer from 'src/components/Footer';
 
 import Image from 'next/image';
  

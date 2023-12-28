@@ -2,18 +2,18 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from '@/components/Header'
-import ContentSection2 from '@/components/ContentSection2';
-import ContentOnly from '@/components/ContentOnly';
-import ContentService from '@/components/ContentService';
-import ServiceGallery from '@/components/ServiceGallery';
-import ContentService1 from '@/components/ContentService1';
-import Footer from '@/components/Footer';
-import ContentService4 from '@/components/ContentService4';
-import ProjectSection from '@/components/ProjectSection';
-import ContentService3 from '@/components/ContentService3';
+import Header from 'src/components/Header'
+import ContentSection2 from 'src/components/ContentSection2';
+import ContentOnly from 'src/components/ContentOnly';
+import ContentService from 'src/components/ContentService';
+import ServiceGallery from 'src/components/ServiceGallery';
+import ContentService1 from 'src/components/ContentService1';
+import Footer from 'src/components/Footer';
+import ContentService4 from 'src/components/ContentService4';
+import ProjectSection from 'src/components/ProjectSection';
+import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
-import TestimonialsService from '@/components/TestimonialsService';
+import TestimonialsService from 'src/components/TestimonialsService';
 
 const VerticalBlinds = () => {
 

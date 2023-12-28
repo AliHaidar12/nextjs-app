@@ -34,7 +34,7 @@ function BlogInfoSection({image, mainHeading, subHeading, text, backgroundColor}
               />
                 </div>
               
-                <div className={`md-4 fs-6 ${styles.fontSize}`} >
+                <div className={`md-4 ${styles.fontSize}`} >
                     {text}
                 </div>
               </div>

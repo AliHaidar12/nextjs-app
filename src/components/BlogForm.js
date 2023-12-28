@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../styles/Home.module.css";
 
-function BlogForm(props) {
+function BlogForm() {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });

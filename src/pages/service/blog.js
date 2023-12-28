@@ -1,6 +1,6 @@
-import BlogItems from '@/components/BlogItems';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import BlogItems from 'src/components/BlogItems';
+import Footer from 'src/components/Footer';
+import Header from 'src/components/Header';
 import ServiceBanner2 from '@/components/ServiceBanner2';
 import React from 'react';
 

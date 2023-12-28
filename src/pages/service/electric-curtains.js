@@ -2,20 +2,20 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from '@/components/Header'
-import ServiceBanner from '@/components/ServiceBanner';
-import ContentSection2 from '@/components/ContentSection2';
-import ProjectSection from '@/components/ProjectSection';
-import ContentOnly from '@/components/ContentOnly';
-import SaleSection from '@/components/SaleSection';
-import ContentService from '@/components/ContentService';
-import ServiceGallery from '@/components/ServiceGallery';
-import ContentService1 from '@/components/ContentService1';
-import ContentService2 from '@/components/ContentService2';
-import Footer from '@/components/Footer';
-import ContentService3 from '@/components/ContentService3';
+import Header from 'src/components/Header'
+import ServiceBanner from 'src/components/ServiceBanner';
+import ContentSection2 from 'src/components/ContentSection2';
+import ProjectSection from 'src/components/ProjectSection';
+import ContentOnly from 'src/components/ContentOnly';
+import SaleSection from 'src/components/SaleSection';
+import ContentService from 'src/components/ContentService';
+import ServiceGallery from 'src/components/ServiceGallery';
+import ContentService1 from 'src/components/ContentService1';
+import ContentService2 from 'src/components/ContentService2';
+import Footer from 'src/components/Footer';
+import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
-import TestimonialsService from '@/components/TestimonialsService';
+import TestimonialsService from 'src/components/TestimonialsService';
 
 const ElectricCurtains = () => {
 

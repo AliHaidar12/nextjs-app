@@ -2,14 +2,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from '@/components/Header'
-import ContentOnly from '@/components/ContentOnly';
-import ContentService from '@/components/ContentService';
-import ContentService1 from '@/components/ContentService1';
-import Footer from '@/components/Footer';
-import ServiceBanner2 from '@/components/ServiceBanner2';
-import ProjectSection from '@/components/ProjectSection';
-import GallerySection from '@/components/GallerySection';
+import Header from 'src/components/Header'
+import ContentOnly from 'src/components/ContentOnly';
+import ContentService from 'src/components/ContentService';
+import ContentService1 from 'src/components/ContentService1';
+import Footer from 'src/components/Footer';
+import ServiceBanner2 from 'src/components/ServiceBanner2';
+import ProjectSection from 'src/components/ProjectSection';
+import GallerySection from 'src/components/GallerySection';
 
 const AboutUs = () => {
     const galleryImages = [
