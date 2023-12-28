@@ -1,7 +1,7 @@
 import BlogItems from 'src/components/BlogItems';
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
-import ServiceBanner2 from '@/components/ServiceBanner2';
+import ServiceBanner2 from 'src/components/ServiceBanner2';
 import React from 'react';
 
 function blog() {
