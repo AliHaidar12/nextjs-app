@@ -61,11 +61,13 @@ function BlogInfo() {
                 <Link className='text-decoration-none text-danger fw-bold' href='blackout-curtains'>Blackout curtains Dubai</Link> come 
                 in various colors and patterns to match your bedroom décor. They’re also available in light-filtering versions that soften 
                 sunlight rather than fully blocking it. On our website, you can find a wide selection of blackout curtains in styles like:<br/> <br/>
+                <ul>
                 <li>Solid blackout curtains in colors like grey, blue, and beige to blend with your walls</li> <br/>
                 <li>Blackout curtains with striped or geometric patterns for visual interest</li> <br/>
                 <li>Kids’ blackout curtains with fun designs, ideal for nurseries and children’s bedrooms</li> <br/>
                 <li>Thermal blackout curtains in cotton, polyester, and other heat-insulating fabrics</li><br/>
                 <li>Room darkening curtains with blackout linings to filter light rather than fully block it</li><br/> <br/>
+                </ul>
                 <p>No matter your style or budget, we have blackout curtains that will keep your Dubai bedroom cool and dark for undisturbed 
                 sleep.</p>
 

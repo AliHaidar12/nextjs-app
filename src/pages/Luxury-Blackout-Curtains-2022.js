@@ -9,7 +9,6 @@ import BlogSocialSection from '@/components/BlogSocialSection';
 import BlogForm from '@/components/BlogForm';
 import BlogsProCons from '@/components/BlogsProCons';
 
-
 function LuxuryBlackoutCurtains() {
     const blogs = [
         
