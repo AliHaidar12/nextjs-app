@@ -7,6 +7,7 @@ import BlogItems from 'src/components/BlogItems';
 import styles from "../styles/Home.module.css";
 import BlogSocialSection from 'src/components/BlogSocialSection';
 import BlogForm from 'src/components/BlogForm';
+import Head from 'next/head';
 function CurtainsIdeas() {
     const blogs = [
         {
@@ -28,10 +29,25 @@ function CurtainsIdeas() {
           description: 'Curtains are essential elements for giving us privacy and blocking the light coming from outside. If you need deep sleep,',
         },
         
-        // Add more blog items as needed
+        
+      ];
+      const metaTags = [
+        { property: 'title', content: "10+ Affordable Living Room Curtains Ideas | Closing Curtains" },
+        { name: 'description', content: "Are you looking curtains for their living room? Yes? If yes then know the best & affordable living room curtains ideas, characteristics and advantages." },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ];
     return (
         <div >
+            <Head>
+                {metaTags.map((tag, index) => (
+                tag.property ? (
+                <title key={index}>{tag.content}</title>
+                ) : (
+                <meta key={index} name={tag.name} content={tag.content} />
+                )
+            ))}
+            </Head> 
             <Header logo='/static/images/logo.png'/>
             <div className={styles.mainContainer}>
                 <div className={"row my-4"}>

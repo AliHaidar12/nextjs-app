@@ -17,6 +17,7 @@ import ServiceBanner from 'src/components/ServiceBanner';
 import Link from 'next/link';
 import ProjectSection from 'src/components/ProjectSection';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const HomeCurtains = () => {
 
@@ -127,9 +128,23 @@ const HomeCurtains = () => {
     
   ];
   
-
+  const metaTags = [
+    { property: 'title', content: "Beautify Your Living Spaces with Home Curtains in Dubai | Closing Curtain" },
+    { name: 'description', content: "Beautify your living spaces with exquisite home curtains in Dubai. Buy now and explore Closing Curtain's wide selection of designs and fabrics." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="Home Curtains"/>

@@ -15,6 +15,7 @@ import ContentService2 from 'src/components/ContentService2';
 import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const WoodenBlinds = () => {
   
@@ -125,10 +126,24 @@ const WoodenBlinds = () => {
     },
   ]
 
-  //const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+  const metaTags = [
+    { property: 'title', content: "Wooden Blinds Dubai - Buy #1 Wood Blinds For At 20% Off, UAE" },
+    { name: 'description', content: "Are you looking for the best wooden Blinds Dubai Supplier? Closingcurtain.ae is top rated shop to buy wooden blinds in Dubai. Visit Now!" },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/quality-blinds-in-uae.jpg"/>

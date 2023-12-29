@@ -99,16 +99,16 @@ const Header = ({ logo }) => {
           <Navbar.Collapse id="navbar-nav" >
             {/* Middle: Menu */}
             <Nav className="mx-auto" >
-              <Nav.Link href="/" className={styles.text} >Home</Nav.Link>
-              <Nav.Link href="/about-us/" className={styles.text}>About Us</Nav.Link>
+              <Nav.Link href="/" className={styles.text1} >Home</Nav.Link>
+              <Nav.Link href="/about-us/" className={styles.text1}>About Us</Nav.Link>
              
             
               <NavDropdown
                 onMouseEnter={() => handleMouseEnter('dropdown3')}
                 onMouseLeave={handleMouseLeave}
                 show={isDropdownVisible === 'dropdown3'}
-                className={`${styles.text} ${styles.dropdownMenu}`}
-                title="Curtains"
+                className={`${styles.text1} ${styles.dropdownMenu}`}
+                title={<Link href="#" className={` ${styles.text1}`}>Curtains</Link>}
                 id="dropdown3"
               >
                 {(isDropdownVisible === 'dropdown3') && (
@@ -119,15 +119,15 @@ const Header = ({ logo }) => {
                       show={isInnerDropdownVisible === 'dropdown2'}
                       className={`${styles.text} ${styles.subMenu}`}
                       //title="Home Curtains"
-                      title={<Link href="/service/home-curtains/" className={styles.dropdownLink}>Home Curtains</Link>}
+                      title={<Link href="/service/home-curtains/" className={` ${styles.text}`}>Home Curtains</Link>}
                       href="/service/home-curtains/"
                       id="dropdown2"
                       drop="end"
                     >
                       {(isInnerDropdownVisible === 'dropdown2') && (
                   <>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/living-room-curtains/">Living Room Curtains</NavDropdown.Item>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/bedroom-curtains/">Bedroom Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/living-room-curtains/">Living Room Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/bedroom-curtains/">Bedroom Curtains</NavDropdown.Item>
                       </>)}
                     </NavDropdown>
 
@@ -136,14 +136,14 @@ const Header = ({ logo }) => {
                       onMouseLeave={handleInnerMouseLeave}
                       show={isInnerDropdownVisible === 'dropdown5'}
                       className={`${styles.text} ${styles.subMenu}`}
-                      title="Commercial"
+                      title={<Link href="#" className={` ${styles.text}`}>Commercial</Link>}
                       id="dropdown5"
                       drop="end"
                     >
                       {(isInnerDropdownVisible === 'dropdown5') && (
                   <>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/hotel-curtains/">Hotel Curtains</NavDropdown.Item>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/office-curtains/">Office Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/hotel-curtains/">Hotel Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/office-curtains/">Office Curtains</NavDropdown.Item>
                       </>)}
                     </NavDropdown>
 
@@ -152,16 +152,16 @@ const Header = ({ logo }) => {
                       onMouseLeave={handleInnerMouseLeave}
                       show={isInnerDropdownVisible === 'dropdown6'}
                       className={`${styles.text} ${styles.subMenu}`}
-                      title="Type"
+                      title={<Link href="#" className={` ${styles.text}`}>Type</Link>}
                       id="dropdown6"
                       drop="end"
                     >
                       {(isInnerDropdownVisible === 'dropdown6') && (
                   <>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/eyelet-curtains/">Eyelet Curtains</NavDropdown.Item>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/sheer-curtains/">Sheer Curtains</NavDropdown.Item>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/silk-curtains/">Silk Curtains</NavDropdown.Item>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/linen-curtains/">Linen Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/eyelet-curtains/">Eyelet Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/sheer-curtains/">Sheer Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/silk-curtains/">Silk Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/linen-curtains/">Linen Curtains</NavDropdown.Item>
                     </>)}
                     </NavDropdown>
 
@@ -170,14 +170,14 @@ const Header = ({ logo }) => {
                       onMouseLeave={handleInnerMouseLeave}
                       show={isInnerDropdownVisible === 'dropdown7'}
                       className={`${styles.text} ${styles.subMenu}`}
-                      title="Smart"
+                      title={<Link href="#" className={` ${styles.text}`}>Smart</Link>}
                       id="dropdown7"
                       drop="end"
                     >
                       {(isInnerDropdownVisible === 'dropdown7') && (
                   <>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/blackout-curtains/">Blackout Curtains</NavDropdown.Item>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/electric-curtains/">Electric Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/blackout-curtains/">Blackout Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/electric-curtains/">Electric Curtains</NavDropdown.Item>
                       </>)}
                     </NavDropdown>
 
@@ -187,15 +187,15 @@ const Header = ({ logo }) => {
                       show={isInnerDropdownVisible === 'dropdown8'}
                       className={`${styles.text} ${styles.subMenu}`}
                       //title="Curtain Accessories"
-                      title={<Link href="/service/curtain-accessories/" className={styles.dropdownLink}>Curtain Accessories</Link>}
+                      title={<Link href="/service/curtain-accessories/" className={styles.text}>Curtain Accessories</Link>}
                       id="dropdown8"
                       drop="end"
                     >
                       {(isInnerDropdownVisible === 'dropdown8') && (
                   <>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/curtain-rings/">Curtain Rings</NavDropdown.Item>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/curtain-rods/">Curtain Rods</NavDropdown.Item>
-                      <NavDropdown.Item className={styles.menuItem} href="/service/curtain-tapes/">Curtain Tapes</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/curtain-rings/">Curtain Rings</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/curtain-rods/">Curtain Rods</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/curtain-tapes/">Curtain Tapes</NavDropdown.Item>
                       </>)}
                     </NavDropdown>
                     {/* Add more fabric types as needed */}
@@ -207,32 +207,32 @@ const Header = ({ logo }) => {
                 onMouseEnter={() => handleMouseEnter1('dropdown4')}
                 onMouseLeave={handleMouseLeave1}
                 show={isDropdownVisible1 === 'dropdown4'}
-                className={`${styles.text} ${styles.dropdownMenu}`} 
-                title="Blinds"
+                className={`${styles.text1} ${styles.dropdownMenu}`} 
+                title={<Link href="#" className={` ${styles.text1}`}>Blinds</Link>}
                 // href="/service/blinds-dubai/"
                 
                  id="dropdown4">
                   {(isDropdownVisible1 === 'dropdown4') && (
                   <>
-                <NavDropdown.Item className={styles.menuItem} href="/service/blinds-dubai/">Blinds Shop In Dubai</NavDropdown.Item>
+                <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/blinds-dubai/">Blinds Shop In Dubai</NavDropdown.Item>
                 <NavDropdown
                       onMouseEnter={() => handleInnerMouseEnter('dropdown9')}
                       onMouseLeave={handleInnerMouseLeave}
                       show={isInnerDropdownVisible === 'dropdown9'}
                       className={`${styles.text} ${styles.subMenu}`}
-                      title="Type"
+                      title={<Link href="#" className={` ${styles.text}`}>Type</Link>}
                       id="dropdown9"
                       drop="end"
                     >
                       {(isInnerDropdownVisible === 'dropdown9') && (
                   <>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/bamboo-blinds-dubai/">Bamboo Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/blackout-blinds-dubai/">Blackout Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/roller-blinds-dubai/">Roller Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/roman-blinds-dubai/">Roman Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/venetian-blinds-dubai/">Venetian Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/vertical-blinds-dubai/">Vertical Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/wooden-blinds/">Wooden Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/bamboo-blinds-dubai/">Bamboo Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/blackout-blinds-dubai/">Blackout Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/roller-blinds-dubai/">Roller Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/roman-blinds-dubai/">Roman Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/venetian-blinds-dubai/">Venetian Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/vertical-blinds-dubai/">Vertical Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/wooden-blinds/">Wooden Blinds Dubai</NavDropdown.Item>
                   </>)}
                 </NavDropdown>
                 <NavDropdown
@@ -240,14 +240,14 @@ const Header = ({ logo }) => {
                       onMouseLeave={handleInnerMouseLeave}
                       show={isInnerDropdownVisible === 'dropdown10'}
                       className={`${styles.text} ${styles.subMenu}`}
-                      title="Commercial"
+                      title={<Link href="#" className={` ${styles.text}`}>Commercial</Link>}
                       id="dropdown10"
                       drop="end"
                     >
                       {(isInnerDropdownVisible === 'dropdown10') && (
                   <>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/office-blinds-dubai/">Office Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item className={styles.menuItem} href="/service/outdoor-blinds-dubai/">Outdoor Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/office-blinds-dubai/">Office Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/outdoor-blinds-dubai/">Outdoor Blinds Dubai</NavDropdown.Item>
                   </>)}
                 </NavDropdown>
                 {/* Add more fabric types as needed */}
@@ -255,10 +255,10 @@ const Header = ({ logo }) => {
               </NavDropdown>
 
 
-              <Nav.Link href="/fabric-collection/" className={styles.text}>Fabric Collection</Nav.Link>
-              <Nav.Link href="/gallery/" className={styles.text}>Gallery</Nav.Link>
-              <Nav.Link href="/service/blog/" className={styles.text}>Blog</Nav.Link>
-              <Nav.Link href="/contact-us/" className={styles.text}>Contact Us</Nav.Link>
+              <Nav.Link href="/fabric-collection/" className={styles.text1}>Fabric Collection</Nav.Link>
+              <Nav.Link href="/gallery/" className={styles.text1}>Gallery</Nav.Link>
+              <Nav.Link href="/service/blog/" className={styles.text1}>Blog</Nav.Link>
+              <Nav.Link href="/contact-us/" className={styles.text1}>Contact Us</Nav.Link>
             </Nav>
 
             {/* Right Side: Get A Quote Button */}

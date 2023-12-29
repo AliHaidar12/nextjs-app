@@ -16,6 +16,7 @@ import ContentService2 from 'src/components/ContentService2';
 import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const VenetianBlinds = () => {
 
@@ -126,10 +127,24 @@ const VenetianBlinds = () => {
     },
   ]
 
-  //const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+  const metaTags = [
+    { property: 'title', content: "Get luxury Venetian Blinds in Dubai By No.1 Blinds Supplier" },
+    { name: 'description', content: "Buy luxurious venetian blinds in Dubai by closingcurtain.ae, We provide high quality venetian window blinds with best installation services." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       

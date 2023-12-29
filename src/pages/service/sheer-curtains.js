@@ -14,6 +14,7 @@ import ContentService2 from 'src/components/ContentService2';
 import Footer from 'src/components/Footer';
 import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const SheerCurtains = () => {
   const galleryImages = [
@@ -44,10 +45,24 @@ const SheerCurtains = () => {
       
   ];
   
-
+  const metaTags = [
+    { property: 'title', content: "Top Rated Sheer Curtains Dubai Shop - Buy No.1 Sheer Drapes" },
+    { name: 'description', content: "Closing Curtain is the top seller of sheer curtains Dubai at best pricing. We offer wide range of sheer curtains in Dubai with best installation service." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>

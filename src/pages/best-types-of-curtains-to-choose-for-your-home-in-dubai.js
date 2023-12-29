@@ -7,6 +7,7 @@ import BlogItems from 'src/components/BlogItems';
 import styles from "../styles/Home.module.css";
 import BlogSocialSection from 'src/components/BlogSocialSection';
 import BlogForm from 'src/components/BlogForm';
+import Head from 'next/head';
 
 function BlogInfo() {
     const blogs = [
@@ -29,8 +30,23 @@ function BlogInfo() {
             description: 'Curtains can transform the style of your living room as well as the whole interior of your home. Apart from',
           },
         ];
+        const metaTags = [
+            { property: 'title', content: 'Best Types Of Curtains To Choose For Your Home in Dubai' },
+            { name: 'description', content: "Discover Best Types Of Curtains To Choose For Your Home in Dubai, If you want to decorate your Dubai's home then these curtains will be the perfect fit!" },
+            { name: 'robots', content: 'index, follow' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+          ];
     return (
         <div >
+            <Head>
+                {metaTags.map((tag, index) => (
+                tag.property ? (
+                <title key={index}>{tag.content}</title>
+                ) : (
+                <meta key={index} name={tag.name} content={tag.content} />
+                )
+            ))}
+            </Head> 
             <Header logo='/static/images/logo.png'/>
             <div className={styles.mainContainer}>
                 <div className={"row my-4"}>

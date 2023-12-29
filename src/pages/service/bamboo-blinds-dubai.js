@@ -15,6 +15,7 @@ import ContentService3 from 'src/components/ContentService3';
 import ServiceBanner2 from 'src/components/ServiceBanner2';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const BombooBlinds = () => {
   const galleryImages = [
@@ -121,9 +122,23 @@ const BombooBlinds = () => {
   ];
 
   
-
+  const metaTags = [
+    { property: 'title', content: "Get Top Quality Bamboo Blinds in Dubai At 20% Discount" },
+    { name: 'description', content: "Add a touch of natural elegance to your windows with bamboo blinds in Dubai. Explore our sustainable and stylish options and buy Closing Curtain." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <div>
+          <Head>
+                {metaTags.map((tag, index) => (
+                tag.property ? (
+                <title key={index}>{tag.content}</title>
+                ) : (
+                <meta key={index} name={tag.name} content={tag.content} />
+                )
+            ))}
+            </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="Bamboo Blinds"/>

@@ -15,6 +15,7 @@ import Link from 'next/link';
 import ContentService2 from 'src/components/ContentService2';
 import FAQsSection from 'src/components/FAQsSection';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const OutdoorBlind = () => {
 
@@ -120,9 +121,23 @@ const OutdoorBlind = () => {
     },
   ]
   
-
+  const metaTags = [
+    { property: 'title', content: "Best Outdoor Blinds Dubai Shop - Buy Outside Blinds Online" },
+    { name: 'description', content: "Buy Outdoor Blinds in Dubai, discover our modern outdoor blinds Dubai at low prices. Enhance your outside look with our blinds today!" },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>

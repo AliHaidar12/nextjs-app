@@ -14,6 +14,7 @@ import ProjectSection from 'src/components/ProjectSection';
 import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const VerticalBlinds = () => {
 
@@ -122,9 +123,23 @@ const VerticalBlinds = () => {
     },
   ]
   
-
+  const metaTags = [
+    { property: 'title', content: "Vertical Blinds Dubai | Buy Luxury Vertical Window Blinds" },
+    { name: 'description', content: "Are you looking for vertical blinds Dubai? Closingcurtain.ae is Ideal place to buy luxury vertical blinds in Dubai. Visit now & get best Offers from us!" },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ContentSection2

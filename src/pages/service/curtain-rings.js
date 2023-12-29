@@ -16,6 +16,7 @@ import ContentService2 from 'src/components/ContentService2';
 import FAQsSection from 'src/components/FAQsSection';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const CurtainRings = () => {
   const galleryImages = [
@@ -130,9 +131,23 @@ const CurtainRings = () => {
     },
   ];
   
-
+  const metaTags = [
+    { property: 'title', content: "Buy Stylish Curtain Rings for Your Curtains in Dubai | Closing Curtain" },
+    { name: 'description', content: "Complete the look of your curtains with stylish curtain rings in Dubai. Explore our collection, buy the perfect accessories at Closing Curtain." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>

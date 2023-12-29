@@ -16,6 +16,7 @@ import Footer from 'src/components/Footer';
 import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const ElectricCurtains = () => {
 
@@ -120,9 +121,23 @@ const ElectricCurtains = () => {
     },
   ]
 
-  
+  const metaTags = [
+    { property: 'title', content: "Electric Curtains Dubai - Buy #1 Motorized Curtains Online" },
+    { name: 'description', content: "Experience convenience and automation with electric curtains Dubai. Buy now and enjoy effortless control with Closing Curtain's solutions." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>

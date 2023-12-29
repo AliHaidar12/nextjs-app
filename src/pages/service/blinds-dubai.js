@@ -17,6 +17,7 @@ import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
 import ContentService5 from 'src/components/ContentService5';
+import Head from 'next/head';
 
 const BlindDubai = () => {
   const galleryImages = [
@@ -125,10 +126,24 @@ const BlindDubai = () => {
       image: '/static/images/testimonial.png',
     },
   ];
-  
+  const metaTags = [
+    { property: 'title', content: "Buy Stylish and Functional Blinds in Dubai | Closing Curtain" },
+    { name: 'description', content: "Discover a wide range of stylish and functional blinds in Dubai. Buy Closing Curtain's quality window coverings to enhance your space." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/quality-blinds-in-uae.jpg"/>

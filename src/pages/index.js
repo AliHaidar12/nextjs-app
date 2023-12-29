@@ -130,16 +130,27 @@ export default function Home() {
     '/static/images/ImageCarousel3.png',
     '/static/images/ImageCarousel4.png',
   ]
-
+  const metaTags = [
+    { property: 'title', content: 'Curtains Dubai, Top Online Curtain Shop UAE - ClosingCurtain' },
+    { name: 'description', content: 'Discover more stylish Curtains Dubai At closingcurtain.ae. Choose from our wide range of curtains in Dubai with new style & color options. Visit now!' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <>
       <Head>
-        <title>Curtains Dubai, Top Online Curtain Shop UAE - ClosingCurtain</title>
+        {/* <title>Curtains Dubai, Top Online Curtain Shop UAE - ClosingCurtain</title>
         <meta name="description" content="Discover more stylish Curtains Dubai At closingcurtain.ae. Choose from our 
-wide range of curtains in Dubai with new style & color options. Visit now!"/>
-          <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
+        wide range of curtains in Dubai with new style & color options. Visit now!"/>
+        <meta name="robots" content="index, follow" /> 
+         <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+        {metaTags.map((tag, index) => (
+        tag.property ? (
+          <title key={index}>{tag.content}</title>
+        ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+        )
+      ))}
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head> 

@@ -17,6 +17,7 @@ import ProjectSection from 'src/components/ProjectSection';
 import TestimonialsService from 'src/components/TestimonialsService';
 import ContentService6 from 'src/components/ContentService6';
 import ContentService7 from 'src/components/ContentService7';
+import Head from 'next/head';
 
 const HomeCurtains = () => {
 
@@ -126,10 +127,24 @@ const HomeCurtains = () => {
       
     
   ];
-  
+  const metaTags = [
+    { property: 'title', content: "Enhance Your Window Treatments with Curtain Accessories in Dubai | Closing Curtain" },
+    { name: 'description', content: "Enhance your window treatments with a range of curtain accessories in Dubai. Buy stylish and functional options at Closing Curtain now." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>

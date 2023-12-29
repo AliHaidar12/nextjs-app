@@ -2,6 +2,19 @@
   padding-right: 20px;
   color: black;
   font-weight: bold;
+  text-decoration: none;
+}
+.text:hover {
+  background-color: #1a808d;
+}
+.text1 {
+  padding-right: 20px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.text1:hover {
+  color: #1a808d;
 }
 @media (max-width: 767px) {
   .logomain {
@@ -13,13 +26,6 @@
   font-size: 18px;
 }
 
-
-.dropdownLink{
-  text-decoration: none;
-  padding-right: 20px;
-  color: black;
-  font-weight: bold;
-}
 .space{
   margin-bottom: 0;
   margin-right: 20px;

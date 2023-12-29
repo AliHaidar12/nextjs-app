@@ -14,6 +14,7 @@ import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import ServiceBanner2 from 'src/components/ServiceBanner2';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const HotelRoomCurtains = () => {
   const galleryImages = [
@@ -47,10 +48,24 @@ const HotelRoomCurtains = () => {
       },
     
   ];
-  
+  const metaTags = [
+    { property: 'title', content: "Hotel Curtains Dubai - Buy Modern Curtains For Hotels Online" },
+    { name: 'description', content: "Create an elegant ambiance with hotel curtains in Dubai. Buy Closing Curtain's premium window treatments for your hospitality spaces." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="Hotel Curtains"/>

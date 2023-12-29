@@ -15,6 +15,7 @@ import Footer from 'src/components/Footer';
 import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const BlackoutBlinds = () => {
   const galleryImages = [
@@ -101,10 +102,24 @@ const BlackoutBlinds = () => {
     },
     
   ];
-
+  const metaTags = [
+    { property: 'title', content: "Blackout Blinds in Dubai - Buy Total Light Control Blinds" },
+    { name: 'description', content: "Experience complete light control and privacy with blackout blinds in Dubai. Buy now and create the ideal ambiance at Closing Curtain." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>

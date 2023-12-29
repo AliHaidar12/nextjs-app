@@ -16,6 +16,7 @@ import ServiceBanner2 from 'src/components/ServiceBanner2';
 import ProjectSection from 'src/components/ProjectSection';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const CurtainTapes = () => {
   const testimonials1 = [
@@ -130,9 +131,23 @@ const CurtainTapes = () => {
       title: "No. of Designs"
     },
   ]
-
+  const metaTags = [
+    { property: 'title', content: "Functional and Decorative Curtain Tapes in Dubai | Closing Curtain" },
+    { name: 'description', content: "Enhance your curtains with functional and decorative curtain tapes in Dubai. Explore our collection, buy Closing Curtain's wide selection now." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="Curtain Tapes"/>

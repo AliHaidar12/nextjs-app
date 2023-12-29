@@ -8,6 +8,7 @@ import BlogSocialSection from 'src/components/BlogSocialSection';
 import BlogForm from 'src/components/BlogForm';
 import BlogsProCons from 'src/components/BlogsProCons';
 import BlogInfoSection from 'src/components/BlogInfoSection';
+import Head from 'next/head';
 
 function LuxuryBlackoutCurtains() {
     const blogs = [
@@ -32,8 +33,23 @@ function LuxuryBlackoutCurtains() {
         },
         // Add more blog items as needed
       ];
+      const metaTags = [
+        { property: 'title', content: "Top 10 Best Types of Luxury Blackout Curtains 2023" },
+        { name: 'description', content: 'Some people didn’t have any idea about how to buy best blackout curtains? So here are the top 10 types of luxury curtains. Cool information' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      ];
     return (
         <div >
+            <Head>
+                {metaTags.map((tag, index) => (
+                tag.property ? (
+                <title key={index}>{tag.content}</title>
+                ) : (
+                <meta key={index} name={tag.name} content={tag.content} />
+                )
+            ))}
+            </Head> 
             <Header logo='/static/images/logo.png'/>
             <div className={styles.mainContainer}>
                 <div className={"row my-4"}>

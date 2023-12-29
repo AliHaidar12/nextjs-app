@@ -14,6 +14,7 @@ import ContentService3 from 'src/components/ContentService3';
 import ServiceBanner2 from 'src/components/ServiceBanner2';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const RomanBlinds = () => {
 
@@ -123,10 +124,24 @@ const RomanBlinds = () => {
       title: "No. of Designs"
     },
   ]
-  
+  const metaTags = [
+    { property: 'title', content: "Roman Blinds Dubai | Buy #1 Soft Roman Blinds In Dubai" },
+    { name: 'description', content: "Closingcurtain.ae offers best roman blinds Dubai with wide range of colours and designs. We also give installation service for roman blinds in Dubai." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="Roman Blinds"/>

@@ -16,6 +16,7 @@ import ContentService2 from 'src/components/ContentService2';
 import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const LinenCurtains = () => {
   
@@ -132,10 +133,23 @@ const LinenCurtains = () => {
     },
   ]
 
-  const points = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
-
+  const metaTags = [
+    { property: 'title', content: "Timeless and Natural Linen Curtains in Dubai | Closing Curtain" },
+    { name: 'description', content: "Experience timeless elegance with linen curtains in Dubai. Create a warm ambiance. Buy high-quality fabrics from Closing Curtain's collection." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>

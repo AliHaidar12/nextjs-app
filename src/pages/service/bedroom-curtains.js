@@ -14,6 +14,7 @@ import ContentService1 from 'src/components/ContentService1';
 import ContentService2 from 'src/components/ContentService2';
 import Footer from 'src/components/Footer';
 import ContentService3 from 'src/components/ContentService3';
+import Head from 'next/head';
 
 const BedroomCurtains = () => {
   const galleryImages = [
@@ -48,10 +49,25 @@ const BedroomCurtains = () => {
       
     
   ];
-
+  const metaTags = [
+    { property: 'title', content: "Bedroom Curtains Dubai - #1 Bedroom Drapes Shop - 20% OFF" },
+    { name: 'description', content: "Purchase modern bedroom curtains Dubai at closingcurtain.ae. We have a wide rang of beautiful bedroom curtains in Dubai at the best prices." },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head> 
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner imageUrl="/static/images/ServiceBanner.jpg"/>

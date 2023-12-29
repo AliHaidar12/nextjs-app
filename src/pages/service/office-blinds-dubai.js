@@ -15,6 +15,7 @@ import ContentService2 from 'src/components/ContentService2';
 import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import TestimonialsService from 'src/components/TestimonialsService';
+import Head from 'next/head';
 
 const OfficeBlinds = () => {
 
@@ -124,10 +125,24 @@ const OfficeBlinds = () => {
     },
   ]
 
-  //const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+  const metaTags = [
+    { property: 'title', content: "Buy #1 Quality Office Blinds In Dubai At Affordable Rates" },
+    { name: 'description', content: "Buy high quality office blinds in Dubai by us, We offer all types of window blinds for your office at amazing low prices. Order Now!" },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ];
 
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ContentSection2
