@@ -65,6 +65,52 @@ const HotelRoomCurtains = () => {
           <meta key={index} name={tag.name} content={tag.content} />
           )
         ))}
+
+<script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Hotel Curtains Dubai",
+        "image": "https://closingcurtain.ae/wp-content/uploads/2021/11/1-Hotel-Curtains-UAE.jpg",
+        "description": "Get no.1 quality curtain fixing dubai service.",
+        "brand": "HotelCurtainsDubai",
+        "sku": "HotelCurtainsDubai",
+        "mpn": "HotelCurtainsDubai",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://closingcurtain.ae/service/hotel-curtains",
+          "priceCurrency": "AED",
+          "price": "250",
+          "priceValidUntil": "2024-12-31",
+          "availability": "https://schema.org/PreOrder",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "bestRating": "5",
+          "worstRating": "4.9",
+          "ratingCount": "1800",
+          "reviewCount": "2960"
+        },
+        "review": {
+          "@type": "Review",
+          "name": "MUsa Awais",
+          "reviewBody": "Get High Qualilty Hotel Curtains In Dubai At Closingcurtain.ae. We Have Wide range of stylish hotel curtains in Dubai. Order Now!",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5.0",
+            "bestRating": "5",
+            "worstRating": "4.9"
+          },
+          "datePublished": "2021-06-10",
+          "author": {"@type": "Person", "name": "Musa Awais"},
+          "publisher": {"@type": "Organization", "name": "Hotel Curtains Dubai"}
+        }
+      }
+    `}
+  </script>
       </Head>
       <Header logo='/static/images/logo.png'/>
 
@@ -90,6 +136,7 @@ const HotelRoomCurtains = () => {
         in the first place. These curtains add to the overall hotel or restaurant space decor in the most noteworthy manner and retain 
         their eye-catching profiles for extended periods of time. Also, they are super flexible and can be easily paired with any 
         given <Link className='text-decoration-none text-danger fw-bold' href='curtain-rings'>curtain accessories.</Link>
+            
             </p>}
         
         text2={<p>These hotel curtains Dubai create the most ideal and agreeable surroundings for everyone, in terms of comfort provision. 
@@ -103,12 +150,13 @@ const HotelRoomCurtains = () => {
             rest in, thus are guaranteed of gaining you reasonable business.
             </p>}
 
-        text4={<p>These curtains give an accomplishing and cozy effect to the rest of the decor, hence making it greatly eye-catching. 
+        text4={<><p>These curtains give an accomplishing and cozy effect to the rest of the decor, hence making it greatly eye-catching. 
             Moreover, they provide the most effective levels of privacy which also is a highly demanded aspect within professional settings. 
             Last but not least, is the fact that these curtains also make the best <Link className='text-decoration-none text-danger fw-bold' href='office-curtains'>Office window curtains</Link>, 
             a marvelous addition to your power offices. 
 
-            </p>}
+            </p>
+            </>}
 
         
         />

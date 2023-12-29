@@ -107,7 +107,8 @@ const Header = ({ logo }) => {
                 onMouseEnter={() => handleMouseEnter('dropdown3')}
                 onMouseLeave={handleMouseLeave}
                 show={isDropdownVisible === 'dropdown3'}
-                title={<Link href="#" className={` ${styles.text2}`}>Curtains</Link>}
+                className={` ${styles.text2}`}
+                title={"Curtains"}
                 id="dropdown3"
               >
                 {(isDropdownVisible === 'dropdown3') && (
@@ -206,7 +207,8 @@ const Header = ({ logo }) => {
                 onMouseEnter={() => handleMouseEnter1('dropdown4')}
                 onMouseLeave={handleMouseLeave1}
                 show={isDropdownVisible1 === 'dropdown4'}
-                title={<Link href="#" className={` ${styles.text2}`}>Blinds</Link>}
+                className={` ${styles.text2}`}
+                title={"Blinds"}
                 // href="/service/blinds-dubai/"
                 
                  id="dropdown4">
