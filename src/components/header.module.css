@@ -16,6 +16,14 @@
 .text1:hover {
   color: #1a808d;
 }
+.text2 {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.text2:hover {
+  color: #1a808d;
+}
 @media (max-width: 767px) {
   .logomain {
     margin: 0px !important;
