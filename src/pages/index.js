@@ -22,13 +22,55 @@ import ContactForm from 'src/components/ContactForm';
 import TestimonialsSection from 'src/components/TestimonialsSection';
 import SaleSection from 'src/components/SaleSection';
 import Footer from 'src/components/Footer';
+import StructuredData from 'src/components/StructuredData';
+
 
 import Image from 'next/image';
  
 
 export default function Home() {
 
-
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Living Room Curtains Dubai",
+    "image": "https://closingcurtain.ae/wp-content/uploads/2021/11/Living-Room-Curtains-1.jpg",
+    "description": "Get Best Living Room Curtains Dubai At Low Price in UAE.",
+    "brand": "LivingRoomCurtainsDubai",
+    "sku": "LivingRoomCurtainsDubai",
+    "mpn": "LivingRoomCurtainsDubai",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://closingcurtain.ae/service/living-room-curtains",
+      "priceCurrency": "AED",
+      "price": "250",
+      "priceValidUntil": "2024-12-31",
+      "availability": "https://schema.org/PreOrder",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "4.9",
+      "ratingCount": "1800",
+      "reviewCount": "2960"
+    },
+    "review": {
+      "@type": "Review",
+      "name": "MUsa Awais",
+      "reviewBody": "Buy High Quality Living Room Curtains in Dubai Online At Low Rates.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "4.9"
+      },
+      "datePublished": "2021-09-20",
+      "author": {"@type": "Person", "name": "Musa Awais"},
+      "publisher": {"@type": "Organization", "name": " Living Room Curtains Dubai"}
+    }
+  };
   
 
 
@@ -356,7 +398,10 @@ export default function Home() {
         <TestimonialsSection
         testimonials={testimonials}/>
 
-        
+<div>
+      {/* Your page content goes here */}
+      <StructuredData data={structuredData} />
+    </div>
         <Footer/>
       </main>
 
