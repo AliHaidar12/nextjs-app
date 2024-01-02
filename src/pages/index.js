@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Script from 'next/script';
 
 import Header from 'src/components/Header'
 import Banner from 'src/components/Banner'
@@ -362,15 +363,19 @@ export default function Home() {
       {/* Your page content goes here */}
       
     </div>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TC1TYEWZPG"></script>
-    <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-TC1TYEWZPG');
-          `}
-        </script>
+    <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-TC1TYEWZPG"
+        strategy="afterInteractive"
+      />
+      <Script strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TC1TYEWZPG');
+        `}
+      </Script>
         <Footer/>
       </main>
 
