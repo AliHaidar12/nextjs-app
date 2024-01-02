@@ -1,22 +1,18 @@
-// components/ProductSchema.js
 import React from 'react';
 
-const ProductSchema = ({
-  name,
-  image,
-  description,
-  brand,
-  sku,
-  mpn,
-  offerUrl,
-  priceCurrency,
-  price,
-  priceValidUntil,
-  availability,
-  itemCondition,
-  aggregateRating,
-  review,
-}) => {
+const ProductSchema = ({ data }) => {
+  const {
+    name,
+    image,
+    description,
+    brand,
+    sku,
+    mpn,
+    offers,
+    aggregateRating,
+    review,
+  } = data;
+
   const schemaData = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
@@ -28,19 +24,17 @@ const ProductSchema = ({
     mpn,
     offers: {
       '@type': 'Offer',
-      url: offerUrl,
-      priceCurrency,
-      price,
-      priceValidUntil,
-      availability,
-      itemCondition,
+      ...offers,
     },
     aggregateRating,
     review,
   };
 
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+    />
   );
 };
 

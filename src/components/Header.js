@@ -232,7 +232,7 @@ const Header = ({ logo }) => {
                   <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/roman-blinds-dubai/">Roman Blinds Dubai</NavDropdown.Item>
                   <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/venetian-blinds-dubai/">Venetian Blinds Dubai</NavDropdown.Item>
                   <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/vertical-blinds-dubai/">Vertical Blinds Dubai</NavDropdown.Item>
-                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/wooden-blinds/">Wooden Blinds Dubai</NavDropdown.Item>
+                  <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/wooden-blinds-dubai/">Wooden Blinds Dubai</NavDropdown.Item>
                   </>)}
                 </NavDropdown>
                 <NavDropdown

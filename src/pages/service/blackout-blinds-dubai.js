@@ -175,7 +175,7 @@ const BlackoutBlinds = () => {
          in the first place. Besides, their incredible functionality is a lot more different and advantageous than other types of blinds.
           These are the<Link className='text-decoration-none text-danger fw-bold' href='venetian-blinds-dubai'>heavy-duty blinds</Link>  with the efficient tendency to block out majority of 
           the blazing sunlight, creating the perfect “blackout” effect. They are a great choice for both classic and contemporary homes,
-           just like the versatile <Link className='text-decoration-none text-danger fw-bold' href='wooden-blinds'>Wooden Window Blinds.</Link>
+           just like the versatile <Link className='text-decoration-none text-danger fw-bold' href='wooden-blinds-dubai'>Wooden Window Blinds.</Link>
 
           </p>}
 

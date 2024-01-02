@@ -362,6 +362,15 @@ export default function Home() {
       {/* Your page content goes here */}
       
     </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TC1TYEWZPG"></script>
+    <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TC1TYEWZPG');
+          `}
+        </script>
         <Footer/>
       </main>
 
