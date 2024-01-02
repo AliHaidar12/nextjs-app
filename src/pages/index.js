@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Script from 'next/script';
 
 import Header from 'src/components/Header'
 import Banner from 'src/components/Banner'
@@ -23,7 +22,6 @@ import ContactForm from 'src/components/ContactForm';
 import TestimonialsSection from 'src/components/TestimonialsSection';
 import SaleSection from 'src/components/SaleSection';
 import Footer from 'src/components/Footer';
-import StructuredData from 'src/components/StructuredData';
 
 
 import Image from 'next/image';
@@ -142,11 +140,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* <title>Curtains Dubai, Top Online Curtain Shop UAE - ClosingCurtain</title>
-        <meta name="description" content="Discover more stylish Curtains Dubai At closingcurtain.ae. Choose from our 
-        wide range of curtains in Dubai with new style & color options. Visit now!"/>
-        <meta name="robots" content="index, follow" /> 
-         <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+        
         {metaTags.map((tag, index) => (
         tag.property ? (
           <title key={index}>{tag.content}</title>
@@ -154,8 +148,14 @@ export default function Home() {
           <meta key={index} name={tag.name} content={tag.content} />
         )
       ))}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TC1TYEWZPG"></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TC1TYEWZPG');`}
+        </script>
       </Head> 
       <main>
         <Header logo='/static/images/logo.png'/>
@@ -363,29 +363,6 @@ export default function Home() {
       {/* Your page content goes here */}
       
     </div>
-    <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-TC1TYEWZPG"
-        strategy="afterInteractive"
-      />
-      <Script strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-TC1TYEWZPG');
-        `}
-      </Script>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-TC1TYEWZPG" />
-
-      <Script strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-TC1TYEWZPG');
-        `}
-      </Script>
         <Footer/>
       </main>
 
