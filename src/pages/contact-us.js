@@ -5,6 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from "../styles/Home.module.css";
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
+import Head from 'next/head';
 const ContactUs = () => {
 
   const [formData, setFormData] = useState({
@@ -74,6 +75,9 @@ const ContactUs = () => {
 
   return (
       <div>
+        <Head>
+        <link rel="icon" href="/closing-curtains.png" />
+        </Head>
           <Header logo='/static/images/logo.png'/>
     <div className="container mt-5">
         <h1 className="text-center mb-3">Contact Closing Curtain - Get in Touch with Us</h1>

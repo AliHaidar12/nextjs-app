@@ -3,6 +3,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 import ServiceBanner2 from 'src/components/ServiceBanner2';
 import React from 'react';
+import Head from 'next/head';
 
 function blog() {
     const blogs = [
@@ -37,6 +38,9 @@ function blog() {
       ];
     return (
         <div>
+          <Head>
+          <link rel="icon" href="/closing-curtains.png" />
+          </Head>
             <Header logo='/static/images/logo.png'/>
             <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" heading="Blog"/>
             <BlogItems blogs={blogs}/>

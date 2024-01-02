@@ -180,6 +180,7 @@ const LivingRoomCurtains = () => {
           <meta key={index} name={tag.name} content={tag.content} />
           )
         ))}
+        <link rel="icon" href="/closing-curtains.png" />
       </Head>
       <Header logo='/static/images/logo.png'/>
 

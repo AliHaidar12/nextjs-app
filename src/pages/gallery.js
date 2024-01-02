@@ -7,7 +7,7 @@ import Header from 'src/components/Header'
 import Footer from 'src/components/Footer';
 import GallerySection from 'src/components/GallerySection';
 import ServiceBanner2 from 'src/components/ServiceBanner2';
-
+import Head from 'next/head';
 const Gallery = () => {
   const galleryImages = [
     '/static/images/gallery/1.jpeg',
@@ -52,6 +52,9 @@ const Gallery = () => {
 
   return (
     <div>
+      <Head>
+      <link rel="icon" href="/closing-curtains.png" />
+      </Head>
       <Header logo='/static/images/logo.png'/>
 
       <ServiceBanner2 imageUrl="/static/images/Closing-Curtain-121.jpeg" 
