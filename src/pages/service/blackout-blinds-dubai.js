@@ -16,8 +16,54 @@ import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const BlackoutBlinds = () => {
+
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "blackout blinds Dubai",
+    "image": "https://closingcurtain.ae/static/images/Blinds-collection.jpg",
+    "description": "We are the best blackout blinds supplier in Dubai",
+    "brand": {
+    "name": "blackout blinds Dubai",
+    "@type": "Brand"
+    },
+    "sku": "blackout blinds Dubai",
+    "mpn": "blackout blinds Dubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/blackout-blinds-dubai",
+    "priceCurrency": "AED",
+    "price": "170",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1149",
+    "reviewCount": "2086"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "Pervaiz Iqbal",
+    "reviewBody": "top-rated Blinds supplier in Dubai. . .",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2023-10-13",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "blackout blinds Dubai"}
+    }
+    } 
   const galleryImages = [
     '/static/images/Blackout-Blinds-1.jpg',
     '/static/images/Blackout-Blinds-2.jpg',
@@ -79,10 +125,7 @@ const BlackoutBlinds = () => {
     },
   ];
 
-  const points = ["",
-    "",
-    "",
-    "" ]
+  
   const faqsData = [
     { 
       question: '1. Can You See Through Blackout Blinds At Night?',
@@ -240,7 +283,7 @@ const BlackoutBlinds = () => {
         faqsData={faqsData}
 
         />
-        
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

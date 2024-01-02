@@ -17,8 +17,51 @@ import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const BlackoutCurtains = () => {
+
+  const structuredData ={
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Blackout Curtains Dubai",
+    "image": "https://closingcurtain.ae/static/images/Versatile-Blackout-Curtains.jpg",
+    "description": "Get no.1 quality curtain fixing dubai service.",
+    "brand": "Blackout Curtains Dubai",
+    "sku": "Blackout Curtains Dubai",
+    "mpn": "Blackout Curtains Dubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/blackout-curtains",
+    "priceCurrency": "AED",
+    "price": "250",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1800",
+    "reviewCount": "2960"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "MUsa Awais",
+    "reviewBody": "Get High Qualilty Blakcout Curtains In Dubai At Closingcurtain.ae. We Have Wide range of stylish Blackout curtains in Dubai. Order Now!",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2021-06-10",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "Blackout Curtains Dubai"}
+    }
+   }
   const galleryImages = [
     '/static/images/1-Top-Quality-Blackout-Curtains.jpg',
     '/static/images/2-Top-Quality-Blackout-Curtains.jpg',
@@ -272,7 +315,7 @@ const BlackoutCurtains = () => {
 
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

@@ -15,8 +15,50 @@ import Footer from 'src/components/Footer';
 import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const SheerCurtains = () => {
+  const structuredData ={
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Sheer Curtains Dubai",
+    "image": "https://closingcurtain.ae/static/images/Stunning-Sheer-Curtains.jpg",
+    "description": "Get stylish Sheer curtains in dubai At amazing low rates.",
+    "brand": "bedroomcurtainsdubai",
+    "sku": "sheercurtainsdubai",
+    "mpn": "sheercurtainsdubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/sheer-curtains",
+    "priceCurrency": "AED",
+    "price": "250",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1800",
+    "reviewCount": "2960"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "MUsa Awais",
+    "reviewBody": "Get High Qualilty Sheer Curtains Dubai At Closingcurtain.ae. We Have Wide range of stylish Sheer curtains in Dubai. Order Now!",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2021-06-10",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "sheer Curtains Dubai"}
+    }
+   }
   const galleryImages = [
     '/static/images/1-Electric-Curtains.jpg',
     '/static/images/2-Electric-Curtains.jpg',
@@ -178,7 +220,7 @@ const SheerCurtains = () => {
         faqsData={faqsData}
 
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

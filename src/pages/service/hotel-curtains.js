@@ -15,8 +15,53 @@ import Footer from 'src/components/Footer';
 import ServiceBanner2 from 'src/components/ServiceBanner2';
 import Link from 'next/link';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const HotelRoomCurtains = () => {
+
+  const structuredData = 
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Hotel Curtains Dubai",
+      "image": "https://closingcurtain.ae/static/images/1-Hotel-Curtains-UAE.jpg ",
+      "description": "Get no.1 quality curtain fixing dubai service.",
+      "brand": "HotelCurtainsDubai",
+      "sku": "HotelCurtainsDubai",
+      "mpn": "HotelCurtainsDubai",
+      "offers": {
+      "@type": "Offer",
+      "url": "https://closingcurtain.ae/service/hotel-curtains",
+      "priceCurrency": "AED",
+      "price": "250",
+      "priceValidUntil": "2024-12-31",
+      "availability": "https://schema.org/PreOrder",
+      "itemCondition": "https://schema.org/NewCondition"
+      },
+      "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "4.9",
+      "ratingCount": "1800",
+      "reviewCount": "2960"
+      },
+      "review": {
+      "@type": "Review",
+      "name": "MUsa Awais",
+      "reviewBody": "Get High Qualilty Hotel Curtains In Dubai At Closingcurtain.ae. We Have Wide range of stylish hotel curtains in Dubai. Order Now!",
+      "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "4.9"
+      },
+      "datePublished": "2021-06-10",
+      "author": {"@type": "Person", "name": "Musa Awais"},
+      "publisher": {"@type": "Organization", "name": "Hotel Curtains Dubai"}
+      }
+     }
+  
   const galleryImages = [
     '/static/images/Top-Quality-Hotel-Curtains-Dubai-1.jpg',
     '/static/images/Top-Quality-Hotel-Curtains-Dubai-2.jpg',
@@ -224,7 +269,7 @@ const HotelRoomCurtains = () => {
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

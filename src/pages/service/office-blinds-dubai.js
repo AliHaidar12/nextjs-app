@@ -16,9 +16,50 @@ import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const OfficeBlinds = () => {
-
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "office blinds Dubai",
+    "image": "https://closingcurtain.ae/static/images/Vertical-Office-Blinds.jpg",
+    "description": "Get no.1 quality office blinds in Dubai.",
+    "brand": "office blinds Dubai",
+    "sku": "office blinds Dubai",
+    "mpn": "office blinds Dubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/office-blinds-dubai",
+    "priceCurrency": "AED",
+    "price": "250",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1800",
+    "reviewCount": "2960"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "MUsa Awais",
+    "reviewBody": "Get High Qualilty office blinds In Dubai At Closingcurtain.ae. We Have Wide range of stylish office blinds in Dubai. Order Now!",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2023-10-12",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "office blinds Dubai"}
+    }
+   } 
 
   const testimonials1 = [
     {
@@ -248,7 +289,7 @@ const OfficeBlinds = () => {
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

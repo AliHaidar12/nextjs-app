@@ -17,11 +17,55 @@ import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const VenetianBlinds = () => {
 
 
-  
+  const structuredData =  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Ventian blinds Dubai",
+    "image": "https://closingcurtain.ae/static/images/venetian-blinds-8.jpg",
+    "description": "We are the best Ventian blinds supplier in Dubai",
+    "brand": {
+    "name": "Ventian blinds Dubai",
+    "@type": "Brand"
+    },
+    "sku": "Ventian blinds Dubai",
+    "mpn": "Ventian blinds Dubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/venetian-blinds-dubai",
+    "priceCurrency": "AED",
+    "price": "170",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1149",
+    "reviewCount": "2086"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "Pervaiz Iqbal",
+    "reviewBody": "top-rated Blinds supplier in Dubai. . .",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2023-10-13",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "Ventian blinds Dubai"}
+    }
+    } 
 
   const testimonials1 = [
     {
@@ -257,7 +301,7 @@ const VenetianBlinds = () => {
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

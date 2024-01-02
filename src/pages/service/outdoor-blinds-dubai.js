@@ -16,10 +16,51 @@ import ContentService2 from 'src/components/ContentService2';
 import FAQsSection from 'src/components/FAQsSection';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const OutdoorBlind = () => {
 
-  
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "outdoor blinds Dubai",
+    "image": "https://closingcurtain.ae/static/images/Top-Quality-Outdoor-Blinds-Dubai.jpg",
+    "description": "Get no.1 quality outdoor blinds in Dubai.",
+    "brand": "outdoor blinds Dubai",
+    "sku": "outdoor blinds Dubai",
+    "mpn": "outdoor blinds Dubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/outdoor-blinds-dubai",
+    "priceCurrency": "AED",
+    "price": "250",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1800",
+    "reviewCount": "2960"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "MUsa Awais",
+    "reviewBody": "Get High Qualilty outdoor blinds In Dubai At Closingcurtain.ae. We Have Wide range of stylish outdoor blinds in Dubai. Order Now!",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2023-10-12",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "outdoor blinds Dubai"}
+    }
+   } 
 
   const testimonials1 = [
     {
@@ -297,7 +338,7 @@ const OutdoorBlind = () => {
 
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

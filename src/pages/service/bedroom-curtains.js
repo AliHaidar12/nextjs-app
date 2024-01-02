@@ -15,8 +15,50 @@ import ContentService2 from 'src/components/ContentService2';
 import Footer from 'src/components/Footer';
 import ContentService3 from 'src/components/ContentService3';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const BedroomCurtains = () => {
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Bedroom Curtains Dubai",
+    "image": "https://closingcurtain.ae/static/images/room-darkening-soundproof-curtains-dubai.jpg",
+    "description": "Get stylish bedroom curtains in dubai At amazing low rates.",
+    "brand": "bedroomcurtainsdubai",
+    "sku": "bedroomcurtainsdubai",
+    "mpn": "bedroomcurtainsdubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/bedroom-curtains",
+    "priceCurrency": "AED",
+    "price": "250",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1800",
+    "reviewCount": "2960"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "MUsa Awais",
+    "reviewBody": "Get High Qualilty bedroom curtains In Dubai At Closingcurtain.ae. We Have Wide range of stylish bedroom curtains in Dubai. Order Now!",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2021-06-10",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "Bedroom Curtains Dubai"}
+    }
+   }
   const galleryImages = [
     '/static/images/Bedroom-Curtains-2-500x500.jpg',
     '/static/images/Bedroom-Curtains-1-500x500.jpg',
@@ -204,7 +246,7 @@ const BedroomCurtains = () => {
         faqsData={faqsData}
 
         />
-        
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

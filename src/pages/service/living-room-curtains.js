@@ -1,7 +1,6 @@
 // pages/service.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Header from 'src/components/Header'
 import ServiceBanner from 'src/components/ServiceBanner';
 import ContentSection2 from 'src/components/ContentSection2';
@@ -16,8 +15,50 @@ import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const LivingRoomCurtains = () => {
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Living Room Curtains Dubai",
+    "image": "https://closingcurtain.ae/static/images/Living-Room-Curtains-9.jpg",
+    "description": "Get Best Living Room Curtains Dubai At Low Price in UAE.",
+    "brand": "LivingRoomCurtainsDubai",
+    "sku": "LivingRoomCurtainsDubai",
+    "mpn": "LivingRoomCurtainsDubai",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://closingcurtain.ae/service/living-room-curtains",
+      "priceCurrency": "AED",
+      "price": "250",
+      "priceValidUntil": "2024-12-31",
+      "availability": "https://schema.org/PreOrder",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "4.9",
+      "ratingCount": "1800",
+      "reviewCount": "2960"
+    },
+    "review": {
+      "@type": "Review",
+      "name": "MUsa Awais",
+      "reviewBody": "Buy High Quality Living Room Curtains in Dubai Online At Low Rates.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "4.9"
+      },
+      "datePublished": "2021-09-20",
+      "author": {"@type": "Person", "name": "Musa Awais"},
+      "publisher": {"@type": "Organization", "name": " Living Room Curtains Dubai"}
+    }
+  };
   const testimonials1 = [
     {
       id: 1,
@@ -247,7 +288,7 @@ const LivingRoomCurtains = () => {
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

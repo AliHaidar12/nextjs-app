@@ -15,8 +15,53 @@ import ServiceBanner2 from 'src/components/ServiceBanner2';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const RomanBlinds = () => {
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "roman blinds Dubai",
+    "image": "https://closingcurtain.ae/static/images/Roman-Blinds-2.jpg",
+    "description": "We are the best roman blinds supplier in Dubai",
+    "brand": {
+    "name": "roman blinds Dubai",
+    "@type": "Brand"
+    },
+    "sku": "roman blinds Dubai",
+    "mpn": "roman blinds Dubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/roman-blinds-dubai",
+    "priceCurrency": "AED",
+    "price": "170",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1149",
+    "reviewCount": "2086"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "Pervaiz Iqbal",
+    "reviewBody": "top-rated Blinds supplier in Dubai. . .",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2023-10-13",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "roman blinds Dubai"}
+    }
+    }
 
   const testimonials1 = [
     {
@@ -261,7 +306,7 @@ const RomanBlinds = () => {
 
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

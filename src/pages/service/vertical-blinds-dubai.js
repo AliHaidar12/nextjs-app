@@ -15,10 +15,54 @@ import ContentService3 from 'src/components/ContentService3';
 import Link from 'next/link';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const VerticalBlinds = () => {
 
-
+  const structuredData =  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "vertical blinds Dubai",
+    "image": "https://closingcurtain.ae/static/images/Vertical-Blinds-8.jpg",
+    "description": "We are the best vertical blinds supplier in Dubai",
+    "brand": {
+    "name": "vertical blinds Dubai",
+    "@type": "Brand"
+    },
+    "sku": "vertical blinds Dubai",
+    "mpn": "vertical blinds Dubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/vertical-blinds-dubai",
+    "priceCurrency": "AED",
+    "price": "170",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1149",
+    "reviewCount": "2086"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "Pervaiz Iqbal",
+    "reviewBody": "top-rated Blinds supplier in Dubai. . .",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2023-10-13",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "vertical blinds Dubai"}
+    }
+    } 
   const testimonials1 = [
     {
       id: 1,
@@ -258,7 +302,7 @@ const VerticalBlinds = () => {
 
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );

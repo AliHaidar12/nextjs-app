@@ -15,8 +15,50 @@ import FAQsSection from 'src/components/FAQsSection';
 import Footer from 'src/components/Footer';
 import TestimonialsService from 'src/components/TestimonialsService';
 import Head from 'next/head';
+import ProductSchema from '../../components/StructuredData';
 
 const OfficeCurtains = () => {
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Office Curtains Dubai",
+    "image": "https://closingcurtain.ae/static/images/Living-Room-Curtains-1.jpg",
+    "description": "https://closingcurtain.ae/static/images/Best-office-curtains.jpg",
+    "brand": "OfficeCurtainsDubai",
+    "sku": "OfficeCurtainsDubai",
+    "mpn": "OfficeCurtainsDubai",
+    "offers": {
+    "@type": "Offer",
+    "url": "https://closingcurtain.ae/service/office-curtains",
+    "priceCurrency": "AED",
+    "price": "250",
+    "priceValidUntil": "2024-12-31",
+    "availability": "https://schema.org/PreOrder",
+    "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9",
+    "ratingCount": "1800",
+    "reviewCount": "2960"
+    },
+    "review": {
+    "@type": "Review",
+    "name": "MUsa Awais",
+    "reviewBody": "Buy High Quality Office Curtains in Dubai Online At Low Rates.",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "4.9"
+    },
+    "datePublished": "2023-10-11",
+    "author": {"@type": "Person", "name": "Musa Awais"},
+    "publisher": {"@type": "Organization", "name": "Office Curtains Dubai"}
+    }
+   }
 
   const testimonials1 = [
     {
@@ -222,7 +264,7 @@ const OfficeCurtains = () => {
         heading="FAQs (Frequently Asked Questions)"
         faqsData={faqsData}
         />
-
+        <ProductSchema data={structuredData} />
         <Footer/>
     </div>
   );
