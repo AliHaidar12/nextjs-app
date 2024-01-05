@@ -177,6 +177,7 @@ const Header = ({ logo }) => {
                       {(isInnerDropdownVisible === 'dropdown7') && (
                   <>
                       <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/blackout-curtains/">Blackout Curtains</NavDropdown.Item>
+                      <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/soundproof-curtains/">Soundproof Curtains</NavDropdown.Item>
                       <NavDropdown.Item className={`${styles.text} ${styles.menuItem}`} href="/service/electric-curtains/">Electric Curtains</NavDropdown.Item>
                       </>)}
                     </NavDropdown>
