@@ -111,52 +111,6 @@ const HotelRoomCurtains = () => {
           )
         ))}
         <link rel="icon" href="/closing-curtains.png" />
-
-<script type="application/ld+json">
-    {`
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "Hotel Curtains Dubai",
-        "image": "https://closingcurtain.ae/wp-content/uploads/2021/11/1-Hotel-Curtains-UAE.jpg",
-        "description": "Get no.1 quality curtain fixing dubai service.",
-        "brand": "HotelCurtainsDubai",
-        "sku": "HotelCurtainsDubai",
-        "mpn": "HotelCurtainsDubai",
-        "offers": {
-          "@type": "Offer",
-          "url": "https://closingcurtain.ae/service/hotel-curtains",
-          "priceCurrency": "AED",
-          "price": "250",
-          "priceValidUntil": "2024-12-31",
-          "availability": "https://schema.org/PreOrder",
-          "itemCondition": "https://schema.org/NewCondition"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "bestRating": "5",
-          "worstRating": "4.9",
-          "ratingCount": "1800",
-          "reviewCount": "2960"
-        },
-        "review": {
-          "@type": "Review",
-          "name": "MUsa Awais",
-          "reviewBody": "Get High Qualilty Hotel Curtains In Dubai At Closingcurtain.ae. We Have Wide range of stylish hotel curtains in Dubai. Order Now!",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5.0",
-            "bestRating": "5",
-            "worstRating": "4.9"
-          },
-          "datePublished": "2021-06-10",
-          "author": {"@type": "Person", "name": "Musa Awais"},
-          "publisher": {"@type": "Organization", "name": "Hotel Curtains Dubai"}
-        }
-      }
-    `}
-  </script>
       </Head>
       <Header logo='/static/images/logo.png'/>
 
