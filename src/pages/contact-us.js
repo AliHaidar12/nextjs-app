@@ -1,77 +1,46 @@
 // components/ContactUs.js
 import React, {useState} from 'react';
+import axios from 'axios';  // Add this import statement
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from "../styles/Home.module.css";
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
 import Head from 'next/head';
-const ContactUs = () => {
 
+const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     message: '',
   });
 
-  
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
-    console.log("form");
     e.preventDefault();
 
-    // Log the form data to the console
-    console.log('Form Data:', formData);
-
     try {
-      // Form submission logic
-      const response = await axios.post('/api/contact', formData);
-      console.log(response.data.message);
-
-      // Email sending logic
-      const transporter = nodemailer.createTransport({
-        // Configure your email transporter here
-        service: 'gmail',
-        auth: {
-          user: 'your-email@gmail.com',
-          pass: 'your-email-password',
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
+        body: JSON.stringify(formData),
       });
 
-      const mailOptions = {
-        from: 'your-email@gmail.com',
-        to: 'info@closingcurtain.ae',
-        subject: 'New Contact Form Submission',
-        text: `
-          Name: ${formData.name}
-          Email: ${formData.email}
-          Phone: ${formData.phone}
-          Message: ${formData.message}
-        `,
-      };
-
-      await transporter.sendMail(mailOptions);
-      console.log('Email sent successfully');
-
-      // Reset the form after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-      });
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        // You can redirect or show a success message here
+      } else {
+        console.error('Error submitting form');
+      }
     } catch (error) {
-      console.error('Error submitting form or sending email:', error);
+      console.error('Error submitting form', error);
     }
   };
-
-
-
 
   return (
       <div>
@@ -154,18 +123,20 @@ const ContactUs = () => {
             <div className="row">
               <div className="col-md-6 mb-3">
                 <input
-                  onChange={handleInputChange}
+                  onChange={handleChange}
                   type="text"
                   className={`${styles.formFields} form-control `}
                   placeholder="Your Name"
+                  name="name"
                 />
               </div>
               <div className="col-md-6 mb-3">
                 <input
-                  onChange={handleInputChange}
+                  onChange={handleChange}
                   type="email"
                   className={`${styles.formFields} form-control `}
                   placeholder="Your Email"
+                  name="email"
                 />
               </div>
             </div>
@@ -173,19 +144,21 @@ const ContactUs = () => {
             <div className="row">
               <div className="col-md-12 mb-3">
                 <input
-                  onChange={handleInputChange}
+                  onChange={handleChange}
                   className={`${styles.formFields} form-control `}
                   placeholder="Your Phone"
+                  name="phone"
                 ></input>
               </div>
             </div>
             <div className="row">
               <div className="col-md-12 mb-3">
                 <textarea
-                  onChange={handleInputChange}
+                  onChange={handleChange}
                   className={` ${styles.formFields} form-control `}
                   rows="4"
                   placeholder="Your Message"
+                  name="message"
                 ></textarea>
               </div>
             </div>
