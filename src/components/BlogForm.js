@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "../styles/Home.module.css";
 
 function BlogForm() {
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-      };
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        // You can redirect or show a success message here
+      } else {
+        console.error('Error submitting form');
+      }
+    } catch (error) {
+      console.error('Error submitting form', error);
+    }
+  };
     return (
         <div className='container'>
             <div className="row">
@@ -14,11 +42,11 @@ function BlogForm() {
                 <h2 className="title mb-3"> Leave Your Comment</h2>
             </div>
           
-          <form >
+          <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-md-6 mb-3">
                 <input
-                  onChange={handleInputChange}
+                  onChange={handleChange}
                   type="text"
                   className={`${styles.formFields} form-control `}
                   placeholder="Your Name"
@@ -26,7 +54,7 @@ function BlogForm() {
               </div>
               <div className="col-md-6 mb-3">
                 <input
-                  onChange={handleInputChange}
+                  onChange={handleChange}
                   type="email"
                   className={`${styles.formFields} form-control `}
                   placeholder="Your Email"
@@ -37,7 +65,7 @@ function BlogForm() {
             <div className="row">
               <div className="col-md-12 mb-3">
                 <textarea
-                  onChange={handleInputChange}
+                  onChange={handleChange}
                   className={` ${styles.formFields} form-control `}
                   rows="4"
                   placeholder="Your Message"
