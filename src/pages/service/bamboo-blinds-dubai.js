@@ -138,6 +138,8 @@ const BombooBlinds = () => {
                 <meta key={index} name={tag.name} content={tag.content} />
                 )
             ))}
+             {/* <link rel="canonical" href="" /> */}
+            // <link ref="canonical" href='https://closingcurtain.ae/service/bamboo-blinds-dubai'/> 
             <link rel="icon" href="/closing-curtains.png" />
             </Head>
       <Header logo='/static/images/logo.png'/>

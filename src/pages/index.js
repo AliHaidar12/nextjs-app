@@ -148,6 +148,7 @@ export default function Home() {
           <meta key={index} name={tag.name} content={tag.content} />
         )
       ))}
+        <link rel="canonical" href="https://closingcurtain.ae/"/>
         <link rel="icon" href="/closing-curtains.png" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TC1TYEWZPG"></script>
         <script>

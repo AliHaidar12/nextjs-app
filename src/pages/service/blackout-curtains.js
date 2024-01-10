@@ -182,6 +182,7 @@ const BlackoutCurtains = () => {
           <meta key={index} name={tag.name} content={tag.content} />
           )
         ))}
+        <link rel="canonical" href="https://closingcurtain.ae/service/blackout-curtains" />
         <link rel="icon" href="/closing-curtains.png" />
       </Head>
       <Header logo='/static/images/logo.png'/>
