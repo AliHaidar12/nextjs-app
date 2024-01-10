@@ -36,7 +36,7 @@ const ContentService3 = ({ faqHeading, leftSectionTitle, leftSectionParagraph1, 
           <div className="mb-4">
             <div className="d-flex align-items-center">
               <div className="me-3 mb-3">
-                <i class="bi bi-phone  fs-1"></i>
+                <i className="bi bi-phone  fs-1"></i>
 
               </div>
               <div>
