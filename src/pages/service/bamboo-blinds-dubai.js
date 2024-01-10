@@ -127,18 +127,22 @@ const BombooBlinds = () => {
     { name: 'description', content: "Add a touch of natural elegance to your windows with bamboo blinds in Dubai. Explore our sustainable and stylish options and buy Closing Curtain." },
     { name: 'robots', content: 'index, follow' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { rel: 'canonical', href: 'https://closingcurtain.ae/service/bamboo-blinds-dubai' },
   ];
   return (
     <div>
           <Head>
                 {metaTags.map((tag, index) => (
+                  tag.rel ? (
+            <link key={index} rel={tag.rel} href={tag.href} />
+          ) :
                 tag.property ? (
                 <title key={index}>{tag.content}</title>
                 ) : (
                 <meta key={index} name={tag.name} content={tag.content} />
                 )
+                
             ))}
-             <link ref="canonical" href='https://closingcurtain.ae/service/bamboo-blinds-dubai'/> 
             <link rel="icon" href="/closing-curtains.png" />
             </Head>
       <Header logo='/static/images/logo.png'/>
