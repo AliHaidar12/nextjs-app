@@ -13,7 +13,7 @@ function BlogInfo() {
     const blogs = [
           {
             id: 1,
-            link: "/luxury-blackout-curtains/",
+            link: "/Luxury-Blackout-Curtains-2022/",
             image: "/static/images/affordable-living-room-curtains-ideas-1.jpg",
             title: 'Top 10 Best Types of Luxury Blackout Curtains 2023',
             date: 'February 24, 2022',
@@ -46,6 +46,7 @@ function BlogInfo() {
                 <meta key={index} name={tag.name} content={tag.content} />
                 )
             ))}
+            <link rel="canonical" href="https://closingcurtain.ae/best-types-of-curtains-to-choose-for-your-home-in-dubai" />
             <link rel="icon" href="/closing-curtains.png" />
             </Head> 
             <Header logo='/static/images/logo.png'/>

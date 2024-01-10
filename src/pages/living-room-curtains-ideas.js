@@ -47,6 +47,7 @@ function CurtainsIdeas() {
                 <meta key={index} name={tag.name} content={tag.content} />
                 )
             ))}
+            <link rel="canonical" href="https://closingcurtain.ae/living-room-curtains-ideas" />
             <link rel="icon" href="/closing-curtains.png" />
             </Head> 
             <Header logo='/static/images/logo.png'/>

@@ -39,6 +39,7 @@ function blog() {
     return (
         <div>
           <Head>
+          <link rel="canonical" href="https://carpentercentre.ae/blog/" />
           <link rel="icon" href="/closing-curtains.png" />
           </Head>
             <Header logo='/static/images/logo.png'/>
