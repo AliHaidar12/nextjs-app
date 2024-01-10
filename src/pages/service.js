@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 import SaleSection from 'src/components/SaleSection';
-
+import Head from 'next/head';
 import ServicesSection from '../components/ServicesSection';
 const curtains = [
   {
@@ -142,10 +142,27 @@ const curtains = [
       pageUrl: "/service/outdoor-blinds-dubai"
     },
 ]
+const metaTags = [
+  { property: 'title', content: "Our Services-closingcurtain.ae" },
+  { name: 'description', content: "Our Services-closingcurtain.ae" },
+  { name: 'robots', content: 'index, follow' },
+  { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+];
 function service() {
   
   return (
     <div>
+      <Head>
+        {metaTags.map((tag, index) => (
+          tag.property ? (
+          <title key={index}>{tag.content}</title>
+          ) : (
+          <meta key={index} name={tag.name} content={tag.content} />
+          )
+        ))}
+        <link rel="canonical" href="https://closingcurtain.ae/service/" />
+        <link rel="icon" href="/closing-curtains.png" />
+      </Head>
       <Header logo="/static/images/logo.png" />
       <ServicesSection 
       items={curtains}
