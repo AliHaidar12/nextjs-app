@@ -149,14 +149,14 @@ function service() {
       <Header logo="/static/images/logo.png" />
       <ServicesSection 
       items={curtains}
-      heading="Curtains"
+      heading="Window Curtains"
       />
       <SaleSection
         text="10% Off Window Curtains and Blinds online - Sale End Today"
         />
       <ServicesSection 
       items={blinds}
-      heading="Blinds"
+      heading="Window Blinds"
       />
       <Footer />
     </div>
