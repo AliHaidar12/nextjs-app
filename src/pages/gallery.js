@@ -53,6 +53,7 @@ const Gallery = () => {
   return (
     <div>
       <Head>
+      <link rel="canonical" href="https://closingcurtain.ae/gallery" />
       <link rel="icon" href="/closing-curtains.png" />
       </Head>
       <Header logo='/static/images/logo.png'/>

@@ -15,6 +15,7 @@ for (let i = 1; i <= 299; i++) {
     return (
         <div>
             <Head>
+            <link rel="canonical" href="https://closingcurtain.ae/fabric-collection" />
             <link rel="icon" href="/closing-curtains.png" />
             </Head>
             <Header logo='/static/images/logo.png'/>
