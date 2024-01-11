@@ -21,12 +21,12 @@ import Head from 'next/head';
 
 const BlindDubai = () => {
   const galleryImages = [
-    '/static/images/1-Top-Quality-Blackout-Curtains.jpg',
-    '/static/images/2-Top-Quality-Blackout-Curtains.jpg',
-    '/static/images/3-Top-Quality-Blackout-Curtains.jpg',
-    '/static/images/4-Top-Quality-Blackout-Curtains.jpg',
-    '/static/images/5-Top-Quality-Blackout-Curtains.jpg',
-    '/static/images/6-Top-Quality-Blackout-Curtains.jpg',
+    '/static/images/blinds-dubai (1).jpg',
+    '/static/images/blinds-dubai (2).jpg',
+    '/static/images/blinds-dubai (3).jpg',
+    '/static/images/blinds-dubai (4).jpg',
+    '/static/images/blinds-dubai (5).jpg',
+    '/static/images/blinds-dubai (6).jpg',
   ];
   const faqsData = [
     { 
@@ -151,7 +151,7 @@ const BlindDubai = () => {
       <ServiceBanner imageUrl="/static/images/quality-blinds-in-uae.jpg"/>
      
       <ContentSection2
-        image='/static/images/Versatile-Blackout-Curtains.jpg'
+        image='/static/images/blinds-dubai.jpg'
         heading="Blinds in Dubai - Stylish and Functional Window Coverings        "
         text="Blinds Dubai by Closing Curtain is the most luxurious, finest looking and long-term promising window treatment, the perfect decor choice for your homes and offices. These blinds are extremely high-performance and their addition brings about fundamental comfort in one’s lifestyle.        "
         h31="Crafting"
@@ -185,7 +185,7 @@ const BlindDubai = () => {
         />
         <ContentService5/>
         <ContentService1
-        image='/static/images/Blackout-Hotel-Curtains-UAE.jpg'
+        image='/static/images/blinds-dubai-1.jpg'
         heading="The Aesthetic Versatility Of Our Custom Blinds Dubai        "
         text={<p>Our best Dubai blinds come in a vast range of options and styles, suitable for both commercial and residential settings, making it the easiest for you to pick the best one out. From size measurements to styling options, there are a whole lot of versatile choices available and you can get a noticeable uplifting for your interiors with these quality blinds.
 
@@ -231,7 +231,7 @@ const BlindDubai = () => {
         text2={<p>
                 We’ve got you these best blinds in Dubai with the most affordable pricings, so you can easily upgrade your places with them on a budget. Besides, these cheap window blinds are the most cost-effective too, meaning they will keep repaying for longer time spans. Do choose us for the best blind selection experience or you can also shop online for these blinds and we shall be delivering them to your places real quickly.
             </p>}
-        image="/static/images/Modern-blackout-curtains.jpg"
+        image="/static/images/blinds-dubai-3.jpg"
         />
         
         <SaleSection

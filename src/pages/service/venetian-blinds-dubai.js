@@ -122,12 +122,12 @@ const VenetianBlinds = () => {
   
 
   const galleryImages = [
-    '/static/images/Living-Room-Curtains-8.jpg',
-    '/static/images/Living-Room-Curtains-9.jpg',
-    '/static/images/Living-Room-Curtains-4.jpg', 
-    '/static/images/Living-Room-Curtains-5.jpg',
-    '/static/images/Living-Room-Curtains-6.jpg',
-    '/static/images/Living-Room-Curtains-7.jpg',
+    '/static/images/venetian-blinds-dubai (1).jpg',
+    '/static/images/venetian-blinds-dubai (2).jpg',
+    '/static/images/venetian-blinds-dubai (3).jpg', 
+    '/static/images/venetian-blinds-dubai (1).jpeg',
+    '/static/images/venetian-blinds-dubai (5).jpg',
+    '/static/images/venetian-blinds-dubai (6).jpg',
   ];
   const faqsData = [
     { 
