@@ -1,6 +1,5 @@
 // components/ContactUs.js
 import React, {useState} from 'react';
-import axios from 'axios';  // Add this import statement
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from "../styles/Home.module.css";

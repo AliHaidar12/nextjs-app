@@ -2,7 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './banner.module.css';
 import Link from 'next/link';
-const Banner = ({heading=null, text=null,text1=null, side_image=null}) => {
+import MobileSection from './MobileSection';
+const Banner = ({heading=null, text=null,text1=null, side_image=null, imagesData}) => {
   return (
     <div className={`container-fluid ${styles.mainContainer}`}>
       <div className="container">
@@ -34,7 +35,11 @@ const Banner = ({heading=null, text=null,text1=null, side_image=null}) => {
             className={`img-fluid ps-3 ${styles.image}`}
             priority 
           />
+          <div className='mt-5'>
+            <MobileSection imagesData={imagesData} />
           </div>
+          </div>
+          
         </div>
       </div>
     </div>

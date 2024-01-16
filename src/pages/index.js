@@ -93,6 +93,17 @@ export default function Home() {
       title: "No. of Designs"
     },
   ]
+  const imagesData = [
+  { src: '/static/images/icons/motorized curtains.png', alt: 'Electric Curtains', href: "/service/electric-curtains", title: "Electric Curtains" },
+  { src: '/static/images/icons/blackout curtains.png', alt: 'Blackout Curtains', href: "/service/blackout-curtains", title: "Blackout Curtains"  },
+  { src: '/static/images/icons/sheer curtains.png', alt: 'Sheer Curtains' , href: "/service/sheer-curtains", title: "Sheer Curtains"  },
+  { src: '/static/images/icons/Soundproof-curtain.png', alt: 'Soundproof Curtains' , href: "/service/soundproof-curtains", title: "Soundproof Curtains"  },
+  { src: '/static/images/icons/Linen-curtains.png', alt: 'Linen Curtains' , href: "/service/linen-curtains", title: "Linen Curtains"  },
+  { src: '/static/images/icons/roman blinds.png', alt: 'Roman Blinds', href: "/service/roman-blinds-dubai", title: "Roman Blinds"  },
+  { src: '/static/images/icons/window.png', alt: 'Roller Blinds', href: "/service/roller-blinds-dubai", title: "Roller Blinds"  },
+  { src: '/static/images/icons/wooden-blinds.png', alt: 'wooden blinds', href: "/service/wooden-blinds-dubai", title: "Wooden Blinds"  },
+  { src: '/static/images/icons/venetian-blinds.png', alt: 'venetian blinds', href: "/service/venetian-blinds-dubai", title: "Venetian Blinds"  },
+];
 
   
   const galleryImages = [
@@ -162,6 +173,7 @@ export default function Home() {
         <Header logo='/static/images/logo.png'/>
 
         <Banner 
+        imagesData={imagesData}
         side_image='/static/images/banner.jpg'
         heading="Curtains Dubai - Best Window Treatment By Closing Curtain "
         text="Curtains Dubai are the best choice to give the perfect look to your windows. We provide premium quality Curtains in Dubai made of the finest fabrics to add luxury to your interiors. Our window coverings create a modern interior look with their attractive designs."
