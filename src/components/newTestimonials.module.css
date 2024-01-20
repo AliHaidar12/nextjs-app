@@ -1,0 +1,31 @@
+.comment{
+    color: black;
+    background-color: white;
+    width: 80%;
+    padding: 35px;
+    font-size: 17px;
+}
+.name{
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a808d;
+    line-height: 14px;
+}
+.rating{
+    color: gold;
+}
+.heading{
+    color: #1a808d;
+    font-weight: bold;
+}
+.text{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+@media (max-width: 767px) {
+    .comment{
+        width: 95%;
+        padding: 20px;
+    }
+}

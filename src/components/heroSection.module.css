@@ -1,0 +1,56 @@
+.textColor{
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a808d;
+    color: white;
+    margin: auto;
+}
+.btnColor:hover{
+    background-color: #1a808d;
+    color: black;
+}
+.main{
+    width: 70%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.whyUs{
+    
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+}
+.main1{
+    padding: 50px;
+}
+@media (max-width: 767px) {
+    .main{
+        width: 95%;
+        padding: 0px;
+    }
+    .whyUs{
+        width: 95%;
+        padding-top: 20px;
+    }
+    .main1{
+        padding: 15px;
+    }
+}
+.fontSize{
+    font-size: 18px;
+  }
+  .heading{
+    font-size: 30px;
+}
+@media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px){
+    .fontSize{
+        font-size: 16px;
+    }
+    .heading{
+        font-size: 26px;
+    }
+ }  

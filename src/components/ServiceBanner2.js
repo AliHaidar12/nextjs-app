@@ -2,8 +2,7 @@
 import React from 'react';
 
 const ServiceBanner2 = ({ imageUrl, heading }) => {
-    const bgImageStyle = {
-        
+    const bgImageStyle = {  
       background: `rgba(0, 0, 0) url(${imageUrl}) center/cover no-repeat`,
         height: '30vh',
       };
