@@ -5,7 +5,7 @@ import styles from './contentServiceNew.module.css';
 function NewServiceSection1({title, heading, text, points,  image,}) {
   return (
     <div className={styles.main}>
-      <div className={` container py-5 px-md-5 mb-4`}>
+      <div className={` container py-5 px-md-5`}>
         <div className={`${styles.innerRows} row align-items-start`} >
           
           

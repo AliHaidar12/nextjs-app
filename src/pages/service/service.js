@@ -166,7 +166,9 @@ function Service() {
               Depending on the fabrication, thickness, and layering, there are endless options available of our exclusive home window curtains, 
               </p>}
             />
-          <ProjectSection items={items}/>
+            <CallToAction image="/static/images/testimonials/testimonial-1.jpg"
+          title="We offer high-quality carpentery services at great prices in Dubai."/>
+          
           <ServiceSection
           title="Welcome To Closing Curtain"
           subImages={subImages}
@@ -178,8 +180,7 @@ function Service() {
             Also, you can have customized versions of these colored, graceful Home Curtains 
             </p>}
           />
-          <CallToAction image="/static/images/testimonials/testimonial-1.jpg"
-          title="We offer high-quality carpentery services at great prices in Dubai."/>
+          <ProjectSection items={items}/>
           <NewTestimonialService
           image="/static/images/curtains-5.jpg" 
           icon="/static/images/icons/play-button.png"
@@ -187,6 +188,7 @@ function Service() {
           heading="Testimunal"
           testimonials={testimonials1}
           />
+          
           <WhyUsSection imageUrl="/static/images/curtains-day.jpg"
           heading="Why Us? – Here is What Makes Us Unique Curtains Shop          "
           text="Closing Curtains, a well-known home decor brand in Dubai, is the customer’s first pick, with thousands of positive 
