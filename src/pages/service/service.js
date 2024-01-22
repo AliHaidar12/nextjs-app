@@ -1,24 +1,30 @@
 import React from 'react';
-import HeroSection from '../../components/HeroSection';
+import HeroSection from '../../components/NewService/HeroSection';
 import Header from 'src/components/Header';
-import ContentImage from '../../components/ContentImage';
-import GallerySection from '../../components/NewServiceGallery';
-import ContactForm from '../../components/ServiceContactForm';
-import NewServiceSection from '../../components/NewServiceSection';
-import ProjectSection from '../../components/NewProjectSection';
-import ServiceSection from '../../components/NewServicesSection';
-import CallToAction from '../../components/CallToAction';
-import WhyUsSection from '../../components/WhyUsSection';
+import ContentImage from '../../components/NewService/ContentImage';
+import GallerySection from '../../components/NewService/NewServiceGallery';
+import ContactForm from '../../components/NewService/ServiceContactForm';
+import NewServiceSection from '../../components/NewService/NewServiceSection';
+import ProjectSection from '../../components/NewService/NewProjectSection';
+import ServiceSection from '../../components/NewService/NewServicesSection';
+import NewTestimonialService from '../../components/NewService/NewTestimonialService';
+import WhyUsSection from '../../components/NewService/WhyUsSection';
 import Footer from 'src/components/Footer';
 import Head from 'next/head';
-import NewServiceSection1 from '../../components/NewServiceSection1';
+import NewServiceSection1 from '../../components/NewService/NewServiceSection1';
+import CallToAction from '../../components/NewService/CallToAction';
 
 
 function Service() {
+  const points = [
+    {title: "Expert Measurement", text: "Expert measurement and installation services"},
+    {title: "Affordable Prices", text: "Wide range of prices to fit any budget"},
+    {title: "Expert Measurement", text: "Expert measurement and installation services"},
+  ]
   const testimonials1 = [
     {
       id: 1,
-      name: 'Henry',
+      name: 'Henry ',
       comment: ' I happened to order these cute curtains for my living room and my experience has been really fantastic.  ',
       rating: 5,
       image: '/static/images/testimonials/testimonial-1.jpg',
@@ -86,22 +92,22 @@ function Service() {
   ];
   const items = [
     {
-      icon: "/static/images/window-1.png",
+      icon: "/static/images/icons/verified.png",
       number: "3200+",
       title: "Project Complete"
     },
     {
-      icon: "/static/images/customer-service.svg",
+      icon: "/static/images/icons/costumer.png",
       number: "3100+",
       title: "Happy Clients"
     },
     {
-      icon: "/static/images/medal.png",
+      icon: "/static/images/icons/medal.png",
       number: "25+",
       title: "Award Wins"
     },
     {
-      icon: "/static/images/curtains.png",
+      icon: "/static/images/icons/design-thinking.png",
       number: "370+",
       title: "No. of Designs"
     },
@@ -151,14 +157,13 @@ function Service() {
             images={galleryImages2} 
             />
             <NewServiceSection1
+            points={points}
             image="/static/images/curtains-13.jpg"
             title="Welcome To Closing Curtain"
-            heading="The Highest Versatility Of Our Home Curtains Dubai        "
+            heading="We offer high-quality carpentery services at great prices in Dubai.            "
             text={<p>
-              Our all-purpose and beyond worthwhile home window curtains can be seamlessly paired with all ornamentations of your choice. 
+              Our all-purpose and beyond worth while home window curtains can be seamlessly paired with all ornamentations of your choice. 
               Depending on the fabrication, thickness, and layering, there are endless options available of our exclusive home window curtains, 
-              so as to effectively fulfill various coverage and light divergence requirements.
-              These curtains are highly versatile in nature and they have the efficient tendency to seamlessly blend into all sorts of spaces. 
               </p>}
             />
           <ProjectSection items={items}/>
@@ -173,7 +178,9 @@ function Service() {
             Also, you can have customized versions of these colored, graceful Home Curtains 
             </p>}
           />
-          <CallToAction
+          <CallToAction image="/static/images/testimonials/testimonial-1.jpg"
+          title="We offer high-quality carpentery services at great prices in Dubai."/>
+          <NewTestimonialService
           image="/static/images/curtains-5.jpg" 
           icon="/static/images/icons/play-button.png"
           subHeading="How Our Happy Clients Talk About Us"

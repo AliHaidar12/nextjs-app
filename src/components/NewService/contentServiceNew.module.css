@@ -6,10 +6,12 @@
     background-color: #1a808d;
     color: black;
 }
+
 .background{
     color: white;
     background-color: #1a808d;
 }
+
 .image1{
     border: 7px #1a808d solid;
     width: 240px;
@@ -30,6 +32,9 @@
     padding-right: 80px;
     padding-top: 90px;
 }
+.row1{
+    padding-right: 80px;
+}
 .iconBox{
     font-size: 22px;
     text-align: center;
@@ -40,9 +45,50 @@
     color: white;
     background-color: #1a808d;
 }
-.main{
-    background-color: #bce1e63b;
+.icon{
+    font-size: 26px;
+    text-align: center;
+    color: #1a808d;
+    font-weight: bold;
 }
+.main{
+    background-color: #b6cccf96;
+}
+ /* Call to Action CSS */
+.main3{
+    background-color: #1a808d;
+}
+.heading2{
+    font-size: 34px;
+    padding: 20px;
+    color: white;
+}
+.innerAction{
+    margin-top: 20px;
+    background-color: #333333;
+    width: 62%;
+    padding: 10px;
+}
+.actionBox{
+    border: #1a808d 2px solid;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 40px;
+}
+.actionText{
+    font-size: 16px;
+    line-height: 15px;
+    color: white;
+    text-align: center;
+}
+.contactFont{
+    font-size: 26px;
+    color: white;
+
+}
+ /* End Call to Action CSS */
+
 .btnColor:hover{
     background-color: #1a808d;
     color: black;
@@ -59,26 +105,28 @@
 .text_number {
     margin-left: 5px;
     margin-top: 10px;
-    font-size: 34px;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 500;
     line-height: 24px;
-    color: white;
+    color: black;
   }
   .text_style {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
     line-height: 16px;
-    color: white;
+    color: black;
   }
 .mainBox {
-    background-color: black;
+    background-color: #1a808d;
     max-width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
   }
   .box_container {
-    width: 300px;
-    background-color: #455e62;
+    width: 275px;
+    background-color: #bcbcbc;
+    border: black solid 2px;
+    box-shadow: 9px 9px 14px -4px #474747e6;
   }
   .videoIcon{
     position: absolute;
@@ -104,6 +152,12 @@
 .heading{
     font-size: 30px;
 }
+.heading1{
+    font-size: 34px;
+    color: #1a808d;
+}
+
+
 .imageDesign{
     border-radius: 25px 0 25px 0;
     width: 100%;
@@ -131,7 +185,6 @@
     border: #1a808d 2px solid;
 
 }
-/* call to action */
 .callBox{
     width: 350px;
     padding: 20px;
@@ -140,6 +193,23 @@
     background-color: #a6aeaf;
 }
 @media (max-width: 767px) {
+    /* Call to Action CSS */
+    .innerAction{
+        width: 100%;
+    }
+    .actionText{
+        font-size: 15px;
+    }
+    .contactFont{
+        font-size: 22px;
+    }
+    .heading2{
+        font-size: 32px;
+    }
+    /* Project Section CSS */
+    .text_style{
+        font-size: 16px;
+    }
     .contentBox{
         position: relative;
         right: auto;
@@ -147,6 +217,9 @@
     }
     .row{
         padding-top: 0px;
+        padding-right: 5px;
+    }
+    .row1{
         padding-right: 5px;
     }
     .image1{
@@ -168,6 +241,9 @@
         width: 80px;
         height: 80px;
     }
+    .heading1{
+        font-size: 26px;
+    }
   }
   @media only screen   
 and (min-width: 1030px)   
@@ -177,5 +253,19 @@ and (max-width: 1366px){
     }
     .heading{
         font-size: 26px;
+    }
+    .heading1{
+        font-size: 28px;
+    }
+    .heading2{
+        font-size: 28px;
+    }
+    .actionText{
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .contactFont{
+        font-size: 19px;
+        line-height: 20px;
     }
  }  

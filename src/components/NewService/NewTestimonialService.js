@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import styles from './contentServiceNew.module.css';
 import TestimonialService from './NewTestimonialSection';
-function CallToAction({testimonials, heading, subHeading, icon, image}) {
+function NewTestimonialService({testimonials, heading, subHeading, icon, image}) {
   return (
     <div className={styles.main}>
       <div className={` container`}>
@@ -35,7 +35,7 @@ function CallToAction({testimonials, heading, subHeading, icon, image}) {
                 <h3 className={`${styles.heading} ${styles.titleColor}`}>{text1}</h3>
             </div>
             <Link className={`${styles.btnColor} mt-4 btn btn-outline-light btn-lg `} href="#!" role="button">
-            CONTACT NOW
+            CONTACT NOW CallToAction
           </Link> */}
           <TestimonialService testimonials={testimonials} heading={heading} subHeading={subHeading}/>
           </div>
@@ -45,4 +45,4 @@ function CallToAction({testimonials, heading, subHeading, icon, image}) {
   )
 }
 
-export default CallToAction
+export default NewTestimonialService
