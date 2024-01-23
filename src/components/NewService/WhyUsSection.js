@@ -24,7 +24,7 @@ const WhyUsSection = ({ imageUrl, text, heading }) => {
             <div className="d-flex justify-content-center align-items-center">
             <div className={`${styles.main1} text-white text-center`}>
             <h2 className={`${styles.heading} mb-4`}>{heading}</h2>
-            <p className={`${styles.fontSize} mb-4`} >{text}</p>
+            <div className={`${styles.fontSize} mb-4`} >{text}</div>
             <Link className={`${styles.btnColor} btn btn-outline-light btn-lg `} href="#!" role="button">
                 Contact Us
             </Link>

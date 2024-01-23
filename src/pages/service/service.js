@@ -192,13 +192,11 @@ function Service() {
           
           <WhyUsSection imageUrl="/static/images/curtains/Curtains.jpg"
           heading="Why Us? – Here is What Makes Us Unique Curtains Shop          "
-          text="Closing Curtains, a well-known home decor brand in Dubai, is the customer’s first pick, with thousands of positive 
+          text={<p>Closing Curtains, a well-known home decor brand in Dubai, is the customer’s first pick, with thousands of positive 
             reviews. We try to deliver you the most exquisite curtains with the most luxury! Let us now assist you in accomplishing your goals; 
-            all you have to do is select your curtain designs and decorate your windows with exquisite window dressing. Our outstanding 
+            all you have to do is select your curtain designs.<br/> Our outstanding 
             services have made us quite popular among Dubai residents. We care about the satisfaction of our valued clients. Bring in 
-            your needs and queries, and we’ll respond as quickly as possible. Find our best curtains in Dubai deals on our website, 
-            or give us a call for exquisite Curtains Dubai, as well as purchasing information and recommendations. And put your eyes 
-            on the top curtains offered in Dubai."
+            your needs and queries, and we’ll respond as quickly as possible. </p>}
             
           />
           <Footer/>
