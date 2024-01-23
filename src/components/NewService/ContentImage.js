@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './contentServiceNew.module.css';
 
-function ContentImage({ url, logo, heading, title, text }) {
+function ContentImage({ url, surl, logo, heading, title, text }) {
   return (
     <div className={styles.main}>
       <div className={` container py-5`}>
@@ -37,7 +37,7 @@ function ContentImage({ url, logo, heading, title, text }) {
             />
             <Image
               alt=""
-              src={url}
+              src={surl}
               width={200}
               height={200}
               className={`${styles.image1} rounded`}

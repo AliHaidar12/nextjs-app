@@ -69,26 +69,26 @@ function Service() {
   ];
 
   const galleryImages = [
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-1.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-2.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-3.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-4.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-5.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-6.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-3.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-4.jpg',
+    '/static/images/curtains/Curtains-1 (7).jpg',
+    '/static/images/curtains/Curtains-1 (6).jpg',
+    '/static/images/curtains/Curtains-1 (5).jpg',
+    '/static/images/curtains/Curtains-1 (4).jpg',
+    '/static/images/curtains/Curtains-1 (3).jpg',
+    '/static/images/curtains/Curtains-1 (2).jpg',
+    '/static/images/curtains/Curtains-1 (1).jpeg',
+    '/static/images/curtains/Curtains-1 (1).jpg',
   ];
   const galleryImages2 = [
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-5.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-6.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-3.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-4.jpg',
+    '/static/images/curtains/Curtains-6 (1).jpg',
+    '/static/images/curtains/Curtains-6 (2).jpg',
+    '/static/images/curtains/Curtains-6 (3).jpg',
+    '/static/images/curtains/Curtains-6 (1).png',
   ];
   const subImages = [
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-1.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-2.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-3.jpg',
-    '/static/images/Top-Quality-Hotel-Curtains-Dubai-4.jpg',
+    '/static/images/curtains/Curtains-1 (10).jpg',
+    '/static/images/curtains/Curtains-1 (11).jpg',
+    '/static/images/curtains/Curtains-1 (9).jpg',
+    '/static/images/curtains/Curtains-1 (8).jpg',
   ];
   const items = [
     {
@@ -119,12 +119,13 @@ function Service() {
       </Head>
       <Header logo='/static/images/logo.png' />
       <HeroSection
-        imageUrl="/static/images/Silk-Curtains-9.jpg"
+        imageUrl="/static/images/curtains/Curtains-1.jpeg"
         text="Welcome To Closing Curtain"
         heading="We Provide High Quality Bedroom Curtains In Dubai "
         content="Home Curtains Dubai by Closing Curtain are the most perfect and durable window treatment selection for all your places. These curtains create an exceptionally attractive and cozy home decor and are one."
       />
-      <ContentImage url="/static/images/Silk-Curtains-9.jpg" 
+      <ContentImage url="/static/images/curtains/Curtains-7.jpg" 
+      surl="/static/images/curtains/Curtains-5.jpeg"
       logo="/static/images/quality-icon.png"
       title="Welcome To Closing Curtain"
       heading="We Provide High Quality Bedroom Curtains Dubai In Wide Range"
@@ -141,7 +142,7 @@ function Service() {
         />
         <ContactForm url="/static/images/curtains-3.jpg"/>
         <NewServiceSection
-        image="/static/images/curtains-11.jpg"
+        image="/static/images/curtains/Curtains (11).jpg"
         title="Welcome To Closing Curtain"
         heading="Choose Our Exquisite Home Curtains Installation Services          "
             text={<p>Our extraordinary fitting and organization services for the Home Window Curtains will bring about the most attractive 
@@ -158,7 +159,7 @@ function Service() {
             />
             <NewServiceSection1
             points={points}
-            image="/static/images/curtains-13.jpg"
+            image="/static/images/curtains/Curtains (2).jfif"
             title="Welcome To Closing Curtain"
             heading="We offer high-quality carpentery services at great prices in Dubai.            "
             text={<p>
@@ -172,7 +173,7 @@ function Service() {
           <ServiceSection
           title="Welcome To Closing Curtain"
           subImages={subImages}
-          mainImageUrl="/static/images/Top-Quality-Hotel-Curtains-Dubai-4.jpg" 
+          mainImageUrl="/static/images/curtains/Curtains-1 (12).jpg" 
           heading="We Provide High Quality Bedroom Curtains Dubai In Wide Range"
           text={<p>Our all-purpose and beyond worthwhile home window curtains can be seamlessly paired with all ornamentations of your choice. 
             Depending on the fabrication, thickness, and layering, there are endless options available of our exclusive home window curtains, 
@@ -189,7 +190,7 @@ function Service() {
           testimonials={testimonials1}
           />
           
-          <WhyUsSection imageUrl="/static/images/curtains-day.jpg"
+          <WhyUsSection imageUrl="/static/images/curtains/Curtains.jpg"
           heading="Why Us? – Here is What Makes Us Unique Curtains Shop          "
           text="Closing Curtains, a well-known home decor brand in Dubai, is the customer’s first pick, with thousands of positive 
             reviews. We try to deliver you the most exquisite curtains with the most luxury! Let us now assist you in accomplishing your goals; 
