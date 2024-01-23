@@ -17,8 +17,13 @@
 .button {
   background: #fcb332;
   color: black;
-  font-size: 30px;
+  font-size: 22px;
   margin-left: 20px;
+}
+.button:hover{
+  background-color: #1a808d;
+  color: white;
+  border: #fcb332 2px solid;
 }
 .inner {
   max-width: 100%;
@@ -64,6 +69,14 @@
 @media (max-width: 767px) {
   .secondSection {
     width: 100% !important;
+  }
+  .button{
+    margin-top: 20px;
+  }
+  .text{
+    font-size: 21px;
+    margin: 0px;
+    margin-bottom: 20px;
   }
 }
 

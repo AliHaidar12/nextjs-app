@@ -14,7 +14,7 @@ const Footer = () => {
           <i className={`bi bi-phone  fs-5 text-white ${styles.icon}`}></i>
           <p className="mb-0 ml-2 text-white" style={{ fontSize: '18px' }}>+971581535184</p>
         </div>
-        <Link href="contact"><button className={`btn btn-primary ${styles.button}`}>Get A Quote</button></Link>
+        <Link href="contact"><button className={`btn ${styles.button}`}>Get A Quote</button></Link>
       </div>
 
       <div className={`d-flex flex-wrap justify-content-around ${styles.secondSection}`}>
