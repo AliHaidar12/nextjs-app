@@ -142,7 +142,7 @@ function Service() {
         />
         <ContactForm url="/static/images/curtains-3.jpg"/>
         <NewServiceSection
-        image="/static/images/curtains/Curtains (11).jpg"
+        image="/static/images/curtains/Curtains (9).jpg"
         title="Welcome To Closing Curtain"
         heading="Choose Our Exquisite Home Curtains Installation Services          "
             text={<p>Our extraordinary fitting and organization services for the Home Window Curtains will bring about the most attractive 
@@ -159,7 +159,7 @@ function Service() {
             />
             <NewServiceSection1
             points={points}
-            image="/static/images/curtains/Curtains (2).jfif"
+            image="/static/images/curtains/Curtains (8).jpg"
             title="Welcome To Closing Curtain"
             heading="We offer high-quality carpentery services at great prices in Dubai.            "
             text={<p>
