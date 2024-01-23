@@ -24,7 +24,7 @@ function NewServiceSection({title, heading, text,  image,}) {
                   <h2 className={`${styles.heading} mb-3`}>{heading}</h2>
                   <div className={styles.fontSize}>{text}</div>
               </div>
-              <Link className={`${styles.btnColor} btn btn-outline-light btn-lg `} href="#!" role="button">
+              <Link className={`${styles.btnColor1} btn btn-outline-light btn-lg `} href="#!" role="button">
                 Order Now
             </Link>
             </div>
