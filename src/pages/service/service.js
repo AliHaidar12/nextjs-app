@@ -119,7 +119,7 @@ function Service() {
       </Head>
       <Header logo='/static/images/logo.png' />
       <HeroSection
-        imageUrl="/static/images/curtains/Curtains-1.jpeg"
+        imageUrl="/static/images/curtains/Bedroom-Curtains.jpg"
         text="Welcome To Closing Curtain"
         heading="We Provide High Quality Bedroom Curtains In Dubai "
         content="Home Curtains Dubai by Closing Curtain are the most perfect and durable window treatment selection for all your places. These curtains create an exceptionally attractive and cozy home decor and are one."
