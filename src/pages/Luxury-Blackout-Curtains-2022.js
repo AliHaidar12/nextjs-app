@@ -179,8 +179,8 @@ function LuxuryBlackoutCurtains() {
                 </ul>}/>
 
             <BlogInfoSection
-            mainHeading="4. Eclipse Kendall Solid Blackout Curtains
-            "
+            mainHeading="4. Eclipse Kendall Solid Blackout Curtains"
+
             backgroundColor="#9b824f"
             text={<p>
                If you want to silence darkness and make your room`s interior modern, then eclipse curtains are your best choice. 
@@ -380,7 +380,7 @@ function LuxuryBlackoutCurtains() {
 
                 <BlogInfoSection
                 backgroundColor="#b59773"
-            mainHeading="Things To Notice Before Best Type of Luxury Blackout Curtains"
+                mainHeading="Things To Notice Before Best Type of Luxury Blackout Curtains"
             text={<div><p>
                 In this section, I'll reveal the most important factors you must notice before purchasing blackout curtains. 
                 </p>
