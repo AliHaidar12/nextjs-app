@@ -35,7 +35,7 @@ function LuxuryBlackoutCurtains() {
       ];
       const metaTags = [
         { property: 'title', content: "Top 10 Best Types of Luxury Blackout Curtains 2023" },
-        { name: 'description', content: 'Some people didn’t have any idea about how to buy best blackout curtains? So here are the top 10 types of luxury curtains. Cool information' },
+        { name: 'description', content: 'Some people didn`t have any idea about how to buy best blackout curtains? So here are the top 10 types of luxury curtains. Cool information' },
         { name: 'robots', content: 'index, follow' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ];
@@ -67,12 +67,12 @@ function LuxuryBlackoutCurtains() {
                 mainHeading="Top 10 Best Types of Luxury Blackout Curtains 2024"
                 text={<p>
                     Curtains are essential for giving us privacy and blocking the light coming from outside. If you need deep sleep, 
-                    the sun’s rays frequently interrupt your sleep early in the morning. Blackout window hanging will be the best choice 
+                    the sun`s rays frequently interrupt your sleep early in the morning. Blackout window hanging will be the best choice 
                     to block the sunlight.<br/> <br/>
 
                     Various types of luxury blackout curtains are available in the market, and each has a different price depending on its 
-                    functionality. Today’s article will discuss the top 10 best types of luxury curtains. We will provide details about 
-                    the types and explain each curtain’s pros and cons so you can make the right decision based on this information.
+                    functionality. Today`s article will discuss the top 10 best types of luxury curtains. We will provide details about 
+                    the types and explain each curtain`s pros and cons so you can make the right decision based on this information.
 
                    
                     
@@ -90,7 +90,7 @@ function LuxuryBlackoutCurtains() {
             <div className={styles.points1}>
                 <p>
                 There are various types of blackout curtains, but we will discuss the most popular blackout types of luxury curtains. 
-                Let’s look at the best blackout curtains in 2024 one by one:
+                Let`s look at the best blackout curtains in 2024 one by one:
 
                     </p>
             </div>
@@ -101,7 +101,7 @@ function LuxuryBlackoutCurtains() {
             backgroundColor="#b59773"
             text={<div><p>
                 One of the best features of Deconovo thermal insulated blackout curtains is that they provide insulation that helps 
-                regulate your home’s temperature. Theory can be suitable for both summer and winter. <br/> <br/>
+                regulate your home`s temperature. Theory can be suitable for both summer and winter. <br/> <br/>
 
                 These <Link className='text-decoration-none text-white' href="/best-types-of-curtains-to-choose-for-your-home-in-dubai">
                     best types of curtains</Link> for home will protect your place from heating during the summer because they completely 
@@ -132,7 +132,7 @@ function LuxuryBlackoutCurtains() {
             backgroundColor="#ffc32a"
             text={<div><p>
                These curtains would be the best choice when you want both style and functionality. Grommet curtains help decorate and 
-               enhance the beauty of your room’s interior. They are also known as lightweight blackout curtains. <br/> <b/>
+               enhance the beauty of your room`s interior. They are also known as lightweight blackout curtains. <br/> <b/>
 
                They are 100% polyester, the best fabric for luxury blackout curtains, and have a sheer overlay attached. They provide 
                the best functioning of blocking the light coming from outside. If you want a restful sleep during the daytime, they can 
@@ -183,7 +183,7 @@ function LuxuryBlackoutCurtains() {
             "
             backgroundColor="#9b824f"
             text={<p>
-               If you want to silence darkness and make your room’s interior modern, then eclipse curtains are your best choice. 
+               If you want to silence darkness and make your room`s interior modern, then eclipse curtains are your best choice. 
                These curtains were tested in the laboratory and guaranteed to block over 99% of light coming from outside. They also 
                reduce noise, and you can get a restful sleep day and night. You can use these luxury blackout 
                <Link className='text-red' href="/living-room-curtains-ideas"> curtains for the living room. </Link>
@@ -354,7 +354,7 @@ function LuxuryBlackoutCurtains() {
             text={<div><p>
                 These curtains can be installed behind the grommet curtains to block the external light completely. They come with  
                 16 metal rings and are ready to be hung. You just have to put on a curtain rod. They also give insulator functionality 
-                and help control the room’s climate easily. There are some pros and cons of these curtains:
+                and help control the room`s climate easily. There are some pros and cons of these curtains:
 
                 <br/> <br/>
 
