@@ -382,7 +382,7 @@ function LuxuryBlackoutCurtains() {
                 backgroundColor="#b59773"
                 mainHeading="Things To Notice Before Best Type of Luxury Blackout Curtains"
             text={<div><p>
-                In this section, I"ll reveal the most important factors you must notice before purchasing blackout curtains. 
+                In this section, I`ll reveal the most important factors you must notice before purchasing blackout curtains. 
                 </p>
                 <h3>Level Of Darkness</h3>
                 <p>You must know the level of darkness in the place where you want to install the blackout curtains. If you want complete 
