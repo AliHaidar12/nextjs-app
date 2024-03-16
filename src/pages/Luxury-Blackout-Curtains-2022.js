@@ -1,14 +1,14 @@
-import React from 'react';
-import Footer from 'src/components/Footer';
-import Header from 'src/components/Header';
-import Link from 'next/link';
-import BlogItems from 'src/components/BlogItems';
+import React from "react";
+import Footer from "src/components/Footer";
+import Header from "src/components/Header";
+import Link from "next/link";
+import BlogItems from "src/components/BlogItems";
 import styles from "../styles/Home.module.css";
-import BlogSocialSection from 'src/components/BlogSocialSection';
-import BlogForm from 'src/components/BlogForm';
-import BlogsProCons from 'src/components/BlogsProCons';
-import BlogInfoSection from 'src/components/BlogInfoSection';
-import Head from 'next/head';
+import BlogSocialSection from "src/components/BlogSocialSection";
+import BlogForm from "src/components/BlogForm";
+import BlogsProCons from "src/components/BlogsProCons";
+import BlogInfoSection from "src/components/BlogInfoSection";
+import Head from "next/head";
 
 function LuxuryBlackoutCurtains() {
     const blogs = [
@@ -17,27 +17,27 @@ function LuxuryBlackoutCurtains() {
           id: 1,
           link: "/best-types-of-curtains-to-choose-for-your-home-in-dubai/",
           image: "/static/images/affordable-living-room-curtains-ideas-1.jpg",
-          title: 'Top 10 Best Types of Luxury Blackout Curtains 2023',
-          date: 'February 24, 2022',
+          title: "Top 10 Best Types of Luxury Blackout Curtains 2023",
+          date: "February 24, 2022",
           comments: "No",
-          description: 'Curtains are essential elements for giving us privacy and blocking the light coming from outside. If you need deep sleep,',
+          description: "Curtains are essential elements for giving us privacy and blocking the light coming from outside. If you need deep sleep,",
         },
         {
           id: 2,
           link: "/living-room-curtains-ideas/",
           image: "/static/images/Affordable-Living-Room-Curtains-Ideas.jpg",
-          title: '10+ Affordable Living Room Curtains Ideas',
-          date: 'February 19, 2022',
+          title: "10+ Affordable Living Room Curtains Ideas",
+          date: "February 19, 2022",
           comments: "No",
-          description: 'Curtains can transform the style of your living room as well as the whole interior of your home. Apart from',
+          description: "Curtains can transform the style of your living room as well as the whole interior of your home. Apart from",
         },
         // Add more blog items as needed
       ];
       const metaTags = [
-        { property: 'title', content: "Top 10 Best Types of Luxury Blackout Curtains 2023" },
-        { name: 'description', content: 'Some people didn`t have any idea about how to buy best blackout curtains? So here are the top 10 types of luxury curtains. Cool information' },
-        { name: 'robots', content: 'index, follow' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { property: "title", content: "Top 10 Best Types of Luxury Blackout Curtains 2023" },
+        { name: "description", content: "Some people didn`t have any idea about how to buy best blackout curtains? So here are the top 10 types of luxury curtains. Cool information" },
+        { name: "robots", content: "index, follow" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
       ];
     return (
         <div >
@@ -52,14 +52,14 @@ function LuxuryBlackoutCurtains() {
             <link rel="canonical" href="https://closingcurtain.ae/Luxury-Blackout-Curtains-2022" />
             <link rel="icon" href="/closing-curtains.png" />
             </Head> 
-            <Header logo='/static/images/logo.png'/>
+            <Header logo="/static/images/logo.png"/>
             <div className={styles.mainContainer}>
                 <div className={"row my-4"}>
                     <div className={styles.pBox}>
                         <p>October 19, 2023</p>
                     </div>
                     <div className={styles.pBox1}>
-                        <Link className='text-decoration-none text-white' href="/">By info@closingcurtain.ae</Link>
+                        <Link className="text-decoration-none text-white" href="/">By info@closingcurtain.ae</Link>
                     </div>
                 </div>
                 
@@ -103,7 +103,7 @@ function LuxuryBlackoutCurtains() {
                 One of the best features of Deconovo thermal insulated blackout curtains is that they provide insulation that helps 
                 regulate your home`s temperature. Theory can be suitable for both summer and winter. <br/> <br/>
 
-                These <Link className='text-decoration-none text-white' href="/best-types-of-curtains-to-choose-for-your-home-in-dubai">
+                These <Link className="text-decoration-none text-white" href="/best-types-of-curtains-to-choose-for-your-home-in-dubai">
                     best types of curtains</Link> for home will protect your place from heating during the summer because they completely 
                 block the sunlight. In winter, increasing your room temperature and keeping it high is helpful to save you from the 
                 cold. These curtains come in triple Woven blackout tech fabric with a unique hidden layer that blocks light for a 
@@ -186,7 +186,7 @@ function LuxuryBlackoutCurtains() {
                If you want to silence darkness and make your room`s interior modern, then eclipse curtains are your best choice. 
                These curtains were tested in the laboratory and guaranteed to block over 99% of light coming from outside. They also 
                reduce noise, and you can get a restful sleep day and night. You can use these luxury blackout 
-               <Link className='text-red' href="/living-room-curtains-ideas"> curtains for the living room. </Link>
+               <Link className="text-red" href="/living-room-curtains-ideas"> curtains for the living room. </Link>
                They comprise 100% polyester. There are some pros and cons of eclipse curtains:
 
                 <br/> <br/>
@@ -240,7 +240,7 @@ function LuxuryBlackoutCurtains() {
             mainHeading="6. Striped Curtains"
             backgroundColor="#46704b"
             text={<div><p>
-               One of the best blackout <Link className='text-red' href="/service/bedroom-curtains"> curtains for the bedroom. </Link> . These 
+               One of the best blackout <Link className="text-red" href="/service/bedroom-curtains"> curtains for the bedroom. </Link> . These 
                curtains come with two panels made up of polyester and woven with a linen-style weave. They can easily be washed 
                in the machine and block 100% outdoor light. They also work as an insulator and help keep your bedroom cool or warm 
                as you want.
@@ -296,7 +296,7 @@ function LuxuryBlackoutCurtains() {
             backgroundColor="#175a7e"
             text={<div><p>
                These curtains comprise a fantastic, durable, and outstanding linen-cotton blend and are widely used as
-               <Link className='text-red' href="/service/hotel-curtains"> hotel curtains. </Link>  They can be installed quickly and 
+               <Link className="text-red" href="/service/hotel-curtains"> hotel curtains. </Link>  They can be installed quickly and 
                help to decorate your room. Pottery Barn curtains can block the external light and give you a peaceful and fantastic 
                sleep. These are some pros and cons of these curtains:
 
@@ -326,8 +326,8 @@ function LuxuryBlackoutCurtains() {
             backgroundColor="#b95d65"
             text={<div><p>
                 These curtains are best known as sound-absorbing, and they reduce external noise and give you a peaceful sleep. 
-                They also work as an excellent insulator to control your room's climate. They can easily be layered using 
-                <Link className='text-red' href="/service/sheer-curtains"> sheer curtains. </Link>  to block the maximum light. 
+                They also work as an excellent insulator to control your room`s climate. They can easily be layered using 
+                <Link className="text-red" href="/service/sheer-curtains"> sheer curtains. </Link>  to block the maximum light. 
                 There are some pros and cons of these curtains, too:
 
                 <br/> <br/>
@@ -382,7 +382,7 @@ function LuxuryBlackoutCurtains() {
                 backgroundColor="#b59773"
                 mainHeading="Things To Notice Before Best Type of Luxury Blackout Curtains"
             text={<div><p>
-                In this section, I'll reveal the most important factors you must notice before purchasing blackout curtains. 
+                In this section, I"ll reveal the most important factors you must notice before purchasing blackout curtains. 
                 </p>
                 <h3>Level Of Darkness</h3>
                 <p>You must know the level of darkness in the place where you want to install the blackout curtains. If you want complete 
