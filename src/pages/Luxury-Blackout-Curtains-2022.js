@@ -62,9 +62,8 @@ function LuxuryBlackoutCurtains() {
                         <Link className="text-decoration-none text-white" href="/">By info@closingcurtain.ae</Link>
                     </div>
                 </div>
-                
+                <h1>Top 10 Best Types of Luxury Blackout Curtains 2024</h1>
             <BlogInfoSection
-                mainHeading="Top 10 Best Types of Luxury Blackout Curtains 2024"
                 text={<p>
                     Curtains are essential for giving us privacy and blocking the light coming from outside. If you need deep sleep, 
                     the sun`s rays frequently interrupt your sleep early in the morning. Blackout window hanging will be the best choice 
@@ -103,7 +102,7 @@ function LuxuryBlackoutCurtains() {
                 One of the best features of Deconovo thermal insulated blackout curtains is that they provide insulation that helps 
                 regulate your home`s temperature. Theory can be suitable for both summer and winter. <br/> <br/>
 
-                These <Link className="text-decoration-none text-white" href="/best-types-of-curtains-to-choose-for-your-home-in-dubai">
+                These <Link className=" " href="/best-types-of-curtains-to-choose-for-your-home-in-dubai">
                     best types of curtains</Link> for home will protect your place from heating during the summer because they completely 
                 block the sunlight. In winter, increasing your room temperature and keeping it high is helpful to save you from the 
                 cold. These curtains come in triple Woven blackout tech fabric with a unique hidden layer that blocks light for a 
@@ -132,13 +131,13 @@ function LuxuryBlackoutCurtains() {
             backgroundColor="#ffc32a"
             text={<div><p>
                These curtains would be the best choice when you want both style and functionality. Grommet curtains help decorate and 
-               enhance the beauty of your room`s interior. They are also known as lightweight blackout curtains. <br/> <b/>
+               enhance the beauty of your room`s interior. They are also known as lightweight blackout curtains. <br/> <br/>
 
                They are 100% polyester, the best fabric for luxury blackout curtains, and have a sheer overlay attached. They provide 
                the best functioning of blocking the light coming from outside. If you want a restful sleep during the daytime, they can 
-               completely block the light from coming to your room. They are also machine washable so that you can easily clean them. <br/> <b/>
+               completely block the light from coming to your room. They are also machine washable so that you can easily clean them. <br/> <br/>
 
-               They are one of the best light-blocking curtains but also have some pros and cons that are listed below:<br/> <b/>
+               They are one of the best light-blocking curtains but also have some pros and cons that are listed below:<br/> <br/>
                 </p>
                 </div>
             }
@@ -185,9 +184,9 @@ function LuxuryBlackoutCurtains() {
             text={<p>
                If you want to silence darkness and make your room`s interior modern, then eclipse curtains are your best choice. 
                These curtains were tested in the laboratory and guaranteed to block over 99% of light coming from outside. They also 
-               reduce noise, and you can get a restful sleep day and night. You can use these luxury blackout 
-               <Link className="text-red" href="/living-room-curtains-ideas"> curtains for the living room. </Link>
-               They comprise 100% polyester. There are some pros and cons of eclipse curtains:
+               reduce noise, and you can get a restful sleep day and night. You can use these luxury 
+               blackout <Link className="text-red" href="/living-room-curtains-ideas">curtains for the living room.</Link> They 
+               comprise 100% polyester. There are some pros and cons of eclipse curtains:
 
                 <br/> <br/>
                 
@@ -240,7 +239,7 @@ function LuxuryBlackoutCurtains() {
             mainHeading="6. Striped Curtains"
             backgroundColor="#46704b"
             text={<div><p>
-               One of the best blackout <Link className="text-red" href="/service/bedroom-curtains"> curtains for the bedroom. </Link> . These 
+               One of the best blackout <Link className="text-red" href="/service/bedroom-curtains"> curtains for the bedroom</Link>. These 
                curtains come with two panels made up of polyester and woven with a linen-style weave. They can easily be washed 
                in the machine and block 100% outdoor light. They also work as an insulator and help keep your bedroom cool or warm 
                as you want.
@@ -326,8 +325,8 @@ function LuxuryBlackoutCurtains() {
             backgroundColor="#b95d65"
             text={<div><p>
                 These curtains are best known as sound-absorbing, and they reduce external noise and give you a peaceful sleep. 
-                They also work as an excellent insulator to control your room`s climate. They can easily be layered using 
-                <Link className="text-red" href="/service/sheer-curtains"> sheer curtains. </Link>  to block the maximum light. 
+                They also work as an excellent insulator to control your room`s climate. They can easily be layered 
+                using <Link className="text-red" href="/service/sheer-curtains">sheer curtains.</Link> to block the maximum light. 
                 There are some pros and cons of these curtains, too:
 
                 <br/> <br/>

@@ -20,7 +20,7 @@ function blog() {
           id: 2,
           link: "/Luxury-Blackout-Curtains-2022/",
           image: "/static/images/affordable-living-room-curtains-ideas-1.jpg",
-          title: 'Top 10 Best Types of Luxury Blackout Curtains 2023',
+          title: 'Top 10 Best Types of Luxury Blackout Curtains 2024',
           date: 'February 24, 2022',
           comments: "No",
           description: 'Curtains are essential elements for giving us privacy and blocking the light coming from outside. If you need deep sleep,',
