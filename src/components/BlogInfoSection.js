@@ -24,15 +24,15 @@ function BlogInfoSection({image, mainHeading, subHeading, text, backgroundColor}
             {subHeading && <h3>{subHeading}</h3>}
             </div>
                 
-                <div className='mb-3'>
-                <Image
-                src={image} // Replace with your image source
-                className="card-img-top"
-                width={400}
-                height={400}
-                alt={"Blog" }
-              />
-                </div>
+            {image && <div className='mb-3'>
+            <Image
+            src={image} // Replace with your image source
+            className="card-img-top"
+            width={400}
+            height={400}
+            alt={"Blog" }
+          />
+            </div>}
               
                 <div className={`md-4 ${styles.fontSize}`} >
                     {text}
