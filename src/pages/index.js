@@ -204,7 +204,7 @@ export default function Home() {
         <ContentSection3
         mainHeading="Discover Modern Curtains in Dubai For Your Windows"
         heading="Blackout Curtains"
-        text="These incredibly comforting Dark Curtains Dubai will be your ultimate saviour against jet lagging, neighbourhood noise and the piercing glare of sunlight. Such curtains are becoming our store’s best-selling in Dubai because of their insulation and heat-reducing features. You can make your room completely dark during peak hours to get peaceful sleep or focus on your work. "
+        text="These incredibly comforting Dark Curtains Dubai will be your ultimate saviour against jet lagging, neighbourhood noise and the piercing glare of sunlight. Such curtains are becoming our store`s best-selling in Dubai because of their insulation and heat-reducing features. You can make your room completely dark during peak hours to get peaceful sleep or focus on your work. "
         text1="There are different fabric options available for room darkening curtains in our shop. You can visit us and buy our top-quality curtains in Dubai with efficient back lining. Make your room comfortable, energy efficient, cool, and dark with our affordable blackout window curtains."
         image="/static/images/Privacy-Curtains.jpg"
         />
@@ -212,7 +212,7 @@ export default function Home() {
         heading="Office Curtains"
         text="Combining the perks of elegance, durability and energy efficiency, our premium-grade commercial Curtains 
         Dubai bring about all the much-needed presentable beauty. Hanging the right office curtains is essential to ensure 
-        a professional-looking interior space. Whether it’s a commercial office or a home workspace, we have the best range 
+        a professional-looking interior space. Whether it`s a commercial office or a home workspace, we have the best range 
         of curtains for offices in Dubai that will enhance the comfort level of your office room. "
         text1="Our curtains are made with a special fabric that does not let the light enter, reducing the unwanted glare on 
         your laptop screen. This way, you can create a desirable work environment at your place by hanging out office window coverings."
@@ -244,7 +244,7 @@ export default function Home() {
         in your apartment or home. We provide premium quality sheer window curtains Dubai with different fabric choices to offer 
         the desired features to our clients."
         text1="With their outstanding beauty and light-filtering functionality, these cheap yet quality drapes in Dubai make the finest 
-        interior styling statement. It doesn’t matter if you have a traditional or modern interior; our white sheer window curtains will 
+        interior styling statement. It doesn`t matter if you have a traditional or modern interior; our white sheer window curtains will 
         enhance the ambiance of your space. Feel the soft sunlight in your home with our easy-to-main sheer drapes. "
         image="/static/images/Bedroom-Sheer-Curtain.jpg"
         button="Buy Sheer Curtains"
@@ -253,7 +253,7 @@ export default function Home() {
         <ContentSection3
         heading="Home Curtains"
         text="Any home is incomplete without a versatile variety of curtains. Our Dubai home curtains collection has simple, bold, 
-        elegant, and plain design options to cater to every customer’s needs. You will surely find the best curtains for your home 
+        elegant, and plain design options to cater to every customer`s needs. You will surely find the best curtains for your home 
         from our Dubai store. "
         text1="We provide the most mind-blowing collection of delightful and serviceable drapes for all residential settings; our 
         quality home curtains are exceptionally purposeful. They improve the aesthetics and add great functionality to your 
@@ -286,7 +286,7 @@ export default function Home() {
         paragraph2="We offer premium quality curtains in Dubai at very low prices to make our customers happy. Over ten years 
         of experience, we have been the first choice of many customers because of the highest quality and lowest prices."
         paragraph3="You can visit our curtain shop in Dubai to explore the latest design range of window coverings. We offer 
-        special discount offers to our new customers. It doesn’t matter if you are buying curtains for homes or offices in Dubai; 
+        special discount offers to our new customers. It doesn`t matter if you are buying curtains for homes or offices in Dubai; 
         we will provide you with the best drapes in Dubai at the most reasonable prices. Call us today to know the material and 
         design options available under your budget."
         heading="We Offer Luxury Curtains at Low Prices"
@@ -303,7 +303,7 @@ export default function Home() {
         text="Closing Curtain is a trustworthy provider of world-class window coverings in Dubai. All our products are processed 
         to be entirely on a budget, with which you can enjoy the perks of both comfort and affordability. Our trendiest and most 
         promisingly durable Curtains Dubai varieties work wonders a lot more than just a window treatment."
-        text1="These drapes are exquisitely designed to offer the benefits of beautification and functionality so that you won’t 
+        text1="These drapes are exquisitely designed to offer the benefits of beautification and functionality so that you won`t 
         need to add any other element for these major purposes. We have 10 years of experience in this field, which makes us the 
         best curtain company in Dubai."
         heading="Celebrate Our 10 Years of Success With Our Curtain Company"
@@ -322,7 +322,7 @@ export default function Home() {
 
         <ContentSection5
         image="/static/images/new-designs-for-soundproof-curtains.jpg"
-        text="In addition to the mesmerizing curtain styles, we’ve also got a whole lineup of high-quality accessories for curtains, 
+        text="In addition to the mesmerizing curtain styles, we`ve also got a whole lineup of high-quality accessories for curtains, 
         which are created for aesthetic and utility requirements. This way, you can easily make the most out of your chosen window 
         curtains in Dubai"
         text1="Using our top-quality accessories will keep your curtains functional for many years. Visit our all-exclusive curtain 
@@ -340,7 +340,7 @@ export default function Home() {
         boxText1="Our curtains Dubai work as a potential barrier against all the external damage, thus saving your furniture, floorings, and other interior stuff from contamination, bacterial buildup and discoloration."
         boxText2="Adding these curtains to your homes is a great way to make them well-maintained, decluttered, organized and most importantly to add a healthy and non-toxic indoor air quality."
         box1Text="Acoustic protection is another amazing advantage you get to experience, once you have our best Curtains Dubai installed in your homes and offices."
-        box1Text1="These curtains are just the most foolproof way to ensure flawless privacy protection for your places, keeping all sorts of intrusions at bay, most importantly while you’re away."
+        box1Text1="These curtains are just the most foolproof way to ensure flawless privacy protection for your places, keeping all sorts of intrusions at bay, most importantly while you`re away."
         box1Text2="The decorative perspective of these curtains is yet another major perk, meaning these curtains give rise to the most harmonized, pleasing and well-organized version of your places."
         />
 
