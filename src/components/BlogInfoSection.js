@@ -18,7 +18,7 @@ function BlogInfoSection({image, mainHeading, subHeading, text, backgroundColor}
       <div className="row ">
           <div className="col   text-left">
           <div className='mb-3' style={containerStyles}>
-            {mainHeading && <h2>{mainHeading}</h2>}
+            {mainHeading && <h3>{mainHeading}</h3>}
             </div>
             <div className='mb-3' style={{ backgroundColor: backgroundColor }}>
             {subHeading && <h3>{subHeading}</h3>}

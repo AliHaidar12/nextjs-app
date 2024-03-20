@@ -60,9 +60,8 @@ function CurtainsIdeas() {
                         <Link className='text-decoration-none text-white' href="/">By info@closingcurtain.ae</Link>
                     </div>
                 </div>
-                
+                <h1>10+ Affordable Living Room Curtains Ideas </h1>
             <BlogInfoSection
-                mainHeading="10+ Affordable Living Room Curtains Ideas                "
                 text={<p>Curtains can transform the style of your living room as well as the whole interior of your home. Apart from this, 
                     curtains are essential for giving us the best privacy solution and blocking out light facilities. They also help to make 
                     your home look modern and stylish when you get fancy curtains for living room.<br/> <br/>
@@ -81,7 +80,7 @@ function CurtainsIdeas() {
 
             <div className={`${styles.consCol1} col`} >
             <div className={styles.consHeading1}>
-                <h3>Living Room Curtains Ideas</h3>
+                <h2>Living Room Curtains Ideas</h2>
             </div>
             <div className={styles.points1}>
                 <p>Some people are confused about how to pick curtains for living room and will make the wrong decision about selecting the 
@@ -283,7 +282,7 @@ function CurtainsIdeas() {
             />
             <div className={`${styles.consCol} col`} >
             <div className={styles.consHeading}>
-                <h3>Conclusion</h3>
+                <h2>Conclusion</h2>
             </div>
             <div className={styles.points}>
                 <p>This is all about the 10+ affordable living room curtains ideas you can use to make your room’s interior look great. 

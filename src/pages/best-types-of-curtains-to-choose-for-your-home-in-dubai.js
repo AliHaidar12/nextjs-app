@@ -59,17 +59,16 @@ function BlogInfo() {
                         <Link className='text-decoration-none text-white' href="/">By info@closingcurtain.ae</Link>
                     </div>
                 </div>
-                
+              <h1>Best Types Of Curtains To Choose For Your Home in Dubai</h1>  
             <BlogInfoSection
-                mainHeading="Best Types Of Curtains To Choose For Your Home in Dubai            "
                 text={<p>Decorating your home? Choosing the right curtains in Dubai is important for a room to come together. Dubai’s 
                 intense sunlight and heat means you’ll want curtains that block light and insulate while complementing your décor. 
                 Here’s an overview of the top curtain styles to consider for your home in Dubai.
                 </p>}
                 image={"/static/images/Curtains-in-Dubai-1536x1079.jpg"}
             />
+            <h2>Best 5 Curtains To Enhance Beauty of Your Home</h2>
             <BlogInfoSection
-            mainHeading="Best 5 Curtains To Enhance Beauty of Your Home            "
             subHeading={<p>1. Blackout Curtains</p>}
             text={<div><p>
                 Blackout curtains are a top choice for bedrooms in Dubai. Made from tightly woven, opaque fabrics, blackout curtains 

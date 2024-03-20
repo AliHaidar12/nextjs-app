@@ -7,7 +7,7 @@ function BlogsProCons({proPoints, ConsPoints}) {
   <div class={`row ${styles.prosBox}`}>
     <div class={`${styles.proCol} col`} >
       <div className={styles.proHeading}>
-        <h3>Pros</h3>
+        <h4>Pros</h4>
       </div>
       <div className={styles.points}>
         {proPoints}
@@ -15,7 +15,7 @@ function BlogsProCons({proPoints, ConsPoints}) {
     </div>
     <div class={`${styles.consCol} col`} >
       <div className={styles.consHeading}>
-        <h3>Cons</h3>
+        <h4>Cons</h4>
       </div>
       <div className={styles.points}>
         {ConsPoints}

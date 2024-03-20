@@ -84,7 +84,7 @@ function LuxuryBlackoutCurtains() {
 
             <div className={`${styles.consCol1} col`} >
             <div className={styles.consHeading1}>
-                <h3>Best Types of Luxury Blackout Curtains 2024</h3>
+                <h2>Best Types of Luxury Blackout Curtains 2024</h2>
             </div>
             <div className={styles.points1}>
                 <p>
@@ -399,7 +399,7 @@ function LuxuryBlackoutCurtains() {
 
             <div className={`${styles.consCol} col`} >
             <div className={styles.consHeading}>
-                <h3>Conclusion</h3>
+                <h2>Conclusion</h2>
             </div>
             <div className={styles.points}>
                 <p>This is all about the best types of luxury blackout curtains in 2024. I hope this article will be helpful for you. 

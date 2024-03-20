@@ -39,7 +39,7 @@ function BlogForm() {
             <div className="row">
         <div className={` py-5 justify-content-center align-items-center col`}>
             <div>
-                <h2 className="title mb-3"> Leave Your Comment</h2>
+                <h3 className="title mb-3"> Leave Your Comment</h3>
             </div>
           
           <form onSubmit={handleSubmit}>
