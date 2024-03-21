@@ -88,7 +88,7 @@ const Footer = () => {
                 <i className={`${styles.contectIcon}bi bi-geo-alt fs-2 me-2`}></i> {/* Phone icon on the left */}
                 <div>
                 <p className={`${styles.phoneText} mb-0`}>Office Address</p> {/* "Contact Us" at the top */}
-                <p className="mb-0">Al quoz first behind bmw showroom sheikh zayed road DUBAI</p> {/* Phone number below */}
+                <p className="mb-0">Shop 74, Al Ameed Plaza, Al Asayel St, Al Quoz 4, Dubai.</p> {/* Phone number below */}
                 </div>
             </div>
         </div>

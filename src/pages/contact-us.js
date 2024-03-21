@@ -72,7 +72,8 @@ const ContactUs = () => {
       </div>
       <div>
         <h5>Location</h5>
-        <p>Al quoz first behind<br/> bmw showroom sheikh zayed <br/>road DUBAI</p>
+        <p>Shop 74, Al Ameed Plaza,<br/> Al Asayel St, <br/>Al Quoz 4, Dubai.</p>
+          
       </div>
     </div>
   </div>
