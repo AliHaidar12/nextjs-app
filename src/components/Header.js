@@ -215,7 +215,7 @@ const Header = ({ logo }) => {
                  id="dropdown4">
                   {(isDropdownVisible1 === 'dropdown4') && (
                   <>
-                <NavDropdown.Item className={`${styles.text}`} href="/service/blinds-dubai/">Blinds Shop In Dubai</NavDropdown.Item>
+                {/* <NavDropdown.Item className={`${styles.text}`} href="/service/blinds-dubai/">Blinds Shop In Dubai</NavDropdown.Item> */}
                 <NavDropdown
                       onMouseEnter={() => handleInnerMouseEnter('dropdown9')}
                       onMouseLeave={handleInnerMouseLeave}
